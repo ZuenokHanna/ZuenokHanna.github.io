@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>table</title>
+    <meta charset=utf-8>
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="font/fontello.css" />
+    <link rel="stylesheet" href="CSS/index5.css">
+    <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+    <link rel="stylesheet" href="js/fm.revealator.jquery.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/fm.revealator.jquery.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $window = $(window);
+            $('div[data-type="background"]').each(function() {
+                var $bgobj = $(this);
+                $(window).scroll(function() {
+                    var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+                    var coords = '50% ' + yPos + 'px';
+                    $bgobj.css({ backgroundPosition: coords });
+                });
+            });
+        });
+    </script>
+</head>
+
+<body id="important">
+    <header id="header">
+        <a href="index.html#important" title="home page"><img src="image/logo1.png" alt="logo.image"></img></a>
+        <div class="button">
+            <ul>
+                <li><a href="index3.html" title="view about us">ABOUT US</a></li>
+                <li><a href="index2.html" title="view menu">MENU</a></li>
+                <li><a href="index3.html#interior" title="view interior">INTERIOR</a></li>
+                <li><a href="index4.html" title="make a reservation">RESERVATION</a></li>
+                <li><a href="index5.html" title="view our location">LOCATION</a></li>
+            </ul>
+        </div>
+        <div>
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+            <label class="btn-menu" for="hmt">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</label>
+            <ul class="hidden-menu">
+                <li><a href="index3.html" title="view about us">ABOUT US</a></li>
+                <li><a href="index2.html" title="view menu">MENU</a></li>
+                <li><a href="index3.html#interior" title="view interior">INTERIOR</a></li>
+                <li><a href="index4.html" title="make a reservation">RESERVATION</a></li>
+                <li><a href="index5.html" title="view our location">LOCATION</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="one" data-speed="10" data-type="background">
+
+            <span>LOCATION</span>
+        </div>
+        <div id="two" data-speed="15" data-type="background">
+
+        </div>
+
+    </main>
+    <section>
+        <span>YOU CAN FIND US HERE</span>
+        <p>37-B Station Rd, Wood Green, London N22 6AF, UK</p>
+        <p>our contacts: (027) 8338 145, (027) 8338 188 </p>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1239.2260865210205!2d-0.112487!3d51.596603!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e52466cbff8494a!2sCoffee+Break!5e0!3m2!1sen!2sby!4v1515272721662" width="600" height="450" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+        </div>
+
+    </section>
+    <footer>
+        <a href=#header title="up"><img src="image/str1.png" alt="navigator-image"></img></a>
+        <div>
+            <div>
+                <span>FOLLOW ALONG</span>
+                <ul>
+                    <li><a href="#" title="facebook"><i class="icon-facebook-squared"></i></a></li>
+                    <li><a href="#" title="instagram"><i class="icon-instagram"></i></a></li>
+                    <li><a href="#" title="twitter"><i class="icon-twitter-squared"></i></a></li>
+                    <li><a href="#" title="pinterest"><i class="icon-pinterest-squared"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <span>NEWSLETTER</span>
+                <br>
+                <form action="send.php" method="post">
+                    <input type="text" name="email" placeholder="your e-mail">
+                </form>
+                <img src="image/icon1.png" alt="social icon"></img>
+            </div>
+        </div>
+        <p><a href="index.html#important" title="home page">&bull; HOME PAGE &bull;</a></p>
+        <p>our contacts: (027) 8338 145, (027) 8338 188</p>
+        <p> &copy; &bull; Handcrafted with love by ZuenokHanna &bull; 2017</p>
+    </footer>
+</body>
+
+</html>
