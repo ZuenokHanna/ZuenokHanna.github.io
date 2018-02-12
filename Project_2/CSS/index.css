@@ -1,0 +1,605 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot');
+    src: url('../font/fontello.eot') format('embedded-opentype'),
+    url('../font/fontello.woff') format('woff'),
+    url('../font/fontello.ttf') format('truetype'),
+    url('../font/fontello.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body,
+#header,
+footer {
+    position: relative;
+    left: 0;
+    width: 1360px;
+    height: 780px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#header {
+    top: 0;
+    z-index: 6;
+    height: 86px;
+    background-color: #ffffff;
+}
+
+#header a img {
+    position: absolute;
+    z-index: 7;
+    top: 14px;
+    left: 86px;
+    width: 167px;
+    height: auto;
+}
+
+#header ul {
+    list-style-type: none;
+    position: absolute;
+    width: 1180px;
+    height: inherit;
+    right: 86px;
+    text-align: right;
+    line-height: 86px;
+    margin: 0;
+}
+
+#header ul li {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 60px;
+    font-family: monospace;
+}
+i {
+    width: 18px;
+    height: 18px;
+    color: darkgray;
+    font-size: 18px;
+}
+i:hover {
+    color: red;
+}
+
+#header a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.slide img {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 50px;
+    height: 780px;
+    width: auto;
+}
+
+#slider-wrap {
+    /* Оболочка слайдера и кнопок */
+    width: 100%;
+    height: 702px;
+    position: absolute;
+    top: 0;
+
+}
+
+#slider {
+    /* Оболочка слайдера */
+    width: 100%;
+    height: 702px;
+    position: relative;
+    top: 0;
+}
+
+.slide {
+    /* Слайд */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url(../image/fon.jpg);
+}
+
+.slide:nth-of-type(2) {
+    background-image: url(../image/slide3.jpg);
+}
+
+.slide:nth-of-type(3) {
+    background-image: url(../image/slide2.jpg);
+}
+
+.slide:nth-of-type(4) {
+    background-image: url(../image/slide3.jpg);
+}
+
+.sli-links {
+    /* Кнопки смены слайдов */
+    position: relative;
+    z-index: 10;
+    bottom: 30px;
+    text-align: center;
+}
+
+.sli-links .control-slide {
+    margin: 7px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bcbcbc;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.sli-links .control-slide:hover {
+    cursor: pointer;
+    background-color: #e54646;
+}
+
+.sli-links .control-slide.active {
+    background-color: #e54646;
+
+}
+
+#prewbutton,
+#nextbutton {
+    /* Ссылка "Следующий" и "Педыдущий" */
+    display: block;
+    width: 20px;
+    height: 702px;
+    position: absolute;
+    top: 0;
+    text-indent: -999px;
+    background: url(../image/right-arrow.png) center no-repeat;
+    z-index: 10;
+    outline: none !important;
+}
+
+#prewbutton {
+    left: 30px;
+}
+
+#nextbutton {
+    right: 30px;
+    background: url(../image/right-arrow.png) center no-repeat;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+#prewbutton:hover,
+#nextbutton:hover {
+    background: url(../image/red.png) center no-repeat;
+
+}
+
+p {
+    display: block;
+    position: absolute;
+    left: 86px;
+    margin: 0;
+}
+
+body>p:nth-of-type(1) {
+    width: 300px;
+    height: 107px;
+    top: 304px;
+    font-size: 45px;
+}
+
+body>p:nth-of-type(2) {
+    display: block;
+    width: 220px;
+    height: 55px;
+    position: absolute;
+    top: 438px;
+    background-color: #e54646;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+p a {
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 79px;
+    background-color: #474747;
+    line-height: 79px;
+}
+
+footer p {
+    font-size: 15px;
+    color: #bcbcbc;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1359px) {
+    body,
+    #header,
+    footer {
+        width: 1280px;
+        height: 733.2px;
+    }
+    #header {
+        height: 80.84px;
+    }
+    #header a img {
+        top: 13.23px;
+        left: 80.84px;
+        width: 157.82px;
+    }
+    #header ul {
+        width: 1115.1px;
+        right: 80.84px;
+        line-height: 80.84px;
+    }
+    #header ul li {
+        font-size: 17px;
+        margin-left: 56.7px;
+    }
+    .slide img {
+        right: 47.25px;
+        height: 737px;
+    }
+    #slider-wrap {
+        height: 663px;
+    }
+    #slider {
+        height: 663px;
+    }
+    .sli-links {
+        bottom: 28.35px;
+    }
+
+    .sli-links .control-slide {
+        margin: 6.6px;
+        width: 9.45px;
+        height: 9.45px;
+    }
+    #prewbutton,
+    #nextbutton {
+        height: 659px;
+        width: 20px;
+    }
+
+    #prewbutton {
+        left: 28.35px;
+    }
+    #nextbutton {
+        right: 28.35px;
+    }
+    p {
+        left: 80.84px;
+    }
+
+    body>p:nth-of-type(1) {
+        width: 282px;
+        height: 100.58px;
+        top: 287.6px;
+        font-size: 42.3px;
+    }
+
+    body>p:nth-of-type(2) {
+        width: 206.8px;
+        height: 51.7px;
+        top: 411.72px;
+        line-height: 51.7px;
+        font-size: 16.92px;
+    }
+
+    footer {
+        height: 74.26px;
+        line-height: 74.26px;
+    }
+
+    footer p {
+        font-size: 14.1px;
+    }
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+     body,
+    #header,
+    footer {
+        width: 1024px;
+        height: 586.56px;
+    }
+    #header {
+        height: 64.67px;
+    }
+    #header a img {
+        top: 10.58px;
+        left: 64.67px;
+        width: 126.27px;
+    }
+    #header ul {
+        width: 892px;
+        right: 64.67px;
+        line-height:64.67px;
+    }
+    #header ul li {
+        font-size: 13.6px;
+        margin-left: 45.36px;
+    }
+    .slide img {
+        right: 37.8px;
+        height: 589.6px;
+    }
+    #slider-wrap {
+        height: 508.8px;
+    }
+    #slider {
+        height: 530.4px;
+    }
+    .sli-links {
+        bottom: 22.68px;
+    }
+
+    .sli-links .control-slide {
+        margin: 5.28px;
+        width: 7.56px;
+        height: 7.56px;
+    }
+    #prewbutton,
+    #nextbutton {
+        height: 527.9px;
+        width:20px;
+    }
+
+    #prewbutton {
+        left: 22.68px;
+    }
+    #nextbutton {
+        right: 22.68px;
+    }
+    p {
+        left: 64.67px;
+    }
+
+    body>p:nth-of-type(1) {
+        width: 226.24px;
+        height: 80.46px;
+        top: 230.08px;
+        font-size: 33.84px;
+    }
+
+    body>p:nth-of-type(2) {
+        width: 165.44px;
+        height: 41.36px;
+        top: 329px;
+        line-height: 41.36px;
+        font-size: 13.53px;
+    }
+
+    footer {
+        height: 59.4px;
+        line-height:59.4px;
+    }
+
+    footer p {
+        font-size: 11.28px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+     body,
+    #header,
+    footer {
+        width: 768px;
+        height: 439.92px;
+    }
+    #header {
+        height: 48.5px;
+    }
+    #header a img {
+        top: 7.94px;
+        left: 48.5px;
+        width: 94.7px;
+    }
+    #header ul {
+        width: 669px;
+        right: 48.5px;
+        line-height:48.5px;
+    }
+    #header ul li {
+        font-size: 10.2px;
+        margin-left: 34.02px;
+    }
+    .slide img {
+        right: 28.35px;
+        height: 442.2px;
+    }
+    #slider-wrap {
+        height: 381.6px;
+    }
+    #slider {
+        height: 397.8px;
+    }
+    .sli-links {
+        bottom: 17.01px;
+    }
+
+    .sli-links .control-slide {
+        margin: 3.96px;
+        width: 5.67px;
+        height: 5.67px;
+    }
+    #prewbutton,
+    #nextbutton {
+        height: 395.92px;
+        width: 20px;
+    }
+
+    #prewbutton {
+        left: 17.01px;
+    }
+    #nextbutton {
+        right: 17.01px;
+    }
+    p {
+        left: 48.5px;
+    }
+
+    body>p:nth-of-type(1) {
+        width: 169.68px;
+        height: 60.35px;
+        top: 172.56px;
+        font-size: 25.38px;
+    }
+
+    body>p:nth-of-type(2) {
+        width: 124.08px;
+        height: 31.02px;
+        top: 246.75px;
+        line-height: 31.02px;
+        font-size: 10.15px;
+    }
+
+    footer {
+        height: 44.55px;
+        line-height:44.55px;
+    }
+
+    footer p {
+        font-size: 8.46px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+     body,
+    #header,
+    footer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        height: 178vw;
+        overflow: hidden;
+    }
+    #header {
+        height: 15vw;
+    }
+    #header a img {
+        top: 4vw;
+        left: 6.32vw;
+        width: 25vw;
+    }
+    #header ul {
+        width: 100%;
+        right: 0;
+        margin: 0;
+        padding: 0;
+    }
+    #header ul li {
+         display: block;
+        position: relative;
+        z-index: 5;
+        top: 15vw;
+        width: 80vw;
+        height: 10vw;
+        text-align: center;
+        font-size: 4vw;
+        background-color: white;
+        border-bottom: 0.3vw solid #bcbcbc;
+        line-height: 10vw;
+        margin:0 auto;
+    }
+    .slide img {
+        position: absolute;
+        top: -15vw;
+        right: 0;
+        height: 100vw;
+    }
+    #slider-wrap {
+        position: absolute;
+        width: 100%;
+        top: 71vw;
+        height: 90vw;
+    }
+    #slider {
+        height: 100%;
+    }
+    .sli-links {
+        bottom: 14.5vw;
+    }
+
+    .sli-links .control-slide {
+        margin: 2vw;
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    #prewbutton,
+    #nextbutton {
+        height: 90vw;
+        width: 20px;
+    }
+
+    #prewbutton {
+        left: 2vw;
+    }
+    #nextbutton {
+        right: 2vw;
+    }
+    p {
+        left: 10vw;
+        z-index: 6;
+    }
+
+    body>p:nth-of-type(1) {
+        width: 100%;
+        left: 0;
+        text-align: center;
+        height: 22vw;
+        padding: 1vw;
+        top: 93vw;
+        font-size: 8vw;
+        background-color: rgba(250,250,250, .5);
+    }
+
+    body>p:nth-of-type(2) {
+        width: 35vw;
+        height: 8.5vw;
+        top: 120vw;
+        left: calc((100% - 35vw) / 2);
+        line-height: 8.5vw;
+        font-size: 3.2vw;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        height: 25vw;
+        line-height:35vw;
+    }
+
+    footer p {
+        font-size: 3vw;
+    }
+}
