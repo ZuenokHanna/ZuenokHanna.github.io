@@ -1,0 +1,206 @@
+@import "vars"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.section_2
+		padding-bottom: 0
+		.section-content
+			min-height: 750px
+	.main-footer
+		.main-mnu
+			position: relative
+			margin-right: -17px
+			margin-bottom: 25px
+
+	.main-mnu
+		display: none
+		float: right
+		min-width: 295px
+		text-align: right
+		background-color: #929394
+		top: 10px
+		position: relative
+		border-bottom: #616162 4px solid
+		border-top: #616162 4px solid
+		position: absolute
+		right: 15px
+		z-index: 2
+		ul
+			li
+				display: block
+				line-height: 0
+				padding: 0
+				&.active
+					a
+						background-color: #79797a
+						text-decoration: none
+						font-family: "RalewayBold", $font-stack-helvetica
+			a
+				color: #eff0f2
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				background-color: transparent
+				font-size: em(15px)
+				text-transform: uppercase
+				transition: all .5s ease
+				border-bottom: #616162 1px solid
+				&:hover
+					background-color: #79797a
+					text-decoration: none
+
+	.phone
+		padding-right: 52px
+
+	.s3-img-wrap
+		margin-left: 82px
+	.section_3
+		.buttons
+			margin-top: 60px
+	.svg-container
+		margin-bottom: 70px
+		.tc-item 
+			margin: 0
+			margin-bottom: 50px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.section_2
+		.section-content
+			min-height: 590px
+	.section_4
+		padding-bottom: 0
+	.section_6
+		padding-bottom: 50px
+	.main-head
+		padding-bottom: 0
+	.section_3
+		.info-item-wrap .info-item
+			margin: 0 0 30px 0!important
+		.section-content
+			background-image: none
+			min-height: auto
+
+	.header-wrap
+		margin-top: 0
+		h1
+			margin-top: 0
+
+	.main-mnu
+		top: 50px
+
+	.top-line
+		min-height: 140px
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main-head
+		.header_img_wrap
+			img
+				display: none
+	.s8-item	
+		margin-bottom: 35px
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+		
+	.info-item
+		max-width: 100%
+		margin: 0
+		padding-left: 0
+
+	
+	.section_1
+		.section-content
+			background-position: bottom
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.section_1
+		.section-pb
+			.text_wrap
+				padding: 0
+	.slider
+		.owl-controls
+			.owl-nav
+				top: 8%
+
+	.phone-wrap
+		.phone
+			font-size: em(18px)
+			line-height: 34px
+			padding-right: 50px
+		.toggle-mnu
+			line-height: 34px
+			margin-top: 8px
+
+	.logo
+		img
+			width: 70px
+
+	.top-line
+		padding-top: 25px
+
+	.s2-item-wrap
+		padding: 0px 10px
+		width: 140px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: block !important
+
+
