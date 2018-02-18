@@ -1,0 +1,141 @@
+@import "vars"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.toggle-mnu
+		display: none
+	.main-head 
+		padding-bottom: 215px
+	.section_1 
+		padding-bottom: 168px
+		background: #1d1d1d
+		.s1_2011
+			margin: 0
+		.s1_2012
+			margin: 0
+		.s1_2013
+			margin: 0
+		.s1_2014
+			margin: 0
+	.section_2 
+			padding-bottom: 195px
+	.section_3
+		.bg-bottom
+			height: 312px
+			.button-wrap 
+				padding-top: 0
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.toggle-mnu
+		display: block
+	.main-mnu
+		display: none
+		float: right
+		min-width: 295px
+		text-align: right
+		background-color: #e4e2e2
+		top: 55px
+		position: relative
+		border-bottom: #bebebe 4px solid
+		border-top: #bebebe 4px solid
+		position: absolute
+		right: 15px
+		z-index: 2
+		ul
+			position: relative
+			li
+				display: block
+				line-height: 0
+				padding: 0
+				&.active
+					a
+						background-color: #c3c2c2
+						text-decoration: none
+			a
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				background-color: transparent
+				text-transform: uppercase
+				transition: all .5s ease
+				border-bottom: #bebebe 1px solid
+				&:hover
+					background-color: #c3c2c2
+					text-decoration: none
+			a.logo
+				display: none
+	.s1_content
+		span
+		&::after
+			display: none
+	.top-line
+		a.logo_hide
+			display: block
+	.section_1
+		padding-top: 120px
+		padding-bottom: 120px
+		.s1_2011
+			&::after
+				display: none
+		.s1_2012
+			&::after
+				display: none
+		.s1_2013
+			&::after
+				display: none
+		.s1_2014
+			&::after
+				display: none
+		.dark_town
+			display: none
+	.section_2
+		padding-top: 70px
+		.pd_top
+			padding-top: 70px
+	.icon-col
+		padding: 60px 0
+	.section_4
+		.icon_container
+			.s4_icon_wrap 
+				padding: 40px 0 0 0
+	.form_wrap
+		.forms 
+			padding-top: 90px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	.main-mnu
+		top: 15px
+	.form_wrap
+		.forms 
+			width: 320px
+	.section_1
+		padding-top: 60px
+		padding-bottom: 60px
+		.sect_wrap, .left
+			padding: 30px
+	.section_2
+		padding-bottom: 125px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+	.form_wrap
+		.forms 
+			width: 290px
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: block !important
+
+

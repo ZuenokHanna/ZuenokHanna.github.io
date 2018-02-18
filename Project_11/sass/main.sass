@@ -1,0 +1,425 @@
+@import "fonts"
+@import "bourbon"
+@import "libs"
+@import "vars"
+
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: 22px
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+a
+	color: $font-color
+a:hover, a:focus, a:active
+	color: $main-color
+	text-decoration: none
+	outline: none
+
+h1
+	font-size: 40px
+	color: $main-color
+	letter-spacing: .2em
+	font-family: "HelveticaNeue-UltraLight"
+	line-height: 1
+
+h2
+	font-size: 32px
+	color: $main-color
+	letter-spacing: .2em
+	font-family: "HelveticaNeue-UltraLight"
+	line-height: 1
+
+h3
+	font-size: 24px
+	color: $main-color
+	letter-spacing: .1em
+	font-family: "HelveticaNeue-UltraLight"
+	line-height: 1
+p
+	font-size: 18px
+	font-family: "MerriweatherSans-LightItalic"
+	color: $font-color
+
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+.top-line
+	width: 100%
+	text-align: center
+	a.logo_hide
+		display: none
+.main-mnu
+	text-align: center
+	li
+		padding: 0	10px
+		&.active
+			a
+				color: $main-color
+	a
+		transition: all .5s ease
+	ul
+		@extend .ulmnu
+
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 14px
+	float: right
+	position: absolute
+	z-index: 2
+	right: 10px
+	top: -50px
+	text-align: center
+	line-height: 48px
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: 9px
+
+.toggle-mnu span:after
+	top: 18px
+
+.toggle-mnu span 
+	position: relative
+	display: block
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 100%
+	height: 2px
+	background-color: $font-color
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+.toggle-mnu.on span 
+	background-color: transparent
+
+.toggle-mnu.on span:before 
+	transform: rotate(45deg) translate(-1px, 0px)
+
+.toggle-mnu.on span:after 
+	transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu.on + #menu 
+	opacity: 1
+	visibility: visible
+
+.main-head
+	padding-bottom: 270px
+	margin-bottom: 60px
+	background-image: url(../img/header_img.png)
+	background-repeat: no-repeat
+	background-position: bottom center
+.header-wrap
+	text-align: center
+	padding-top: 150px
+.button-wrap
+	text-align: center
+	padding-top: 30px
+	.button
+		cursor: pointer
+		display: inline-block
+		border: 1px solid $main-color
+		background-color: transparent
+		color: $main-color
+		font-size: 12px
+		font-family: "RobotoRegular", sans-serif
+		padding: 10px 35px
+		transition: all .25s ease
+		text-decoration: none
+		border-radius: 2px
+		&:hover, &:active, &:focus
+			box-shadow: 2px 3px 0 3px #dfdfdf
+
+.homesect
+	padding-top: 120px
+
+.section_1
+	padding-bottom: 300px
+	background: url(../img/s1_bg.gif) repeat-y 50% 50%  #1d1d1d
+	position: relative
+	.sect_wrap
+		text-align: right
+		padding-left: 130px
+		padding-right: 83px
+	.left
+		text-align: left
+		padding-left: 83px
+		padding-right: 130px
+	.s1_content
+		display: inline-block
+		position: relative
+		font-family: "HelveticaNeue-Light"
+		p
+			color: #b7b7b7
+		span
+			font-size: 30px
+			color: #fefefe
+			transition: all .5s ease
+		&::after
+			position: absolute
+			content: ''
+			display: block
+			width: 19px
+			height: 19px
+			border-radius: 10em
+			border: 4px solid #fefefe
+			background-color: #1d1d1d
+			transition: all .5s ease
+	.s1_2011
+		span
+		&::after
+			top: 0
+			right: -107px
+		&:hover
+			span
+				font-weight: bold
+			&::after
+				width: 35px
+				height: 35px
+				transform: translate(8px, -8px)
+	.s1_2012
+		margin-top: 120px
+		span
+		&::after
+			top: 0
+			left: -107px
+		&:hover
+			span
+				font-weight: bold
+			&::after
+				width: 35px
+				height: 35px
+				transform: translate(-8px, -8px)
+	.s1_2013
+		margin-top: 80px
+		span
+		&::after
+			top: 0
+			right: -107px
+		&:hover
+			span
+				font-weight: bold
+			&::after
+				width: 35px
+				height: 35px
+				transform: translate(8px, -8px)
+	.s1_2014
+		margin-top: 200px
+		span
+		&::after
+			top: 0
+			left: -107px
+		&:hover
+			span
+				font-weight: bold
+			&::after
+				width: 35px
+				height: 35px
+				transform: translate(-8px, -8px)
+.dark_town
+	background: url(../img/s1_bg_town.png) bottom center
+	height: 187px
+	position: absolute
+	bottom: 0
+	z-index: 2
+	width: 100%
+	background-size: contain
+	background-repeat: no-repeat
+	&::after
+		position: absolute
+		content: ''
+		bottom: -20px
+		display: block
+		background: url(../img/s1_bg_town_w.png) bottom center
+		height: 187px
+		z-index: 3
+		width: 100%
+		background-size: contain
+		background-repeat: no-repeat
+
+.section_2
+	padding-bottom: 250px
+	position: relative
+.s_content
+	text-align: center
+
+.team-wrap
+	width: 100%
+	text-align: center
+	display: inline-block
+	color: $font-color
+	padding-top: 70px
+	&:hover
+		img
+			transform: scale(1.05)
+	img
+		width: 140px
+		transition: all .3s ease
+	.icon_block
+		display: block
+		text-align: center
+		padding-top: 15px
+		font-size: 22px
+		i
+			padding: 0 5px
+.pd_top
+	padding-top: 150px
+.dark_triangle
+	background: url(../img/s3_after.png) bottom center
+	height: 187px
+	position: absolute
+	bottom: -2px
+	z-index: 2
+	width: 100%
+	background-size: contain
+	background-repeat: no-repeat
+	
+.section_3
+	padding-top: 30px
+	padding-bottom: 0
+	background-color: #101010
+	.bg-bottom
+		height: 500px
+		background: url(../img/s3_bg.png) repeat-y bottom center
+		text-align: center
+		.button-wrap 
+			padding-top: 100px
+			.button
+				cursor: pointer
+				background-color: #fff
+				padding: 15px 40px
+				font-size: 17px
+				&:hover, &:active, &:focus
+					box-shadow: 0 0 0
+	.s_content
+		h2
+			color: #fff
+.icon-col
+	text-align: center
+	width: 100%
+	padding-top: 120px
+	padding-bottom: 120px
+	.icon_wrap
+		width: 170px
+		height: 170px
+		background: url(../img/s3_icon.png)
+		background-size: auto 140px
+		position: relative
+		margin: auto
+		background-repeat: no-repeat
+		background-position: 16px 0
+	h3
+		color: #fff
+	.icon_two
+		background-position: -158px 0
+	.icon_three
+		background-position: -333px 0
+
+.section_4
+	position: relative
+	padding-top: 30px
+	padding-bottom: 100px
+	.bg_top
+		height: 500px
+		width: 100%
+		position: absolute
+		top: -480px
+		z-index: 2
+		background: url(../img/s4_after.png) no-repeat bottom center
+	.icon_container
+		.s4_icon_wrap
+			display: block
+			padding: 40px 0 90px 0
+			text-align: center
+			font-size: 18px
+			i
+				color: #000
+				padding: 10px
+
+.form_wrap
+	text-align: center
+	color: $main-color
+	.forms
+		display: inline-block
+		width: 500px
+		color: $main-color
+		input, textarea
+			display: block
+			width: 100%
+			border: 1px solid #000
+			text-indent: 10px
+			padding: 8px 0
+			transition: all .5s ease
+			color: $font-color
+			font-size: 15px 
+			overflow: hidden
+			&:focus
+				background-color: #c3c2c2
+		[type="text"]::placeholder
+			color: $main-color
+		input
+			text-align: center
+	.buttons
+			display: block
+			width: 100%
+			background-color: #000
+			color: #fff
+			border: none
+			padding: 10px 0
+.top
+	height: 36px
+	background-color: #e4e2e2
+	background-image: url(../img/top.png)
+	background-repeat: no-repeat
+	background-position: center
+	cursor: pointer
+
+@import "media"
