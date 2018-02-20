@@ -1,0 +1,374 @@
+@import "fonts"
+@import "bourbon"
+@import "libs"
+@import "vars"
+
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: em(22px)
+	font-family: "RalewayRegular", sans-serif
+	overflow-x: hidden
+	color: #333
+	background-color: #f6f2ec
+
+a:hover, a:focus,  a:active
+	color: #000
+	outline: none
+	font-family: "RalewayBold", $font-stack-helvetica
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+	line-height: 1.2em
+
+h1
+	font-size: 36px
+
+h2
+	font-size: 32px
+
+h3
+	font-size: 26px
+
+b, strong
+	font-family: "RalewayBold", $font-stack-helvetica
+	font-weight: normal
+
+.headers
+	text-transform: uppercase
+	font-weight: normal
+	color: $main-color
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+
+.main-mnu
+	font-size: 15px
+	li
+		line-height: 48px
+		padding: 0	10px
+		a
+			transition: all .5s ease
+			color: $font-color
+			font-family: "RalewayBold", $font-stack-helvetica
+			&:hover
+				color: #000
+		&.active
+			a
+				font-family: "RalewayBold", $font-stack-helvetica
+				text-decoration: underline
+				color: #000
+.two_mnu
+	@extend .main-mnu
+	display: none
+	float: right
+	min-width: 295px
+	text-align: right
+	background-color: #e6dfd4
+	top: 55px
+	position: relative
+	border-bottom: $font-color 1px solid
+	border-top: $font-color 1px solid
+	position: absolute
+	right: 15px
+	z-index: 2
+	ul
+		position: relative
+		li
+			display: block
+			line-height: 0
+			padding: 0
+			&.active
+				a
+					background-color: #d6cdbf
+					text-decoration: none
+			a
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				background-color: transparent
+				transition: all .5s ease
+				border-bottom: $font-color 1px solid
+				&:hover
+					background-color: #d6cdbf
+					text-decoration: none
+			form
+				width: 80%
+				margin: 15px auto
+
+.toggle_mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 14px
+	float: right
+	position: absolute
+	right: 15px
+	top: 0
+	text-align: center
+	line-height: 48px
+
+.toggle_mnu span:after,
+.toggle_mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: 9px
+
+.toggle_mnu span:after
+	top: 18px
+
+.toggle_mnu span 
+	position: relative
+	display: block
+
+.toggle_mnu span,
+.toggle_mnu span:after,
+.toggle_mnu span:before
+	width: 100%
+	height: 2px
+	background-color: #000
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+.toggle_mnu.on span 
+	background-color: transparent
+
+.toggle_mnu.on span:before 
+	transform: rotate(45deg) translate(-1px, 0px)
+
+.toggle_mnu.on span:after 
+	transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle_mnu.on + #menu 
+	opacity: 1
+	visibility: visible
+
+.block_wrap
+	width: 100%
+	position: relative
+	padding-top: 30px
+	vertical-align: middle
+	form
+		display: block
+		position: absolute
+		top: 10px
+		left: 80px
+	.icon_wrap
+		display: block
+		position: absolute
+		top: 15px
+		left: 0
+		i
+			font-size: 20px
+			color: #000
+	label
+		display: block
+		position: absolute
+		top: 0
+		left: -22px
+		font-size: 20px
+	input
+		border: 1px solid $font-color
+		height: 31px
+
+.top-line
+	padding-top: 30px
+	vertical-align: middle
+
+.logo
+	img
+		width: 80px
+
+.s1_wrap
+	text-align: center
+	span
+		display: inline-block
+		width: 490px
+		height: 490px
+		margin-top: 100px
+		border-radius: 50%
+		background: radial-gradient( 90% 50%, circle, #f7edd0, #ffe185)
+
+.bottom_block
+	position: relative
+	.block_wrap
+		position: absolute
+		top: -250px
+		min-height: 400px
+		background: #fff
+		.block1
+			span
+				color: #f8ac0e
+				letter-spacing: .4em
+				display: block
+				margin-top: -100px
+				margin-bottom: 25px
+				font-size: 12px
+				font-family: "RalewayBold", $font-stack-helvetica
+			h1
+				font-weight: bold
+				color: #000
+				text-transform: capitalize
+				margin-bottom: 45px
+.block1 p, .block3 p
+	margin-bottom: 60px
+	color: #b6b6b6
+	font-weight: normal
+
+.block2
+	margin-top: -310px
+	img
+		width: 400px
+
+.carousel-control,
+.carousel-control:hover,
+.carousel-control:focus,
+.carousel-control:active
+	text-shadow: 0 0 0
+	color: #000
+	font-size: 40px
+
+.carousel-control
+	&.right
+		right: 0
+	&.left
+		left: 75%
+
+.carousel-inner
+	img
+		width: 60px
+
+.carousel-caption
+	p
+		color: #000
+		padding: 0 20px
+		margin: 0
+		text-shadow: 0 0 0
+		text-align: left
+		font-family: "RalewayBold", $font-stack-helvetica
+		font-size: 15px
+	&:nth-of-type(3)
+		font-size: 25px
+		font-weight: bold
+	&:nth-of-type(1)
+		color: #b6b6b6
+		font-size: 10px
+		padding-bottom: 5px
+		letter-spacing: .2em
+	&:nth-of-type(2)
+		font-weight: bold
+		padding-bottom: 20px
+		font-size: 16px
+		div
+			&.carousel-caption
+				top: -20%
+
+.carousel-control.right,
+.carousel-control.left
+	background: transparent
+	top: 50%
+.carousel-indicators
+	display: none
+
+.block3
+	text-align: center
+	.form-group 
+		width: 100%
+		padding-bottom: 45px
+	.form_block3
+		float: left
+		height: 40px
+		border: 1px solid #cbc9c9
+		border-radius: 0
+		font-family: "RalewayBold", $font-stack-helvetica
+	.form_count
+		width: 20%
+	.form_size
+		width: 80%
+	p
+		margin-bottom: 0
+	.btn_wrap
+		width: 100%
+		font-family: "RalewayBold", $font-stack-helvetica
+		.btn
+			display: inline-block
+			border: 0
+			padding: 6px
+			font-size: 25px
+			width: 20%
+			&:hover, &:active, &:focus
+				background: transparent
+				box-shadow: 0 0 0
+				border: 0
+				outline: 0
+		span
+			display: inline-block
+			width: 70%
+.block4
+	width: 100%		
+	text-align: center
+	line-height: 58px
+	background: #000
+	color: #fff
+.text-center
+	letter-spacing: .8em
+
+
+@import "media"
+
+
+
+
+
+
+
+
+
