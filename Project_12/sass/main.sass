@@ -1,0 +1,260 @@
+@import "fonts"
+@import "bourbon"
+@import "libs"
+@import "vars"
+
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+html, body
+	height: 100%
+
+body
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	color: $main-color
+
+a, a:hover, a:focus,  a:active
+	color: $main-color
+	text-decoration: none
+	outline: none
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+	line-height: 1em
+
+h1
+	font-size: 31px
+	font-family: "Roboto-Medium", sans-serif
+
+h3
+	font-size: 22px
+	font-family: "Roboto-Regular", sans-serif
+
+.headers
+	text-transform: uppercase
+	font-weight: normal
+
+.trans
+	transition: all .5s ease
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+.button-wrap
+	text-align: center
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+
+.section_3
+	min-height: 370px
+	background-image: url(../img/s3_bg.jpg)
+	background-size: cover
+	background-position: center
+	position: relative
+	padding-bottom: 30px
+	.col1_wrap
+		h1
+			margin-bottom: 10px
+		span
+			font-size: 44px
+			font-family: "Roboto-Thin", sans-serif
+		p
+			margin-bottom: -20px
+			&:nth-of-type(2)
+				font-size: 16px
+				font-family: "Roboto-Regular", sans-serif
+		.num_wrap
+			padding-top: 15px
+			span
+				display: inline-block
+				font-size: 160px
+				font-family: "Roboto-Regular", sans-serif
+				vertical-align: top
+				margin-top: -60px
+				&:nth-of-type(2)
+					font-size: 120px
+					margin-top: -16px
+					margin-left: -5px
+				&:nth-of-type(3)
+					margin-left: -16px
+	.col2_wrap
+		padding-left: 40px
+		.price-box
+			padding-top: 20px
+			.price-slider
+				margin: 0 auto
+				background: #5b96bf
+				border-radius: 10em
+				padding: 10px 15px 11px
+				width: 100%
+				.asRange 
+					position: relative
+					width: 100%
+					height: 8px
+					background-color: $main-color
+					border-radius: 10em
+					.asRange-selected
+						background: linear-gradient(to top, #83a13d, #9dba5b)
+					.asRange-pointer
+						cursor: pointer
+						border-radius: 10em
+						.asRange-tip
+							color: #82a13c
+							background-color: $main-color
+							border: 1px solid $main-color
+							height: 17px
+							font-family: "Roboto-Bold", sans-serif
+							font-size 12px
+							padding-bottom: 20px
+							z-index: 2
+							top: -40px
+							&::before
+								background-color: $main-color
+						width: 10px
+						height: 10px
+						&::before
+							background: linear-gradient(to top, #83a13d, #9dba5b)
+							top: -5px
+							left: -5px
+							width: 20px
+							height: 20px
+			ul
+				list-style-type: none
+				padding: 7px 0
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				li
+					display: inline-block
+		h3
+			margin: 36px 0
+		p
+			font-size: 16px
+			font-family: "Roboto-Regular", sans-serif
+		.count_wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			div
+				display: inline-block
+				border: 1px solid $main-color
+				border-radius: 10em
+				padding: 0 38px
+				text-align: center
+				p
+					margin: 5px 0 -7px 0
+				span
+					font-size: 42px
+		.button_wrap
+			width: 100%
+			text-align: center
+			padding-top: 36px
+			.button
+				font-size: 14px
+				padding: 16px 25px
+				border-radius: 10em
+				background: linear-gradient(to top, #83a13d, #9dba5b)
+				text-transform: uppercase
+				font-family: "Roboto-Regular", sans-serif
+	.col3_wrap
+		@extend .col2_wrap
+		p
+			font-size: 14px
+			font-family: "Roboto-Light", sans-serif
+			color: #fefefe
+			line-height: 1.3em
+		h3
+			margin-bottom: 15px
+		.list_wrap
+			ul
+				list-style-type: none
+				padding: 0
+				li
+					display: block
+					width: 100%
+					text-align: left
+					font-size: 16px
+					font-family: "Roboto-Light", sans-serif
+					padding: 12px 0
+					border-bottom: 1px solid $s3-color
+					&:last-child
+						border-bottom: 0
+					span
+						font-family: "Roboto-Bold", sans-serif
+						float: right
+
+
+@import "media"
+
+		
+
+
+				
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+		
+
+
+	
+
+
