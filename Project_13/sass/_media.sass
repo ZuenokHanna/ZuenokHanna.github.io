@@ -1,0 +1,337 @@
+@import "vars"
+
+
+@media only screen and (max-width : 1200px)
+	
+	.toggle-mnu
+		display: none
+	.main-mnu
+		display: block
+	.bottom_block
+		background-position: 70% bottom
+	.section_3
+		.content_wrap
+			min-height: 514px
+			.text_wrap
+				.text_block
+					h3
+						font-size: 20px
+					p
+						margin: 0
+				.text_block_1
+					padding-top: 80px
+					.icon_wrap
+						top: 99px
+				.text_block_2
+					padding-top: 0
+					padding-left: 129px
+					p
+						padding: 0
+					.icon_wrap
+						left: 97px
+						top: 7px
+				.text_block_3
+					margin-top: -8px
+					p
+						padding: 0 62px
+					.icon_wrap
+						top: 15px
+						left: 28px
+				.text_block_4
+					padding-top: 74px
+					.icon_wrap
+						top: 98px
+						&:nth-of-type(2)
+							top: 277px
+							left: 66px
+	.section_6
+		.s4_content
+			padding-top: 0
+			padding-bottom: 108px
+	.section_7
+		.image_content
+			.img_wrap
+				.recent
+					img 
+						width: 372px
+		.s7-mnu
+			li
+				a
+					&::after 
+						margin: 0 35px
+
+	.slider
+		.owl-controls
+			.owl-nav
+				div
+					left: 46%
+				.owl-next
+					right: 46%
+
+@media only screen and (max-width : 992px)
+
+	.header-wrap
+		h1
+			&::after,
+			&::before
+				display: none
+	.section_3
+		.content_wrap
+			.text_wrap
+				.text_block
+					h3
+						font-size: 24px
+				.text_block_1
+					padding-top: 100px
+					.icon_wrap
+						top: 120px
+						left: -18px
+				.text_block_2
+					padding-top: 6px
+					padding-left: 152px
+					p
+						padding: 0
+					.icon_wrap
+						top: 26px
+						left: 124px
+				.text_block_3
+					margin-top: 17px
+					padding-top: 1px
+					padding-right: 11px
+					p
+						padding: 0 62px
+					.icon_wrap
+						top: 26px
+						left: 40px
+				.text_block_4
+					padding-top: 90px
+					padding-right: 20px
+					.icon_wrap
+						top: 127px
+						left: -36px
+						&:nth-of-type(2)
+							top: 326px
+							left: 86px
+	.section_4, .section_5, .section_6
+		img
+			margin-top: 50px
+	.section_7
+		.s7-mnu
+			li
+				a
+					&::after 
+						margin: 0 15px
+	.bottom_block
+		background-position: 80% bottom
+	.section_2
+		.s2-wrap
+			&::after
+				display: none
+	.slider
+		.owl-controls
+			.owl-nav
+				div
+					left: 45%
+				.owl-next
+					right: 45%
+	.toggle-mnu
+		display: block
+	.main-mnu
+		display: none
+		float: right
+		min-width: 295px
+		width: 77vw
+		text-align: center
+		background-color: rgba(17,17,17,.8)
+		top: 88px
+		position: relative
+		border-bottom: #616162 1px solid
+		border-top: #616162 1px solid
+		position: absolute
+		right: 15px
+		z-index: 2
+		ul
+			li
+				display: block
+				line-height: 0
+				padding: 0
+				&.active
+					a
+						background-color: #272727
+						text-decoration: none
+						font-family: "RalewayBold", $font-stack-helvetica
+			a
+				color: #eff0f2
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				background-color: transparent
+				text-transform: uppercase
+				transition: all .5s ease
+				border-bottom: #616162 1px solid
+				&:hover
+					background-color: #272727
+					text-decoration: none
+
+
+@media only screen and (max-width : 768px)
+
+	.main-mnu
+		width: 90vw
+	.section_1, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9
+		.ris
+			width: 245px
+		.icon_wrap
+			padding: 0
+			.s1_ris
+				width: 65px
+	.section_3
+		.content_wrap
+			.image_wrap
+				display: none
+			.text_wrap
+				.text_block_1, .text_block_2, .text_block_3, .text_block_4
+					padding: 60px 0
+					text-align: center
+					p
+						margin: 10px 0
+					.icon_wrap
+						top: 0
+						left: calc((100% - 39px) / 2)
+						&:nth-of-type(2)
+							display: none
+	.s4_content
+		padding: 0
+		.center
+			text-align: center
+		img
+			display: inline-block
+	.section_6
+		.s4_content 
+	    padding-top: 0
+	    padding-bottom: 38px
+	.section_5
+		padding-top: 14px
+		.s4_content
+			img 
+				display: inline-block
+				margin: 30px 0
+	.section_7
+		.s7-mnu
+			ul
+				width: 100%
+				padding: 0
+				text-align: center
+				li
+					display: block
+					margin-top: 15px
+					a
+						&::after
+							display: none
+		.image_content
+			padding: 50px
+			.img_wrap
+				padding: 0
+	.section_8
+		.team_wrap 
+			padding: 30px 0
+	.section_9
+		.section-pb 
+			padding: 50px 0
+			padding-bottom: 80px
+	.slider
+		.slide
+			.slide_content 
+				padding-top: 0
+		.owl-controls
+			.owl-nav 
+				top: 420px
+				div
+					left: 40%
+				.owl-next
+					right: 40%
+	.bottom_block
+		background: none
+
+@media (width: 768px)
+	.toggle-mnu
+		display: block
+	.slider
+		.owl-controls
+			.owl-nav 
+				top: 244px
+	.section_3
+		.text_wrap
+			padding-left: 60px
+	.main-mnu
+		right: 33px
+
+@media only screen and (max-width : 480px)
+	.section_7
+		.image_content 
+			padding: 50px 0
+	.section_1, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8
+		padding-top: 10px
+	.section_3
+		margin-top: -32px
+	.section_5
+		padding-top: 14px
+	.main-mnu
+		width: 90vw
+	.section_2
+		.s2-wrap
+			h1 
+				font-size: 40px
+	.s4_content
+		padding: 0
+
+	#small-dialog
+		.page_3
+			.item_wrap
+				display: flex
+				justify-content: space-around
+				flex-wrap: wrap
+				flex-direction: column
+				align-content: flex-start
+				.mm-survey-item
+					&:nth-of-type(1)
+						input[type="radio"] + label span, input[type="radio"]:checked + label span
+							margin-left: -36px
+					&:nth-of-type(2)
+						input[type="radio"] + label span, input[type="radio"]:checked + label span
+							margin-left: -8px
+	.form_wrap
+		width: 100%
+
+@media only screen and (max-width : 320px)
+
+	.main-mnu
+		width: 80vw
+	.header-wrap 
+		margin-top: 98px
+	.bottom_block 
+		min-height: 336px
+		.arrow-wrap 
+			top: 200px
+	.section_1, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9
+		p
+			padding: 0
+		.s4_content
+			h3
+				font-size: 27px
+	.section_9
+		.section-pb 
+			padding: 26px 0
+			padding-bottom: 80px
+	.slider
+		.owl-controls
+			.owl-nav
+				top: 450px
+				div
+					left: 36%
+				.owl-next
+					right: 36%
+
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: block !important
