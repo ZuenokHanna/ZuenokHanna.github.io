@@ -11,6 +11,12 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$(".navigation").click(function() {
+		$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "120px"}, "slow"); 
+		return false;
+	});
+
 	$(".arrow-bottom").click(function() {
 		$("html, body").animate({
 			scrollTop: $($(this).attr("href")).offset().top + "120px"}, "slow"); 
