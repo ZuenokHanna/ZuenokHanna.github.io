@@ -47,6 +47,8 @@ body
 	font-family: "Montserrat-Light", sans-serif
 	overflow-x: hidden
 	color: #212121
+#my-page
+	overflow-x: hidden
 
 a, a:hover, a:focus,  a:active
 	text-decoration: none
@@ -61,19 +63,19 @@ h1
 h2
 	font-size: 43px
 	font-family: Montserrat-Medium
-	line-height: 1.2em
+	line-height: 1.3em
 
-h3
-	font-size: em(26px)
 
 h4
 	font-size: 18px
 	font-family: "Montserrat-ExtraBold"
 	text-transform: uppercase
+	line-height: 1.1em
 
 p
 	font-size: 18px
 	margin: 0
+	line-height: 1.1em
 
 .before
 	content: ''
@@ -88,16 +90,20 @@ p
 	margin: 0
 	padding: 0
 
-.button-wrap
+.center
 	text-align: center
+	margin-bottom: 15px
+.left
+	text-align: left
+	margin-bottom: 15px
+.right
+	text-align: right
+	margin-bottom: 15px
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
-
-.text-center
-	text-align: center
 
 .ulmnu
 	list-style-type: none
@@ -105,15 +111,6 @@ p
 	padding: 0
 	li
 		display: inline-block
-
-#callback
-	display: none
-.fancybox-skin
-	border-radius: 0
-.fancybox-close
-	background-image: url(../img/close.png)
-	background-repeat: no-repeat
-	top: 6px
 
 .form
 	display: inline-block
@@ -154,7 +151,7 @@ p
 .main-head
 	min-height: 940px
 	background-size: cover
-	background-position: center
+	background-position: bottom center
 	position: relative
 	padding-bottom: 120px
 	.top-line
@@ -177,12 +174,13 @@ p
 			.tel
 				font-family: "Montserrat-Medium", sans-serif
 				font-size: 26px
-			.modal_header
+			.phone
 				font-family: "Montserrat-light", sans-serif
 				color: $main-color
+				cursor: pointer
 				.fa
 					margin-right: 5px
-		.toggle-mnu
+		.hamburger
 			display: inline-block
 			margin-left: 36px
 			width: 50px
@@ -190,19 +188,19 @@ p
 			border-radius: 10em
 			background: linear-gradient(to top left, #66b04d, #b4e36a)
 			position: relative
-			span
-				display: block
-				width: 33px
-				height: 47px
-				background-image: url(../img/sprite.png)
-				background-position: 828px 0
-				position: absolute
-				top: 9.5px
-				left: 7px
-			&:hover
-				background: linear-gradient(to top left, #8cc048, #bbdf8c)
-			&.is-active
-				background: linear-gradient(to top left, #8cc048, #bbdf8c)
+.hamburger-inner 
+	display: block
+	top: 42%
+	left: -5px
+	width: 29px
+	height: 3px
+	background-color: #fff	
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before 
+	width: 29px
+	height: 3px
+	background-color: #fff
+
 
 .mm-listview>li>a
 	color: inherit
@@ -254,7 +252,7 @@ p
 		background: linear-gradient(to top, #66b04d, #b4e36a)
 		border-radius: 5px
 		color: #fff
-		font-size: 16px
+		font-size: 14px
 		letter-spacing: .05em
 		font-family: "Montserrat-ExtraBold", sans-serif
 		border-bottom: 5px solid #518f3f
@@ -273,7 +271,7 @@ p
 			background-position: 872px 0
 			position: absolute
 			top: 14px
-			left: 53px
+			left: 36px
 		a
 			color: #fff
 		&::before
@@ -298,8 +296,12 @@ p
 .section_1
 	position: relative
 	text-align: center
-	min-height: 785px
+	min-height: 793px
 	padding-top: 100px
+	background-image: url(../img/s_bg.png)
+	background-repeat: no-repeat
+	background-position: bottom
+	background-size: cover
 	&::before
 		@extend .before
 		position: absolute
@@ -308,14 +310,15 @@ p
 		background-image: url(../img/s1_bg.png)
 		background-repeat: no-repeat
 		background-position: bottom
-		background-size: contain
-		top: 570px
+		background-size: cover
+		top: 478px
 		left: 0
 	h2
 		margin-bottom: 17px
 	.icon_group
 		padding-top: 78px
 		.icon_wrap
+			display: inline-block
 			width: 254px
 			height: 254px
 			position: relative
@@ -335,7 +338,7 @@ p
 				p
 					color: #fff
 					font-size: 16px
-					margin-top: 22px
+					margin-top: 8px
 			.text_wrap2
 				background-position: -262px 25px
 			.text_wrap3
@@ -347,17 +350,40 @@ p
 	position: relative
 	text-align: center
 	min-height: 760px
-	padding-top: 180px
+	padding-top: 100px
 	padding-bottom: 70px
+	.btn_wrap
+		text-align: left
+		margin-top: -51px
+		.btn
+			width: 460px
+			&:hover, &:active, &:focus
+				border-bottom: 2px solid #518f3f
+				outline: none
+				span
+					top: 10px
+			span
+				display: block
+				width: 33px
+				height: 69px
+				background-image: url(../img/sprite.png)
+				background-position: 791px -2px
+				position: absolute
+				top: 8px
+				left: 23px
+			&::before
+				display: none
 	.catalog_wrap
+		text-align: center
 		.title_wrap
 			text-align: left
 			margin-top: 52px
+			margin-bottom: 156px
 			span
 				float: left
 				width: 50px
 				height: 50px
-				border-radius: 10em
+				border-radius: 50%
 				background: linear-gradient(to top left, #66b04d, #b4e36a)
 				box-shadow: 0 0 0 rgba(82,143,63, 0.5)
 				animation: pulse 2s infinite
@@ -372,34 +398,84 @@ p
 				margin: 0
 				line-height: 1.4em
 		.title_wrap2
+			padding-left: 58px
 			h4
 				margin-top: 12px
-		.content_wrap
+		.nav-wrap
+			display: inline-block
+			float: left
+			li
+				float: none
+				width: 200px
+				a
+					transition: all .5s ease
+					font-size: 16px
+					font-family: "Montserrat-SemiBold"
+					display: block
+					height: 72px
+					border-bottom: 1px solid #e0e0e0
+					&:focus, &:hover
+						border: none
+						box-shadow: 0 0 15px rgba(0,0,0,0.4)
+						border-radius: 5px
+						color: $main-color
+						background-color: #fff
+				&:nth-of-type(1), &:nth-of-type(5)
+					a
+						padding-top: 23px
+		.tab-content
 			width: 100%
-			padding-top: 77px
-			.nav-wrap
+			.slider_wrap
+				display: inline-block
+				width: 260px
+				float: left
+				padding: 0 20px
+			.content_wrap2
 				display: inline-block
 				float: left
-				li
-					float: none
-					width: 200px
-					a
-						transition: all .5s ease
-						font-size: 16px
-						font-family: "Montserrat-SemiBold"
-						display: block
-						height: 72px
-						border-bottom: 1px solid #e0e0e0
-						&:focus, &:hover
-							border: none
-							box-shadow: 0 0 15px rgba(0,0,0,0.4)
-							border-radius: 5px
-							color: $main-color
-							background-color: #fff
-			.tab-content
-				display: inline-block
-				width: 50%
-				float: right
+				.nav-tabs2
+					display: inline-block
+					box-shadow: 0 0 15px rgba(0,0,0,0.4)
+					border-radius: 5px
+					width: 155px
+					float: left
+					margin-right: 15px
+					li
+						float: none
+						&.active
+							a
+								border-bottom: 1px solid #e0e0e0
+								box-shadow: none
+								background-color: rgba(165,218,81, 0.2)
+								border-radius: 0
+								margin: 0
+								color: $main-color
+						a
+							font-size: 16px
+							margin: 0
+							padding: 26px 15px
+							border-bottom: 1px solid #e0e0e0
+							font-family: "Montserrat-SemiBold"
+							&:hover, &:focus, &.active
+								border-bottom: 1px solid #e0e0e0
+								box-shadow: none
+								background-color: rgba(165,218,81, 0.2)
+								border-radius: 0
+								margin: 0
+								color: $main-color
+				.variable_wrap
+					text-align: left
+					display: inline-block
+					position: relative
+					float: left
+					img
+						float: left
+					.btn_wrap
+						text-align: right
+						.btn
+							width: 235px
+							text-align: center
+							padding-left: 35px
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
 	border: none
@@ -407,66 +483,13 @@ p
 	border-radius: 5px
 	color: $main-color	
 
-.content_wrap2
-	.nav-tabs2
-		display: inline-block
-		box-shadow: 0 0 15px rgba(0,0,0,0.4)
-		border-radius: 5px
-		width: 155px
-		float: left
-		li
-			float: none
-			&.active
-				a
-					border-bottom: 1px solid #e0e0e0
-					box-shadow: none
-					background-color: rgba(165,218,81, 0.2)
-					border-radius: 0
-					margin: 0
-					color: $main-color
-			a
-				font-size: 16px
-				margin: 0
-				padding: 26px 15px
-				border-bottom: 1px solid #e0e0e0
-				font-family: "Montserrat-SemiBold"
-				&:hover, &:focus, &.active
-					border-bottom: 1px solid #e0e0e0
-					box-shadow: none
-					background-color: rgba(165,218,81, 0.2)
-					border-radius: 0
-					margin: 0
-					color: $main-color
-
-
-.section_2
-	.btn
-		width: 100%
-		margin-top: 50px
-		&:hover, &:active, &:focus
-			border-bottom: 2px solid #518f3f
-			outline: none
-			span
-				top: 10px
-		span
-			display: block
-			width: 33px
-			height: 69px
-			background-image: url(../img/sprite.png)
-			background-position: 791px -2px
-			position: absolute
-			top: 8px
-			left: 23px
-		&::before
-			display: none
-
 .slick-dots li button:before 
 	font-size: 10px
 	width: 10px
 	height: 10px
 	content: ''
 	background-color: #a7abad
-	border-radius: 10em
+	border-radius: 50%
 	&:hover, &:focus
 		background-image: url(../img/marker.png)
 .slick-dots li.slick-active button:before
@@ -516,7 +539,7 @@ p
 				display: inline-block
 				width: 15px
 				height: 15px
-				border-radius: 10em
+				border-radius: 50%
 				border: 2px solid #c0c9cc
 				position: relative
 				margin-right: 6px
@@ -526,7 +549,7 @@ p
 					width: 7px
 					height: 7px
 					position: absolute
-					border-radius: 10em
+					border-radius: 50%
 					top: 2px
 					left: 2px
 					transition: all .5s ease
@@ -567,9 +590,11 @@ p
 .section_3
 	@extend .section_1
 	min-height: 660px
+	padding-top: 80px
 	&::before
-		background-image: url(../img/s3_bg.jpg)
-		height: 437px
+		background-image: url(../img/s3_bg.png)
+		height: 447px
+		top: 541px
 	.s_block
 		padding-top: 65px
 		span
@@ -668,7 +693,7 @@ p
 					margin: 0
 					margin-bottom: 15px
 				span
-					left: 45px
+					left: 25px
 					background-position: 790px 0
 			span
 				font-family: "Montserrat-SemiBold"
@@ -696,7 +721,7 @@ p
 	background-position: bottom
 	.form_block
 		text-align: center
-		padding-top: 30px
+		padding-top: 9px
 		.form_wrap
 			padding-top: 20px
 		.form
@@ -704,7 +729,7 @@ p
 			.btn
 				width: 430px
 				span
-					left: 103px
+					left: 20%
 					background-position: 790px 0
 		p
 			font-size: 18px
@@ -742,6 +767,7 @@ p
 .section_6
 	@extend .section_1
 	padding-top: 105px
+	padding-bottom: 159px
 	&::before
 		top: 754px
 		transform: scale(-1, 1) 
@@ -749,6 +775,7 @@ p
 		text-align: center
 		.btn
 			width: 458px
+			margin: 0
 			&::before 
 				left: -154px
 			&:hover, &:active, &:focus
@@ -760,7 +787,7 @@ p
 				height: 32px
 				background-position: 799px -4px
 				top: 9px
-				left: 31px
+				left: 17px
 .slider
 	margin: 60px 0
 	.slide
@@ -815,7 +842,7 @@ p
 	.owl-controls
 		text-align: center
 		.owl-dots
-			margin-top: 44px
+			margin-top: 19px
 		.owl-dot
 			width: 11px
 			height: 11px
@@ -848,13 +875,14 @@ p
 
 .section_7
 	@extend .section_1
-	padding-top: 224px
+	padding-top: 127px
+	padding-bottom: 159px
 	&::before
-		background-image: url(../img/s7_bg.jpg)
+		background-image: url(../img/s7_bg.png)
 		background-repeat: no-repeat
 		background-position: bottom right
 		background-size: contain
-		top: 880px
+		top: 737px
 	.tab_wrap
 		text-align: center
 		margin-top: 80px
@@ -863,20 +891,20 @@ p
 			border-bottom: 0
 			display: inline-block
 			li
-					width: 200px
-					a
-						padding-top: 22px
-						transition: all .5s ease
-						font-size: 16px
-						font-family: "Montserrat-SemiBold"
-						display: block
-						height: 72px
-						&:focus, &:hover
-							border: none
-							box-shadow: 0 0 15px rgba(0,0,0,0.4)
-							border-radius: 5px
-							color: $main-color
-							background-color: #fff
+				width: 200px
+				a
+					padding-top: 22px
+					transition: all .5s ease
+					font-size: 16px
+					font-family: "Montserrat-SemiBold"
+					display: block
+					height: 72px
+					&:focus, &:hover
+						border: none
+						box-shadow: 0 0 15px rgba(0,0,0,0.4)
+						border-radius: 5px
+						color: $main-color
+						background-color: #fff
 	.i_wrap
 		position: relative
 		width: 206px
@@ -931,8 +959,8 @@ p
 .section_8
 	@extend .section_4
 	background: none
-	padding-top: 218px
-	min-height: 900px
+	padding-top: 110px
+	min-height: 870px
 	h1
 		margin-bottom: 73px
 	.image_wrap
@@ -1006,14 +1034,14 @@ p
 		text-align: left
 		padding-top: 0
 		.btn
-			left: -39px
-			width: 369px
+			left: -107px
+			width: 29vw
 			&:hover, &:active, &:focus
 				span
 					top: 7px
 			span
 				background-position: 631px 0
-				left: 7px
+				left: 29px
 				top: 5px
 
 .section_9
@@ -1021,7 +1049,7 @@ p
 	padding-top: 0
 	min-height: 685px
 	background-image: url(../img/s9_bg.jpg)
-	background-size: contain
+	background-size: cover
 	background-position: bottom
 	.content_wrap
 		padding-top: 70px
@@ -1064,7 +1092,7 @@ p
 				left: 111px
 			.btn_wrap
 				.btn
-					text-align: right
+					text-align: center
 		.cont_wrap2
 			.btn_wrap
 				.btn
@@ -1106,8 +1134,11 @@ p
 
 .section_10
 	@extend .section_1
+	padding-bottom: 190px
 	&::before
-		background-image: url(../img/s10_bg.jpg)
+		background-image: url(../img/s10_bg.png)
+		top: 558px
+		background-size: contain
 	.block_wrap
 		margin-top: 100px
 		text-align: center
@@ -1160,7 +1191,6 @@ p
 							font-size: 12px
 							box-shadow: 0 0 0 rgba(82,143,63, 0.5)
 							animation: pulse 3s infinite
-
 			.icon_wrap1
 				top: 78px
 				left: 60px
@@ -1222,7 +1252,7 @@ p
 .section_11
 	@extend .section_9
 	background-image: url(../img/s11_bg.jpg)
-	margin-top: 257px
+	margin-top: 145px
 	padding-bottom: 100px
 	.photo_wrap, .map_wrap
 		padding-top: 80px
@@ -1264,11 +1294,16 @@ p
 						background-position: 0 0
 						background-repeat: no-repeat
 						top: 10px
-						left: 33px
+						left: 20px
 		.soc_wrap
 			a
 				.fa
 					margin-right: 20px
+	.map_wrap
+		width: 100%
+		overflow: hidden
+		h4
+			margin-bottom: 36px
 
 
 .footer
@@ -1288,3 +1323,605 @@ p
 			display: inline-block
 			border-left: 2px solid #a6cb67
 			padding-left: 20px
+
+
+
+.modalForm1
+	.btn_wrap
+		text-align: center
+		.btn
+			width: 300px
+			margin: 15px 0 0 0
+			&::before
+				display: none
+			&:hover
+				span
+					top: 9px
+			span
+				background-image: url(../img/icon_form.png)
+				background-repeat: no-repeat
+				width: 34px
+				height: 37px
+				background-position: 0
+				top: 7px
+				left: 32px
+
+.modalForm2
+	img
+		position: absolute
+		top: 200px
+		left: -164px
+	.file
+		color: $main-color
+	.btn_wrap
+		text-align: center
+		.btn
+			width: 300px
+			margin: 15px 0
+			&::before
+				display: none
+			&:hover
+				span
+					top: 8px
+			span
+				background-image: url(../img/sprite.png)
+				background-repeat: no-repeat
+				width: 34px
+				height: 37px
+				background-position: -74px 0
+				top: 6px
+				left: 59px
+
+.modalForm3
+	img
+		position: absolute
+		top: 200px
+		left: -164px
+	.file
+		color: $main-color
+	.btn_wrap
+		text-align: center
+		.btn
+			width: 300px
+			margin: 15px 0
+			&::before
+				display: none
+			&:hover
+				span
+					top: 8px
+			span
+				background-image: url(../img/sprite.png)
+				background-repeat: no-repeat
+				width: 34px
+				height: 37px
+				background-position: -74px 0
+				top: 6px
+				left: 59px
+.quiz
+	text-align: center
+	h2
+		margin-top: 60px
+	.text_wrap
+		display: inline-block
+		width: 40%
+		padding: 20px 0
+		span
+			display: inline-block
+			width: 37px
+			height: 35px
+			background-image: url(../img/quize/quize_sprite.png)
+			background-position: -34px 0
+			background-repeat: no-repeat
+			float: left
+	.text_wrap2
+		span
+			background-position: -70px 0
+
+	input[type="checkbox"], input[type="radio"] 
+		box-sizing: border-box
+		padding: 0
+	.magic-radio, .magic-checkbox 
+		position: absolute
+		display: none
+	.answers label 
+		font-size: 15px
+		line-height: 20px
+		line-height: 1.2
+		text-align: left
+	.magic-radio + label, .magic-checkbox + label 
+		position: relative
+		display: block
+		padding-left: 30px
+		cursor: pointer
+		vertical-align: middle
+	.magic-radio:checked + label:before 
+		border: 2px solid #ccc
+	.magic-radio:checked + label:before, .magic-checkbox:checked + label:before 
+		animation-name: none
+	.magic-radio + label:before 
+		border-radius: 50%
+	.magic-radio + label:before, .magic-checkbox + label:before 
+		position: absolute
+		top: 0
+		left: 0
+		display: inline-block
+		width: 18px
+		height: 18px
+		content: ''
+		border: 1.5px solid #ccc
+		&:hover
+			border: 1.5px solid $main-color
+	.magic-radio:checked + label:after, .magic-checkbox:checked + label:after 
+		display: block
+	.magic-radio:checked + label, .magic-checkbox:checked + label
+
+	.magic-radio + label:after 
+		top: 5px
+		left: 5px
+		width: 8px
+		height: 8px
+		border-radius: 50%
+		background: $main-color
+	.magic-radio + label:after, .magic-checkbox + label:after 
+		position: absolute
+		display: none
+		content: ''
+.magic-checkbox + label:before 
+	border-radius: 5px
+	width: 20px
+	height: 20px
+.magic-checkbox:checked + label::before
+	height: 20px
+	width: 20px
+	position: absolute
+	content: '✔'
+	display: inline-block
+	font-size: 15px
+	text-align: center
+	line-height: 19px
+	color: $main-color
+
+legend 
+	border: 0
+	padding: 0
+input[type="radio"] + label, input[type="radio"]:checked + label, input[type="checkbox"] + label, input[type="checkbox"]:checked + label
+	transition: all 0.20s ease-in-out
+	font-family: "Montserrat-SemiBold"
+
+.mm-survey-progress-bar
+	height: 6px
+	width: 0%
+	background: linear-gradient(to left, #66b04d, #b4e36a)
+	opacity: .5
+
+.mm-survey-progress
+	width: 90%
+	height: 6px
+	margin-top: 50px
+	transition: width 0.5s ease-in-out
+	background-image: url(../img/quize/bar.png)
+	background-repeat: repeat-x
+	background-position: 0 0
+
+
+input[type="checkbox"]
+
+input[type="text"]
+	display: block
+	margin-bottom: 14px
+	width: 50%
+	border: 1px solid #ccc
+	border-radius: 5px
+	background-color: #fff
+	text-indent: 10px
+	padding: 20px 0
+	transition: all .5s ease
+	color: $main-color 
+	font-size: 16px
+	margin-top: 20px
+	&:focus
+		background-color: #ededed
+		outline: none
+		color: $main-color 
+.mm-survey-q
+	list-style-type: none
+	padding: 0px
+	li
+		display: block
+		margin-bottom: 10px
+		width: 100%
+		background: #fff
+		input
+			width: 100%
+
+.mm-survey-results
+	display: none
+
+.mm-prev-btn button:focus, .mm-next-btn button:focus, .mm-finish-btn button:focus
+	outline: none
+	border: none
+
+.mm-survey-page
+	display: none
+	font-weight: 100
+	padding: 0
+	&.active
+		display: block
+
+.mm-survey-results-container
+	width: 100%
+	min-height: 400px
+
+.mm-survey-container
+	width: 100%
+	min-height: 400px
+
+.mm-survery-content
+	label
+		width: 100%
+		margin: 0px !important
+		&:hover
+			cursor: pointer
+			color: $main-color
+			font-family: "Montserrat-SemiBold"
+		p
+			display: inline-block
+			position: relative
+			top: 2px
+			left: 5px
+			margin: 0px
+
+.mm-survey-question
+	min-height: 100px
+	p
+		font-size: 22px
+		font-weight: 200
+		margin-bottom: 20px
+		line-height: 40px
+
+.mm-survey-controller
+	position: relative
+	height: 0
+	padding: 0
+	top: -300px
+	background-color: transporent
+	width: 100%
+	text-align: center
+	button
+		display: inline-block
+		position: relative
+		width: 416px
+		height: 56px
+		margin-right: 0
+		margin-top: 0
+		border: none
+		background: linear-gradient(to top, #66b04d, #b4e36a)
+		border-radius: 5px
+		color: #fff
+		font-size: 14px
+		letter-spacing: .05em
+		font-family: "Montserrat-ExtraBold", sans-serif
+		border-bottom: 5px solid #518f3f
+		box-shadow: 0 0 10px rgba(82,143,63,0.5)
+		outline: none
+		&:hover, &:active, &:focus
+			border-bottom: 2px solid #518f3f
+			outline: none
+			span
+				top: 13px
+		span
+			display: block
+			width: 35px
+			height: 28px
+			position: absolute
+			top: 11px
+			left: 36px
+
+.mm-finish-btn
+	display: none
+	position: relative
+	button
+		span
+			background-image: url(../img/quize/quize_sprite.png)
+			background-position: 0 0
+			background-repeat: no-repeat
+	&.active
+		display: inline-block
+
+.mm-next-btn
+	display: inline-block
+	span
+		background-image: url(../img/quize/quize_sprite.png)
+		background-position: 0 0
+		background-repeat: no-repeat
+
+.mm-survey-item
+	display: inline-block
+	text-align: center
+	img
+		display: inline-block
+		margin: 15px 0
+
+.page_1
+	.bg
+		margin-top: -256px
+		width: 100%
+.page_3
+	.mm-survey-item
+		text-align: center
+	.answers
+		label
+			text-align: center
+			font-size: 18px
+		input
+			display: inline-block
+		input[type="radio"]
+			display: none
+.page_4
+	.mm-survey-item
+		text-align: left
+.page_3, .page_4, .page_5, .page_2, .page_6
+	.bg
+		margin-top: -56px
+		width: 100%
+.mm-survey-results-container
+	p
+		margin: 40px 0
+	.bg
+		margin-top: -148px
+		width: 100%
+	.text
+		display: block
+		position: relative
+		top: 0
+		color: #fff
+		p
+			font-size: 20px
+			margin: 0
+	h3
+		font-size: 30px
+		font-family: "Montserrat-Medium", sans-serif
+	.answers
+		label
+			width: 100%
+			text-align: center
+			padding-bottom: 30px
+			.fa
+				margin-right: 6px
+		input[type=text]
+			margin: 40px 0
+			display: inline-block
+			width: 60%
+			padding: 20px 0
+	.magic-checkbox+label:before, .magic-radio+label:before 
+		top: 27px
+		left: 78px
+	.magic-radio+label:after 
+		top: 31.5px
+		left: 83px
+	.btn
+		display: inline-block
+		position: relative
+		width: 60%
+		height: 56px
+		margin-right: 0
+		margin-top: 0
+		border: none
+		background: linear-gradient(to top, #66b04d, #b4e36a)
+		border-radius: 5px
+		color: #fff
+		font-size: 14px
+		letter-spacing: .05em
+		font-family: "Montserrat-ExtraBold", sans-serif
+		border-bottom: 5px solid #518f3f
+		box-shadow: 0 0 10px rgba(82,143,63,0.5)
+		outline: none
+		&:hover, &:active, &:focus
+			border-bottom: 2px solid #518f3f
+			outline: none
+			span
+				top: 13px
+		span
+			display: block
+			width: 35px
+			height: 28px
+			position: absolute
+			top: 11px
+			left: 36px
+			background-image: url(../img/quize/quize_sprite.png)
+			background-position: 0 0
+			background-repeat: no-repeat
+	.question__comment
+		width: 100%
+		text-align: center
+		.present_wrap
+			display: inline-block
+			padding: 40px 20px
+			box-shadow: 0 0 15px rgba(0,0,0,0.4)
+			border-radius: 5px
+			margin-top: 20px
+
+
+
+
+
+
+
+
+@media (min-width: 768px)
+
+	.modal-dialog 
+		width: 387px
+		margin: 50px auto
+	.close
+		color: #ccc
+		text-shadow: 0 1px 0 #fff
+		opacity: 1
+		font-size: 40px
+		font-weight: 200
+		&:hover
+			opacity: 1
+			color: #212121
+			background: #fff
+			span
+				&:hover
+					opacity: 1
+					color: #212121
+					background: #fff
+		span
+			position: absolute
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			background: #fff
+			opacity: 1
+			right: -18px
+			top: -16px
+			box-shadow: 0 5px 15px rgba(0,0,0,.4)
+			&:hover
+				opacity: 1
+				color: #212121
+				background: #fff
+
+	.modal-header 
+		padding: 0
+		height: 0
+		border: 0
+		min-height: 0
+
+	.modalQuize
+		.modal-dialog 
+			width: 90%
+			margin-left: 5%
+
+
+@media (max-width: 768px)
+
+	.modal-dialog 
+		width: 310px
+		margin-left: calc((100% - 310px) / 2)
+
+@media (max-width: 1500px)
+
+	.mm-survey-controller
+		top: -90px
+	.mm-survey-results-container .answers label
+		padding-left: 0
+@media (max-width: 1200px)	
+
+	.mm-survey-controller
+		top: -90px
+	.quiz h2
+		margin-top: 0
+	.mm-survey-question 
+	    min-height: 10px
+	.quiz .text_wrap 
+		padding: 0
+	.mm-survey-page
+		min-height: 505px
+	.mm-survey-item img
+		width: 70%
+		display: inline-block
+	.mm-survey-results-container .answers input[type=text] 
+		margin: 20px 0
+		width: 60%
+		padding: 20px 0
+	.question__comment
+		img
+			width: 70%
+			display: inline-block
+	.mm-survey-results-container .question__comment .present_wrap
+		margin: 10px
+	.mm-survey-results-container .btn
+		width: 90%
+	.mm-survey-results-container .bg 
+		margin-top: -110px
+	.mm-survey-results-container .answers label
+		padding-left: 0
+		.fa
+			display: none
+	.mm-survey-results-container .magic-checkbox+label:before, .mm-survey-results-container .magic-radio+label:before
+		left: 37px
+	.mm-survey-results-container .magic-radio+label:after
+		left: 42px
+	.page_1 .bg 
+		margin-top: -211px
+	.mm-survey-results-container
+		label
+			img
+				display: none
+
+@media (max-width: 992px)
+	.mm-survey-results-container
+		h2
+			margin-top: 65px
+	.page_1
+		h2
+			margin-top: 40px
+	.quiz .text_wrap 
+		width: 46%
+	.mm-survey-controller
+		top: -90px
+	input[type=text]
+		width: 60%
+	.page_4
+		padding: 0 20px
+		.answers
+			.mm-survey-item1
+				img
+					width: 60%
+	.page_1
+		padding: 0 20px
+		h2
+			margin-top: 25px
+	.mm-survey-results-container .bg
+		display: none
+	.mm-survey-results-container .text 
+		top: 0
+		color: #000
+		margin-top: -24px
+	.quiz h2
+		margin: 20px 0
+	.mm-survey-results-container
+		padding-bottom: 50px
+	.mm-survey-results-container p 
+		margin: 21px 0
+		line-height: 1.5em
+	.mm-survey-progress 
+		width: 100%
+
+@media (max-width: 450px)
+	.quiz .text_wrap 
+		width: 100%
+	.page_1, .page_2, .page_3, .page_4,.page_5, .page_6
+		.last-item
+		margin-bottom: 130px
+
+	.mm-survey-controller button
+		width: 100%
+		span
+			display: none
+	.mm-survey-results-container .btn
+		span
+			display: none
+	.mm-survey-results-container .magic-checkbox+label:before, .mm-survey-results-container .magic-radio+label:before
+		top: 0
+	.quiz .magic-checkbox:checked+label:after, .quiz .magic-radio:checked+label:after
+		top: 5px
+	.page_2, .page_3, .page_4,.page_5, .page_6
+		h4
+			margin-top: -85px
+
+@media (width: 768px)
+	
+	.modalQuize
+		.modal-dialog 
+			.close span 
+				right: -18px
+
+
+
+@import "media"
+
+
+

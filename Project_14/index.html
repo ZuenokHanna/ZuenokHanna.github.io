@@ -25,170 +25,165 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
-
 </head>
 
 <body>
+
 	<div id="my-page">
 		<div id="my-header">
-		<div class="main-head" style="background-image: url(img/head_bg.jpg);">
-			<div class="top-line">	
-				<div class="container">
-					<div class="row">
-						<div class="col-md-5">
-							<div class="text_wrap">
-								<p>Надежный кровельные материалы
-									высокого качества. Оптимальное 
-								соотношение качества и цены.</p>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<a href="" class="logo"><img src="img/logo.png" alt="Строительные традиции"></a>
-						</div>
-						<div class="col-md-5">
-							<div class="wrap">
-								<div class="phone-wrap">
-									<a class="tel" href="tel:+375 29 727 58 81">+375 29 727 58 81</a><br>
-									<a class="modal modal_header" href="#callback"><i class="fa fa-phone fa-flip-horizontal"></i>Заказать обратный звонок</a>
-									<div id="callback">
-										<form class="form" role="form" method="post" action="mail.php" id="form1"
-										enctype="multipart/form-data">
-										<h4>заказать звонок</h4>
-										<div class="form-group">
-											<label class="sr-only" for="name3">Имя</label>
-											<input type="text" name="contact_name" required class="form-control" id="name1" placeholder="Имя">
-										</div>
-										<div class="form-group">
-											<label class="sr-only" for="phone3">Телефон</label>
-											<input type="text" name="contact_tel" required class="form-control" id="phone1" placeholder="Телефон">
-										</div>
-										<input type="hidden" name="formname" value="Форма в блоке: header">
-										<button type="submit" data-id="form1" class="btn"><span></span>заказать звонок</button>
-									</form>
+			<div class="main-head" style="background-image: url(img/head_bg.jpg);">
+				<div class="top-line">	
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5 col-sm-4 hidden-xs">
+								<div class="text_wrap">
+									<p>Надежный кровельные материалы
+										высокого качества. Оптимальное 
+									соотношение качества и цены.</p>
 								</div>
 							</div>
-							<a href="#my-menu" class="toggle-mnu"><span></span></a>
-							<nav id="my-menu">
-								<ul>
-									<li class="active"><a href="#">Home</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">About us</a></li>
-								</ul>
-							</nav>
+							<div class="col-md-2 col-sm-3 col-xs-12">
+								<a href="" class="logo"><img src="img/logo.png" alt="Строительные традиции" class="img-responsive"></a>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-12">
+								<div class="wrap">
+									<div class="phone-wrap">
+										<a class="tel" href="tel:+375 29 727 58 81">+375 29 727 58 81</a><br>
+										<a class="btn-form phone" data-send="Верхняя кнопка: Заказать звонок" data-submit="Заказать звонок" data-toggle="modal"  data-target=".modalForm1"><i class="fa fa-phone fa-flip-horizontal"></i>Заказать обратный звонок</a>
+									</div>
+									<a href="#my-menu" class="hamburger hamburger--emphatic">
+										<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+									</a>
+									<nav id="my-menu">
+										<ul>
+											<li class="active"><a href="#">Home</a></li>
+											<li><a href="#">About us</a></li>
+											<li><a href="#">About us</a></li>
+											<li><a href="#">About us</a></li>
+											<li><a href="#">About us</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-
-	<div class="header-wrap">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<div class="header-left">
-						<p>&mdash; Бесплатный замер</p>
-						<h1>Черепица по<br>оптовым ценам<br>всего от 900&#8381;/1м&#178;</h1>
-						<ul>
-							<li>8 лет бузупречной работы</li>
-							<li>4500 довольных клиентов</li>
-						</ul>
-						<ul>
-							<li>Бесплатная доставка с оплатой на месте</li>
-							<li>Любой размер и объем</li>
-						</ul>
+				<div class="header-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="header-left">
+									<p>&mdash; Бесплатный замер</p>
+									<h1>Черепица по<br>оптовым ценам<br>всего от 900&#8381;/1м&#178;</h1>
+									<ul>
+										<li>8 лет бузупречной работы</li>
+										<li>4500 довольных клиентов</li>
+									</ul>
+									<ul>
+										<li>Бесплатная доставка с оплатой на месте</li>
+										<li>Любой размер и объем</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-5 center">
+								<div class="form_wrap">
+									<form class="form" role="form" method="post" action="mail.php" id="form1"
+									enctype="multipart/form-data">
+									<h4>Скидка 20% на мансардные
+									окна при заказе кровли</h4>
+									<p>Оставьте заявку на просчёт</p>
+									<div class="form-group">
+										<input type="text" name="contact_name" required class="form-control" id="name1" placeholder="Ваше имя">
+									</div>
+									<div class="form-group">
+										<input type="text" name="contact_tel" required class="form-control" id="phone1" placeholder="Телефон">
+									</div>
+									<input type="hidden" name="formname" value="Форма в блоке: header">
+									<div class="btn_wrap">
+										<button type="submit" data-id="form1" class="btn"><span></span>отправить</button>
+									</div>
+								</form>
+								<img src="img/form_image.png" alt="" class="img-responsive">
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-5">
-					<div class="form_wrap">
-						<form class="form" role="form" method="post" action="mail.php" id="form2"
-						enctype="multipart/form-data">
-						<h4>Скидка 20% на мансардные
-						окна при заказе кровли</h4>
-						<p>Оставьте заявку на просчёт</p>
-						<div class="form-group">
-							<input type="text" name="contact_name" required class="form-control" id="name2" placeholder="Ваше имя">
-						</div>
-						<div class="form-group">
-							<input type="text" name="contact_tel" required class="form-control" id="phone2" placeholder="Телефон">
-						</div>
-						<input type="hidden" name="formname" value="Форма в блоке: header">
-						<div class="btn_wrap">
-							<button type="submit" data-id="form2" class="btn"><span></span><a>&emsp;&emsp;отправить</a></button>
-						</div>
-					</form>
-					<img src="img/form_image.png" alt="" class="img-responsive">
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-<div id="my-content">
-<section class="section_1" id="section_1">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Мы продаем кровельные материалы по оптовым<br>
-					ценам и производим монтаж кровли под ключ</h2>
-					<p>Наши резулитаты и достижения в цыфрах</p>
-				</div>
-			</div>
-			<div class="icon_group">
+	<div id="my-content">
+		<section class="section_1" id="section_1">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
-						<div class="icon_wrap">
-							<div class="text_wrap">
-								<span>2050</span><br>
-								<p>довольных клиентов</p>
+					<div class="col-md-12">
+						<h2>Мы продаем кровельные материалы по оптовым<br>
+						ценам и производим монтаж кровли под ключ</h2>
+						<p>Наши резулитаты и достижения в цыфрах</p>
+					</div>
+				</div>
+				<div class="icon_group">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-6 right">
+							<div class="icon_wrap">
+								<div class="text_wrap">
+									<span>2050</span><br>
+									<p>довольных клиентов</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="icon_wrap">
-							<div class="text_wrap text_wrap2">
-								<span>8</span><br>
-								<p>лет успешной работы</p>
+						<div class="col-md-3 col-sm-6 col-xs-6 left">
+							<div class="icon_wrap">
+								<div class="text_wrap text_wrap2">
+									<span>8</span><br>
+									<p>лет успешной работы</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="icon_wrap">
-							<div class="text_wrap text_wrap3">
-								<span>150</span><br>
-								<p>километров стали продано</p>
+						<div class="col-md-3 col-sm-6 col-xs-6 right">
+							<div class="icon_wrap">
+								<div class="text_wrap text_wrap3">
+									<span>150</span><br>
+									<p>километров стали продано</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="icon_wrap">
-							<div class="text_wrap text_wrap4">
-								<span>30%</span><br>
-								<p>киентов приходит по рекомедации</p>
+						<div class="col-md-3 col-sm-6 col-xs-6 left">
+							<div class="icon_wrap">
+								<div class="text_wrap text_wrap4">
+									<span>30%</span><br>
+									<p>киентов приходит по рекомедации</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="section_2" id="section_2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Каталог нашей продукции</h2>
-				</div>
-			</div>
-			<div class="catalog_wrap">
+		<section class="section_2" id="section_2">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-5">
-						<div class="title_wrap">
-							<span>1</span>
-							<h4>выберите тип<br>кровельного покрытия</h4>
+					<div class="col-md-12">
+						<h2>Каталог нашей продукции</h2>
+					</div>
+				</div>
+				<div class="catalog_wrap">
+					<div class="row">
+						<div class="col-lg-4 col-md-12">
+							<div class="title_wrap">
+								<span>1</span>
+								<h4>выберите тип<br>кровельного покрытия</h4>
+							</div>
 						</div>
-						<div class="content_wrap">
+						<div class="col-lg-8 hidden-md hidden-sm hidden-xs">
+							<div class="title_wrap title_wrap2">
+								<span>2</span>
+								<h4>доступные решения</h4>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2 col-md-12">
 							<div class="nav-wrap">
 								<ul class="nav nav-tabs">
 									<li class="active"><a data-toggle="tab" href="#cont_1">Металлочерепица</a></li>
@@ -199,303 +194,263 @@
 									<li><a data-toggle="tab" href="#cont_6">Композитная черепица</a></li>
 								</ul>
 							</div>
-							<div class="tab-content">
-								<div id="cont_1" class="tab-pane fade in active">
-									<div class="slider1">
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
+						</div>
+						<div class="col-md-12 col-sm-12 hidden-lg">
+							<div class="title_wrap title_wrap2">
+								<span>2</span>
+								<h4>доступные решения</h4>
+							</div>
+						</div>
+						<div id="cont_1" class="tab-pane fade in active">
+							<div class="col-lg-10 col-md-12">
+								<div class="tab-content">
+									<div class="slider_wrap">
+										<div class="slider1">
+											<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
+											<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
+											<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
+											<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
+											<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
+										</div>
 									</div>
-								</div>
-								<div id="cont_2" class="tab-pane fade">
-									<div class="slider2">
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-									</div>
-								</div>
-								<div id="cont_3" class="tab-pane fade">
-									<div class="slider3">
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-									</div>
-								</div>
-								<div id="cont_4" class="tab-pane fade">
-									<div class="slider4">
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-									</div>
-								</div>
-								<div id="cont_5" class="tab-pane fade">
-									<div class="slider5">
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-									</div>
-								</div>
-								<div id="cont_6" class="tab-pane fade">
-									<div class="slider6">
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
-										<div><img src="img/s2_slider_image.jpg" alt="" class="img-responsive"></div>
+									<div class="content_wrap content_wrap2">
+										<ul class="nav nav-tabs nav-tabs2">
+											<li><a data-toggle="tab" href="#count_1">Вариант 1</a></li>
+											<li class="active"><a data-toggle="tab" href="#count_2">Вариант 2</a></li>
+											<li><a data-toggle="tab" href="#count_3">Вариант 3</a></li>
+											<li><a data-toggle="tab" href="#count_4">Вариант 4</a></li>
+											<li><a data-toggle="tab" href="#count_5">Вариант 5</a></li>
+											<li><a data-toggle="tab" href="#count_6">Вариант 6</a></li>
+										</ul>
+										<div class="variable_wrap">
+											<div id="count_2" class="tab-pane fade in active">
+												<div class="item_color">
+													<p>Доступные цвета:</p>
+													<div class="item_wrap">
+														<input type="radio" id="radio1" value="Красный RAL 37588" />
+														<label for="radio1"><span class="red"></span>Красный RAL 37588</label>
+													</div>
+													<div class="item_wrap">
+														<input type="radio" id="radio1" value="Синий RAL 37588" />
+														<label for="radio1"><span class="blue"></span>Синий RAL 37588</label>
+													</div>
+													<div class="item_wrap">
+														<input type="radio" id="radio1" value="Белый RAL 37588" />
+														<label for="radio1"><span class="white"></span>Белый RAL 37588</label>
+													</div>
+													<div class="item_wrap">
+														<input type="radio" id="radio1" value="Черный RAL 37588" />
+														<label for="radio1"><span class="black"></span>Черный RAL 37588</label>
+													</div>
+													<div class="item_wrap">
+														<input type="radio" id="radio1" value="Желтый RAL 37588" />
+														<label for="radio1"><span class="yellow"></span>Желтый RAL 37588</label>
+													</div>
+													<div class="item_wrap">
+														<input type="radio" id="radio1" value="Синий RAL 37588" />
+														<label for="radio1"><span class="blue2"></span>Синий RAL 37588</label>
+													</div>
+												</div>
+												<p>Вариант 2</p>
+												<img src="img/s2_var_image.jpg"  alt="" class="img-responsive">
+
+												<div class="text">
+													<p>Отдельного внимания заслуживает мастика для кровли. Отличительная черта которой – отсутствие швов и стыков. Для высокой прочности наливного покрытия, его армируют.</p>
+													<p>Характеристики:</p>
+													<p>Толщина 0,5 мм</p>
+												</div>
+											</div>
+											<div class="btn_wrap">
+												<button type="submit" class="btn btn-form hidden-xs" data-toggle="modal"  data-target=".modalForm3"><span></span>скачать прайс</button>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
 						<div class="btn_wrap">
-							<button type="submit" class="btn"><span></span><a>скачайте полный каталог с ценами</a></button>
-						</div>
-					</div>
-					<div class="col-md-7">
-						<div class="title_wrap title_wrap2">
-							<span>2</span>
-							<h4>доступные решения</h4>
-						</div>
-						<div class="content_wrap content_wrap2">
-							<ul class="nav nav-tabs nav-tabs2">
-								<li><a data-toggle="tab" href="#count_1">Вариант 1</a></li>
-								<li class="active"><a data-toggle="tab" href="#count_2">Вариант 2</a></li>
-								<li><a data-toggle="tab" href="#count_3">Вариант 3</a></li>
-								<li><a data-toggle="tab" href="#count_4">Вариант 4</a></li>
-								<li><a data-toggle="tab" href="#count_5">Вариант 5</a></li>
-								<li><a data-toggle="tab" href="#count_6">Вариант 6</a></li>
-							</ul>
-							<div class="variable_wrap">
-								<div id="count_2" class="tab-pane fade in active">
-									<div class="item_color">
-										<p>Доступные цвета:</p>
-										<div class="item_wrap">
-											<input type="radio" id="radio1" value="Красный RAL 37588" />
-											<label for="radio1"><span class="red"></span>Красный RAL 37588</label>
-										</div>
-										<div class="item_wrap">
-											<input type="radio" id="radio1" value="Синий RAL 37588" />
-											<label for="radio1"><span class="blue"></span>Синий RAL 37588</label>
-										</div>
-										<div class="item_wrap">
-											<input type="radio" id="radio1" value="Белый RAL 37588" />
-											<label for="radio1"><span class="white"></span>Белый RAL 37588</label>
-										</div>
-										<div class="item_wrap">
-											<input type="radio" id="radio1" value="Черный RAL 37588" />
-											<label for="radio1"><span class="black"></span>Черный RAL 37588</label>
-										</div>
-										<div class="item_wrap">
-											<input type="radio" id="radio1" value="Желтый RAL 37588" />
-											<label for="radio1"><span class="yellow"></span>Желтый RAL 37588</label>
-										</div>
-										<div class="item_wrap">
-											<input type="radio" id="radio1" value="Синий RAL 37588" />
-											<label for="radio1"><span class="blue2"></span>Синий RAL 37588</label>
-										</div>
-									</div>
-									<p>Вариант 2</p>
-									<img src="img/s2_var_image.jpg"  alt="" class="img-responsive">
-
-									<div class="text">
-										<p>Отдельного внимания заслуживает мастика для кровли. Отличительная черта которой – отсутствие швов и стыков. Для высокой прочности наливного покрытия, его армируют.</p>
-										<p>Характеристики:</p>
-										<p>Толщина 0,5 мм</p>
-									</div>
-								</div>
-								<div class="btn_wrap">
-									<button type="submit" class="btn"><span></span><a>скачать прайс</a></button>
-								</div>
-							</div>
+							<button type="submit" class="btn btn-form" data-toggle="modal"  data-target=".modalForm2"><span></span>скачайте полный каталог с ценами</button>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
 
-		</div>
-	</section>
-
-	<section class="section_3" id="section_3">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Рассчитайте стоимость вашего объекта за<br>30 секунд</h2>
-					<p>И получите</p>
-				</div>
-			</div>
-			<div class="s_block">
+		<section class="section_3" id="section_3">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-4 left">
-						<span></span>
-						<p>Рассчитаем точные сроки работ</p>
-					</div>
-					<div class="col-md-4 left">
-						<span class="span2"></span>
-						<p>Рассчитаем точную стоимость</p>
-					</div>
-					<div class="col-md-4">
-						<span class="span3"></span>
-						<p>Вышлем полную смету в тот же день</p>
+					<div class="col-md-12">
+						<h2>Рассчитайте стоимость вашего объекта за<br>30 секунд</h2>
+						<p>И получите</p>
 					</div>
 				</div>
-			</div>
-			<div class="btn_wrap">
-				<button type="submit" class="btn"><span></span><a>рассчитать онлайн</a></button>
-			</div>
-		</div>
-	</section>
-
-	<section class="section_4" id="section_4">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Скачайте полный каталог<br>кровельных материалов</h2>
-					<p>с ценами и примерами выполненных объектов</p>
-				</div>
-			</div>
-			<div class="s_block">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="block_wrap block_wrap1">
+				<div class="s_block">
+					<div class="row">
+						<div class="col-md-4 left">
 							<span></span>
-							<p>Вы увидете актуальные<br>позиции каталога</p>
+							<p>Рассчитаем точные сроки работ</p>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="block_wrap">
+						<div class="col-md-4 left">
 							<span class="span2"></span>
-							<p>Все позиции собраны<br>в одном документе</p>
+							<p>Рассчитаем точную стоимость</p>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="block_wrap block_wrap3">
+						<div class="col-md-4 left">
 							<span class="span3"></span>
-							<p>Вышлем каталог<br>в течении часа</p>
+							<p>Вышлем полную смету в тот же день</p>
+						</div>
+					</div>
+				</div>
+				<div class="btn_wrap">
+					<button type="submit" class="btn" data-toggle="modal"  data-target=".modalQuize"><span></span><a>рассчитать онлайн</a></button>
+				</div>
+			</div>
+		</section>
+
+		<section class="section_4" id="section_4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Скачайте полный каталог<br>кровельных материалов</h2>
+						<p>с ценами и примерами выполненных объектов</p>
+					</div>
+				</div>
+				<div class="s_block">
+					<div class="row">
+						<div class="col-md-4 col-sm-12 center">
+							<div class="block_wrap block_wrap1">
+								<span></span>
+								<p>Вы увидете актуальные<br>позиции каталога</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 center">
+							<div class="block_wrap">
+								<span class="span2"></span>
+								<p>Все позиции собраны<br>в одном документе</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 center">
+							<div class="block_wrap block_wrap3">
+								<span class="span3"></span>
+								<p>Вышлем каталог<br>в течении часа</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-11">
+						<div class="form_block">
+							<div class="form_wrap">
+								<div class="rectangle"></div>
+								<form class="form" role="form" method="post" action="mail.php" id="form2"
+								enctype="multipart/form-data">
+								<h4>при заказе с сайта -10%</h4>
+								<p>Заполните данные и каталог автоматически<br>
+								скачается на ваш компьютер</p>
+								<div class="form-group">
+									<input type="text" name="contact_name" required class="form-control" id="name2" placeholder="Ваше имя">
+								</div>
+								<div class="form-group">
+									<input type="text" name="contact_tel" required class="form-control" id="phone2" placeholder="Телефон">
+								</div>
+								<input type="hidden" name="formname" value="Форма в блоке:4">
+								<div class="btn_wrap">
+									<button type="submit" data-id="form2" class="btn"><span></span><a href="#">скачать полный каталог</a></button>
+								</div>
+								<span>PDF 2.1 mb</span>		
+							</form>
+							<img src="img/s4_form_image.png" alt="" class="img-responsive">
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section class="section_5" id="section_5">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-11">
-					<div class="form_block">
-						<div class="form_wrap">
-							<div class="rectangle"></div>
-							<form class="form" role="form" method="post" action="mail.php" id="form2"
-							enctype="multipart/form-data">
-							<h4>при заказе с сайта -10%</h4>
-							<p>Заполните данные и каталог автоматически<br>
-							скачается на ваш компьютер</p>
-							<div class="form-group">
-								<input type="text" name="contact_name" required class="form-control" id="name2" placeholder="Ваше имя">
-							</div>
-							<div class="form-group">
-								<input type="text" name="contact_tel" required class="form-control" id="phone2" placeholder="Телефон">
-							</div>
-							<input type="hidden" name="formname" value="Форма в блоке: header">
-							<div class="btn_wrap">
-								<button type="submit" data-id="form2" class="btn"><span></span><a>&emsp;&emsp;скачать полный каталог</a></button>
-							</div>
-							<span>PDF 2.1 mb</span>		
-						</form>
-						<img src="img/s4_form_image.png" alt="" class="img-responsive">
+				<div class="col-md-12">
+					<h2>Дополнительно комплектуем</h2>
+					<p>Даем возможность покупать все для крыши в одном месте по лучшим ценам без переплат</p>
+				</div>
+			</div>
+			<div class="content_wrap">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 center">
+						<div class="cont">
+							<img src="img/s5_im1.jpg">
+							<p>Водостоки</p>
+							<span><a href="#">подробнее</a></span>
+						</div>		
+					</div>
+					<div class="col-md-3 col-sm-6 center">
+						<div class="cont">
+							<img src="img/s5_im2.jpg">
+							<p>Софиты</p>
+							<span><a href="#">подробнее</a></span>
+						</div>				
+					</div>
+					<div class="col-md-3 col-sm-6 center">
+						<div class="cont">
+							<img src="img/s5_im3.jpg">
+							<p>Мансардные окна</p>
+							<span><a href="#">подробнее</a></span>
+						</div>			
+					</div>
+					<div class="col-md-3 col-sm-6 center">
+						<div class="cont">
+							<img src="img/s5_im4.jpg">
+							<p>Гидропаро изоляция</p>
+							<span><a href="#">подробнее</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 center">
+						<div class="cont">
+							<img src="img/s5_im5.jpg">
+							<p>Теплоизоляция</p>
+							<span><a href="#">подробнее</a></span>
+						</div>				
+					</div>
+					<div class="col-md-3 col-md-push-6 col-sm-6 center">
+						<div class="cont">
+							<img src="img/s5_im6.jpg">
+							<p>Комплектующие</p>
+							<span><a href="#">подробнее</a></span>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-pull-3 col-md-offset-0 col-sm-10 col-sm-offset-1 center">
+						<div class="form_block">
+							<div class="form_wrap">
+								<div class="rectangle"></div>
+								<form class="form" role="form" method="post" action="mail.php" id="form3"
+								enctype="multipart/form-data">
+								<h4>загрузить полный каталог с ценами</h4>
+								<p>Заполните данные и получите доступ к каталогу<br>
+								дополнительных элементов с ценами</p>
+								<div class="form-group">
+									<input type="text" name="contact_name" required class="form-control" id="name3" placeholder="Ваше имя">
+								</div>
+								<div class="form-group">
+									<input type="text" name="contact_tel" required class="form-control" id="phone3" placeholder="Телефон">
+								</div>
+								<input type="hidden" name="formname" value="Форма в блоке: 5">
+								<div class="btn_wrap">
+									<button type="submit" data-id="form3" class="btn"><span></span><a href="#">загрузить каталог</a></button>
+								</div>
+								<span>PDF 2.1 mb</span>		
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
-
-<section class="section_5" id="section_5">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Дополнительно комплектуем</h2>
-				<p>Даем возможность покупать все для крыши в одном месте по лучшим ценам без переплат</p>
-			</div>
-		</div>
-		<div class="content_wrap">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="cont">
-						<img src="img/s5_im1.jpg">
-						<p>Водостоки</p>
-						<span><a href="#">подробнее</a></span>
-					</div>		
-				</div>
-				<div class="col-md-3">
-					<div class="cont">
-						<img src="img/s5_im2.jpg">
-						<p>Софиты</p>
-						<span><a href="#">подробнее</a></span>
-					</div>				
-				</div>
-				<div class="col-md-3">
-					<div class="cont">
-						<img src="img/s5_im3.jpg">
-						<p>Мансардные окна</p>
-						<span><a href="#">подробнее</a></span>
-					</div>			
-				</div>
-				<div class="col-md-3">
-					<div class="cont">
-						<img src="img/s5_im4.jpg">
-						<p>Гидропаро изоляция</p>
-						<span><a href="#">подробнее</a></span>
-					</div>
-
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="cont">
-						<img src="img/s5_im5.jpg">
-						<p>Теплоизоляция</p>
-						<span><a href="#">подробнее</a></span>
-					</div>				
-				</div>
-				<div class="col-md-6">
-					<div class="form_block">
-						<div class="form_wrap">
-							<div class="rectangle"></div>
-							<form class="form" role="form" method="post" action="mail.php" id="form2"
-							enctype="multipart/form-data">
-							<h4>загрузить полный каталог с ценами</h4>
-							<p>Заполните данные и получите доступ к каталогу<br>
-							дополнительных элементов с ценами</p>
-							<div class="form-group">
-								<input type="text" name="contact_name" required class="form-control" id="name2" placeholder="Ваше имя">
-							</div>
-							<div class="form-group">
-								<input type="text" name="contact_tel" required class="form-control" id="phone2" placeholder="Телефон">
-							</div>
-							<input type="hidden" name="formname" value="Форма в блоке: header">
-							<div class="btn_wrap">
-								<button type="submit" data-id="form2" class="btn"><span></span><a>&emsp;&emsp;загрузить каталог</a></button>
-							</div>
-							<span>PDF 2.1 mb</span>		
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="cont">
-					<img src="img/s5_im6.jpg">
-					<p>Комплектующие</p>
-					<span><a href="#">подробнее</a></span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 </section>
 
 <section class="section_6" id="section_6">
@@ -508,30 +463,29 @@
 		<div class="row">
 			<div class="section-pb">
 				<div class="slider">
-
 					<div class="slide">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content1">
-										<img src="img/s6_im2.jpg">
+										<img src="img/s6_im2.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6">
 									<div class="slide-descr">
 										<div class="slide_content2">
-											<div class="image_wrap"></div>
-											<img src="img/s6_im.jpg">
+											<div class="image_wrap img-responsive"></div>
+											<img src="img/s6_im.jpg" class="img-responsive" alt="">
 											<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 											<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content3">
-										<img src="img/s6_im3.jpg">
+										<img src="img/s6_im3.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
@@ -542,26 +496,26 @@
 					<div class="slide">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content1">
-										<img src="img/s6_im2.jpg">
+										<img src="img/s6_im2.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6">
 									<div class="slide-descr">
 										<div class="slide_content2">
 											<div class="image_wrap"></div>
-											<img src="img/s6_im.jpg">
+											<img src="img/s6_im.jpg" class="img-responsive" alt="">
 											<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 											<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content3">
-										<img src="img/s6_im3.jpg">
+										<img src="img/s6_im3.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
@@ -572,26 +526,26 @@
 					<div class="slide">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content1">
-										<img src="img/s6_im2.jpg">
+										<img src="img/s6_im2.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6">
 									<div class="slide-descr">
 										<div class="slide_content2">
 											<div class="image_wrap"></div>
-											<img src="img/s6_im.jpg">
+											<img src="img/s6_im.jpg" class="img-responsive" alt="">
 											<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 											<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content3">
-										<img src="img/s6_im3.jpg">
+										<img src="img/s6_im3.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
@@ -602,26 +556,26 @@
 					<div class="slide">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content1">
-										<img src="img/s6_im2.jpg">
+										<img src="img/s6_im2.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6">
 									<div class="slide-descr">
 										<div class="slide_content2">
 											<div class="image_wrap"></div>
-											<img src="img/s6_im.jpg">
+											<img src="img/s6_im.jpg" class="img-responsive" alt="">
 											<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 											<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content3">
-										<img src="img/s6_im3.jpg">
+										<img src="img/s6_im3.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
@@ -632,26 +586,26 @@
 					<div class="slide">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content1">
-										<img src="img/s6_im2.jpg">
+										<img src="img/s6_im2.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6">
 									<div class="slide-descr">
 										<div class="slide_content2">
 											<div class="image_wrap"></div>
-											<img src="img/s6_im.jpg">
+											<img src="img/s6_im.jpg" class="img-responsive" alt="">
 											<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 											<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-3">
 									<div class="slide_content3">
-										<img src="img/s6_im3.jpg">
+										<img src="img/s6_im3.jpg" class="img-responsive" alt="">
 										<h4>Загородный дом на берегу<br> реки в Иваново</h4>
 										<p>Материал: Металлочерепица<br>Цвет: RAL 25441</p>
 									</div>
@@ -662,12 +616,11 @@
 				</div>
 			</div>
 			<div class="btn_wrap">
-				<button type="submit" data-id="form2" class="btn"><span></span><a>&emsp;&emsp;скачайте полный каталог с ценами</a></button>
+				<button type="submit" class="btn btn-form" data-toggle="modal"  data-target=".modalForm2"><span></span>скачайте полный каталог с ценами</button>
 			</div>
 		</div>
 	</div>
 </section>
-
 
 <section class="section_7" id="section_7">
 	<div class="container">
@@ -689,7 +642,7 @@
 			</div>
 			<div id="counter_1" class="tab-pane fade in active">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="i_wrap">
 							<div class="icon_wrap"></div>
 							<div class="icon">
@@ -699,7 +652,7 @@
 						<p>Гарантия качества</p>
 						<p>Под описание гарантий которое расскажет почему эта гарантия реальная</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="i_wrap">
 							<div class="icon_wrap icon_wrap2"></div>
 							<div class="icon">
@@ -709,7 +662,7 @@
 						<p>Гарантия качества</p>
 						<p>Под описание гарантий которое расскажет почему эта гарантия реальная</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="i_wrap">
 							<div class="icon_wrap icon_wrap3"></div>
 							<div class="icon">
@@ -719,7 +672,7 @@
 						<p>Гарантия качества</p>
 						<p>Под описание гарантий которое расскажет почему эта гарантия реальная</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="i_wrap">
 							<div class="icon_wrap icon_wrap4"></div>
 							<div class="icon">
@@ -744,12 +697,12 @@
 		</div>
 	</div>
 	<div class="image_wrap">
-		<img src="img/s8_image.jpg">
+		<img src="img/s8_image.png">
 	</div>
 	<div class="container">
 		<div class="row">
 			<div class="cont_wrap">
-				<div class="col-md-10 col-offset-2">
+				<div class="col-lg-10 col-lg-offset-2 col-md-12">
 					<div class="s_block">
 						<div class="block left">
 							<span></span>
@@ -764,7 +717,7 @@
 							<p>Вышлем полную смету в тот же день</p>
 						</div>
 						<div class="btn_wrap">
-							<button type="submit" data-id="form2" class="btn"><span></span><a>&emsp;&emsp;получить расчёт кровли онлайн</a></button>
+							<button type="submit" class="btn" data-toggle="modal"  data-target=".modalQuize"><span></span><a>получить расчёт кровли онлайн</a></button>
 						</div>
 					</div>
 				</div>
@@ -775,183 +728,726 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="bottom_block">
-					<span><a href="#">СМОТРЕТЬ<br>пример<br>расчёта</a></span>
+					<span ><a href="#" data-toggle="modal"  data-target=".modalQuize">СМОТРЕТЬ<br>пример<br>расчёта</a></span>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-</div>
+	</section>
 
-<section class="section_9" id="section_9">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>А также:</h2>
-			</div>
-		</div>
-		<div class="content_wrap">
-			<div class="col-md-4">
-				<div class="cont_wrap cont_wrap1">
-					<div class="over">
-						<div class="dark_block dark_block1"></div>
-					</div>
-					<img src="img/s9_icon1.png">
-					<div class="btn_wrap">
-						<button type="submit" data-id="form2" class="btn"><span></span><a href="#">Заявка на бесплатный замер</a></button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="cont_wrap cont_wrap2">
-					<div class="over">
-						<div class="dark_block dark_block2"></div>
-					</div>
-					<img src="img/s9_icon2.png">
-					<div class="btn_wrap">
-						<button type="submit" data-id="form2" class="btn"><span></span><a href="#">Получить консультацию</a></button>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="cont_wrap cont_wrap3">
-					<div class="over">
-						<div class="dark_block dark_block3"></div>
-					</div>
-					<img src="img/s9_icon3.png">
-					<div class="btn_wrap">
-						<button type="submit" data-id="form2" class="btn"><span></span><a href="#">Заявка на монтаж</a></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section_10" id="section_10">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Как происходит работа с нами</h2>
-				<p>Ознакомьтесь с 5-ю этапами решения задач по кровле</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="block_wrap">
-					<div class="image_wrap">
-						<img src="img/s10_image.png" alt="" class="img-responsive">
-					</div>
-					<div class="context_wrap">
-						<div class="icon_wrap icon_wrap1">
-							<p>Заявка на сайте</p>
-							<div><span></span></div>
-						</div>
-						<div class="icon_wrap icon_wrap2">
-							<p>Подбор и рассчёт стоимости</p>
-							<div><span></span></div>
-						</div>
-
-						<div class="icon_wrap icon_wrap3">
-							<p>Договор</p>
-							<div><span></span></div>
-						</div>
-						<div class="icon_wrap icon_wrap4">
-							<p>Изготовление и доставка</p>
-							<div><span></span></div>
-						</div>
-						<div class="icon_wrap icon_wrap5">
-							<p>Монтаж (по необходимости)</p>
-							<div><span></span></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<section class="section_11" id="section_11">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Приезжайте к нам в офис</h2>
-				<h4>наш офис находится по адресу</h4>
-				<p>г. Брест, ул. Пионерская 86, оф. 11</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="photo_wrap">
-					<h4>фото офиса</h4>
-					<img src="img/s11_im1.jpg" alt="" class="img-responsive">
-					<img src="img/s11_im2.jpg" alt="" class="img-responsive">
-					<img src="img/s11_im3.jpg" alt="" class="img-responsive">
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="map_wrap">
-					<h4>схема проезда</h4>
-					<img src="img/map.jpg" alt="" class="img-responsive">
-				</div>
-			</div>
-		</div>
-		<div class="bottom_block">
+	<section class="section_9" id="section_9">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="phone_wrap">
-						<p>Телефоны:</p>
-						<a class="tel" href="tel:+375 29 727 58 81">+375 29 727 58 81</a><br>
-						<a class="tel" href="tel:+375 29 727 58 81">+375 29 727 58 81</a><br>
+				<div class="col-md-12">
+					<h2>А также:</h2>
+				</div>
+			</div>
+			<div class="content_wrap">
+				<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
+					<div class="cont_wrap cont_wrap1">
+						<div class="over">
+							<div class="dark_block dark_block1"></div>
+						</div>
+						<img src="img/s9_icon1.png">
 						<div class="btn_wrap">
-							<button type="submit" data-id="form2" class="btn"><span></span><a href="#">&emsp;&emsp;заказать звонок</a></button>
+							<button type="submit" class="btn btn-form" data-toggle="modal"  data-target=".modalForm1"><span></span>Заявка на бесплатный замер</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<p>Почта</p>
-					<a href="mailto:info@pararsfg.by">info@pararsfg.by</a>
+				<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
+					<div class="cont_wrap cont_wrap2">
+						<div class="over">
+							<div class="dark_block dark_block2"></div>
+						</div>
+						<img src="img/s9_icon2.png">
+						<div class="btn_wrap">
+							<button type="submit" class="btn btn-form" data-toggle="modal"  data-target=".modalForm1"><span></span>Получить консультацию</button>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="soc_wrap">
-						<p>Мы в социальных сетях:</p>
-						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+				<div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2">
+					<div class="cont_wrap cont_wrap3">
+						<div class="over">
+							<div class="dark_block dark_block3"></div>
+						</div>
+						<img src="img/s9_icon3.png">
+						<div class="btn_wrap">
+							<button type="submit" class="btn btn-form" data-toggle="modal"  data-target=".modalForm1"><span></span>Заявка на монтаж</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_10" id="section_10">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Как происходит работа с нами</h2>
+					<p>Ознакомьтесь с 5-ю этапами решения задач по кровле</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block_wrap">
+						<div class="image_wrap">
+							<img src="img/s10_image.png" alt="" class="img-responsive">
+						</div>
+						<div class="context_wrap">
+							<div class="icon_wrap icon_wrap1">
+								<p><a href="#" data-toggle="modal"  data-target=".modalForm1">Заявка на сайте</a></p>
+								<div><span></span></div>
+							</div>
+							<div class="icon_wrap icon_wrap2">
+								<p><a href="#" data-toggle="modal"  data-target=".modalForm1">Подбор и рассчёт стоимости</a></p>
+								<div><span></span></div>
+							</div>
+
+							<div class="icon_wrap icon_wrap3">
+								<p>Договор</p>
+								<div><span></span></div>
+							</div>
+							<div class="icon_wrap icon_wrap4">
+								<p>Изготовление и доставка</p>
+								<div><span></span></div>
+							</div>
+							<div class="icon_wrap icon_wrap5">
+								<p>Монтаж (по необходимости)</p>
+								<div><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_11" id="section_11">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Приезжайте к нам в офис</h2>
+					<h4>наш офис находится по адресу</h4>
+					<p>г. Брест, ул. Пионерская 86, оф. 11</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="photo_wrap">
+						<h4>фото офиса</h4>
+						<img src="img/s11_im1.jpg" alt="" class="img-responsive">
+						<img src="img/s11_im2.jpg" alt="" class="img-responsive">
+						<img src="img/s11_im3.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="map_wrap">
+						<h4>схема проезда</h4>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.134924261004!2d23.729779953104615!3d52.09547598541404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210c1d47c9768b%3A0xb25b9d40f1ef09a5!2zMTEsINGD0LsuINCf0LjQvtC90LXRgNGB0LrQsNGPIDg2LCDQkdGA0LXRgdGC!5e0!3m2!1sru!2sby!4v1521194123119" width="555" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_block">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="phone_wrap">
+							<p>Телефоны:</p>
+							<a class="tel" href="tel:+375 29 727 58 81">+375 29 727 58 81</a><br>
+							<a class="tel" href="tel:+375 29 727 58 81">+375 29 727 58 81</a><br>
+							<div class="btn_wrap">
+								<button type="submit" class="btn btn-form" data-toggle="modal"  data-target=".modalForm1"><span></span>заказать звонок</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-3 col-xs-12">
+						<p>Почта</p>
+						<a href="mailto:info@pararsfg.by">info@pararsfg.by</a>
+					</div>
+					<div class="col-md-4 col-sm-5 col-xs-12">
+						<div class="soc_wrap">
+							<p>Мы в социальных сетях:</p>
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="my-footer">
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-7 col-xs-12">
+						<div class="logo_wrap">
+							<a href="" class="logo"><img src="img/logo.png" alt="Строительные традиции" class="img-responsive"></a>
+							<p>Надежный кровельные материалы<br>высокого качества. Оптимальное<br>соотношение качества и цены.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-3 col-xs-12">
+						<p>УНП 299428942<br>Брест 2018. Все права защищены</p>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<p>Создание сайта:</p>
+						<a href="mailto:Paradigma.by">Paradigma.by</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 
-<div id="my-footer">
-<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="logo_wrap">
-					<a href="" class="logo"><img src="img/logo.png" alt="Строительные традиции"></a>
-					<p>Надежный кровельные материалы<br>высокого качества. Оптимальное<br>соотношение качества и цены.</p>
+<div class="modal fade modalForm1" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			</div>
+			<form class="form" role="form" method="post" action="mail.php" id="form4"
+			enctype="multipart/form-data">
+			<h4>заказать звонок</h4>
+			<p>Заполните данные и мы<br>перезвоним в течение 2-х часов</p>
+			<div class="form-group">
+				<input type="text" name="contact_name" required class="form-control" id="name4" placeholder="Ваше имя">
+			</div>
+			<div class="form-group">
+				<input type="text" name="contact_tel" required class="form-control" id="phone4" placeholder="Телефон">
+			</div>
+			<input type="hidden" name="formname" value="Форма в блоке: modal-page">
+			<div class="btn_wrap">
+				<button type="submit" data-id="form4" class="btn"><span></span>заказать звонок</button>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+
+<div class="modal fade modalForm2" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			</div>
+			<form class="form" role="form" method="post" action="mail.php" id="form5"
+			enctype="multipart/form-data">
+			<h4>скачать каталог с ценами</h4>
+			<p>Заполните данные и каталог<br>автоматически скачается</p>
+			<div class="form-group">
+				<input type="text" name="contact_name" required class="form-control" id="name5" placeholder="Ваше имя">
+			</div>
+			<div class="form-group">
+				<input type="text" name="contact_tel" required class="form-control" id="phone5" placeholder="Телефон">
+			</div>
+			<input type="hidden" name="formname" value="Форма в блоке: modal-page">
+			<div class="btn_wrap">
+				<button type="submit" data-id="form5" class="btn"><span></span>скачать</button>
+			</div>
+			<span class="file">PDF 2.1 mb</span>
+		</form>
+		<img src="img/form_image2.png" alt="" class="img-responsive">
+	</div>
+</div>
+</div>
+
+<div class="modal fade modalForm3" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			</div>
+			<form class="form" role="form" method="post" action="mail.php" id="form6"
+			enctype="multipart/form-data">
+			<h4>скачать полный прайс</h4>
+			<p>Заполните данные и прайс<br>автоматически скачается</p>
+			<div class="form-group">
+				<input type="text" name="contact_name" required class="form-control" id="name6" placeholder="Ваше имя">
+			</div>
+			<div class="form-group">
+				<input type="text" name="contact_tel" required class="form-control" id="phone6" placeholder="Телефон">
+			</div>
+			<input type="hidden" name="formname" value="Форма в блоке: modal-page">
+			<div class="btn_wrap">
+				<button type="submit" data-id="form6" class="btn"><span></span>скачать</button>
+			</div>
+			<span class="file">PDF 2.1 mb</span>
+		</form>
+		<img src="img/form_image3.png" alt="" class="img-responsive">
+	</div>
+</div>
+</div>
+
+<div class="modal fade modalQuize" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			</div>
+			<div class="container-fluide">
+				<div class="quiz">
+					<form  role="form" method="post" action="mail.php" id="form7">
+					<div class="mm-survey">
+						<div class="hide_block">
+							<div class="row">
+								<div class="col-md-3 hidden-sm">
+								</div>
+								<div class="col-md-9 col-sm-12">
+									<h2>Ответьте на 7 вопросов и получите:</h2>
+									<div class="text_wrap">
+										<span></span><p>Точную стоимость кровли и работ</p>
+									</div>
+									<div class="text_wrap text_wrap2">
+										<span></span><p>Гарантированный подарок на выбор</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-9 col-md-offset-3 col-sm-12">
+								<div class="mm-survey-progress">
+									<div class="mm-survey-progress-bar mm-progress"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mm-survey-results">
+						<div class="mm-survey-results-container">
+							<div class="row">
+								<div class="col-md-3 col-sm-12">
+									<div class="text">
+										<h2>Спасибо!</h2>
+										<p>Тест успешно пройден</p>
+									</div>
+									<img src="img/quize/step7_bg.jpg" alt="" class="bg img-responsive">
+								</div>
+								<div class="col-md-6 col-sm-8">
+									<div class="quiz__questions-list">
+										<div class="question__block question__block_active">
+											<div class="question__number"></div>
+											<legend class="question__text"><h3>Менеджер уже приступил<br>к расчёту кровли</h3>
+												<p>Введите Ваш телефон и получите<br>стоимость в течение 15 минут на:</p>
+											</legend>				
+										</div>
+										<div class="answers">
+											<div class="row">
+												<div class="col-md-3 col-sm-3">
+													<div class="answer-group" >
+														<input class="magic-radio" type="radio" id="q7-a0" name="q7" value="Да" data-value="" /><label for="q7-a0"><img src="img/quize/mail.png"> По SMS</label>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3">
+													<div class="answer-group" >
+														<input class="magic-radio" type="radio" id="q7-a1" name="q7" value="Да" data-value="" /><label for="q7-a1"><img src="img/quize/viber.png"> Viber</label>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3">
+													<div class="answer-group" >
+														<input class="magic-radio" type="radio" id="q7-a2" name="q7" value="Да" data-value="" /><label for="q7-a2"><img src="img/quize/tel.png"> Telegram</label>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3">
+													<div class="answer-group" >
+														<input class="magic-radio" type="radio" id="q7-a3" name="q7" value="Да" data-value="" /><label for="q7-a3"><img src="img/quize/app.png"> WhatsApp</label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 col-sm-12">
+													<div class="answer-group">
+														<input type="text" name="contact_tel" id="phone7" required placeholder="+375 (**) *** *** *">
+													</div>
+												</div>
+											</div>
+											<input type="hidden" name="formname" value="Форма в блоке: quize">
+											<button type="submit" data-id="form7" class="btn"><span></span>получить стоимость кровли</button>
+										</div>											
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-4">
+									<div class="question__comment">
+										<h3>Ваш подарок:</h3>
+										<div class="present_wrap">
+											<h4>скидка -20% на</h4>
+											<p>мансардные окна Velux</p>
+											<img src="img/quize/step7_im.png" class="img-responsive" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mm-survey-bottom">
+						<div class="mm-survey-container">
+							<div class="page_1">
+								<div class="mm-survey-page active" data-page="1">
+									<div class="mm-survery-content">
+										<div class="row">
+											<div class="col-md-3 hidden-sm hidden-xs">
+												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
+											</div>
+											<div class="col-md-9 col-sm-12">
+												<div class="mm-survey-question">
+													<div class="question__block question__block_active">
+														<div class="question__number"><h4>шаг 1 из 7</h4></div>
+														<div class="question__description">
+															<legend class="question__text">Выберите тип крыши</legend>
+															<div class="question__answer"></div>
+														</div>													
+													</div>
+												</div>
+												<div class="item_wrap">
+													<div class="answers">
+														<div class="row">
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item">
+																	<img src="img/quize/step1_im1.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio01" data-item="1" name="radio1" value="Односкатная крыша" data-value="1" /><label for="radio01">Односкатная крыша</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item">
+																	<img src="img/quize/step1_im2.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio02" data-item="1" name="radio1" value="Двускатная" data-value="2" /><label for="radio02">Двускатная</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item">
+																	<img src="img/quize/step1_im3.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio03" data-item="1" name="radio1" value="Четырехскатная вальмовая" data-value="3" /><label for="radio03">Четырехскатная вальмовая</label>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-4 col-sm-4">
+																	<div class="mm-survey-item" >
+																		<img src="img/quize/step1_im4.jpg" alt="" class="img-responsive">
+																		<input class="magic-radio" type="radio" id="radio04" data-item="1" name="radio1" value="Мансардная ломаная" data-value="4" /><label for="radio04">Мансардная ломаная</label>
+																	</div>
+																</div>
+																<div class="col-md-4 col-sm-4">
+																	<div class="mm-survey-item" >
+																		<img src="img/quize/step1_im5.jpg" alt="" class="img-responsive">
+																		<input class="magic-radio" type="radio" id="radio05" data-item="1" name="radio1" value="Четырехскатная шатровая" data-value="5" /><label for="radio05">Четырехскатная шатровая</label>
+																	</div>
+																</div>
+																<div class="col-md-4 col-sm-4">
+																	<div class="mm-survey-item last-item" >
+																		<img src="img/quize/step1_im6.jpg" alt="" class="img-responsive">
+																		<input class="magic-radio" type="radio" id="radio06" data-item="1" name="radio1" value="Полувальмовая" data-value="6"><label for="radio06">Полувальмовая</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="page_2">
+								<div class="mm-survey-page" data-page="2">
+									<div class="mm-survery-content">
+										<div class="row">
+											<div class="col-md-3 hidden-sm hidden-xs">
+												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
+											</div>
+											<div class="col-md-9 col-sm-12">
+												<div class="mm-survey-question">
+													<div class="question__block question__block_active">
+														<div class="question__number"><h4>шаг 2 из 7</h4></div>
+														<div class="question__description">
+															<legend class="question__text">Выберите тип покрытия</legend>
+															<div class="question__answer"></div>
+														</div>													
+													</div>
+												</div>
+												<div class="item_wrap">
+													<div class="answers">
+														<div class="row">
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item">
+																	<img src="img/quize/step2_im1.jpg" alt="" class="img-responsive">
+																	<input  class="magic-radio" type="radio" id="radio07" data-item="2" name="radio2" value="Металлочерепица" /><label for="radio07">Металлочерепица</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step2_im2.jpg" alt="" class="img-responsive">
+																	<input  class="magic-radio" type="radio" id="radio08" data-item="2" name="radio2" value="Битумная черепица"/><label for="radio08">Битумная черепица</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step2_im3.jpg" alt="" class="img-responsive">
+																	<input  class="magic-radio" type="radio" id="radio09" data-item="2" name="radio2" value="Модульная металлочерепица" /><label for="radio09">Модульная металлочерепица</label>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step2_im4.jpg" alt="" class="img-responsive">
+																	<input  class="magic-radio" type="radio" id="radio10" data-item="2" name="radio2" value="Керамическая металлочерепица" /><label for="radio10">Керамическая металлочерепица</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step2_im5.jpg" alt="" class="img-responsive">
+																	<input  class="magic-radio" type="radio" id="radio11" data-item="2" name="radio2" value="Фальцевая кровля"/><label for="radio11">Фальцевая кровля</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item last-item" >
+																	<img src="img/quize/step2_im6.jpg" alt="" class="img-responsive">
+																	<input  class="magic-radio" type="radio" id="radio12" data-item="2" name="radio2" value="Композитная черепица"><label for="radio12">Композитная черепица</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="page_3">
+								<div class="mm-survey-page" data-page="3">
+									<div class="mm-survery-content">
+										<div class="row">
+											<div class="col-md-3 hidden-sm hidden-xs">
+												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
+											</div>
+											<div class="col-md-9 col-sm-12">
+												<div class="mm-survey-question">
+													<div class="question__block question__block_active">
+														<div class="question__number"><h4>шаг 3 из 7</h4></div>
+														<div class="question__description">
+															<legend class="question__text">Введите площадь крыши либо размеры дома</legend>
+															<div class="question__answer"></div>
+														</div>													
+													</div>
+												</div>
+												<div class="item_wrap">
+													<div class="answers">
+														<div class="row">
+															<div class="col-md-6 col-sm-6">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step3_im1.jpg" alt="" class="img-responsive">
+																	<input type="radio" id="radio13" data-item="3" name="radio3" value="Площадь крыши"><label class="magic-text" for="radio13">Площадь крыши<br><input type="text" placeholder="Например: 250 кв. м."></label>
+																</div>
+															</div>
+															<div class="col-md-6 col-sm-6">
+																<div class="mm-survey-item last-item" >
+																	<img src="img/quize/step3_im2.jpg" alt="" class="img-responsive">
+																	<input type="radio" id="radio14" data-item="3" name="radio3" value="Размеры дома"><label class="magic-text" for="radio14">Размеры дома<br><input type="text" placeholder="15 х 16 м"></label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="page_4">
+								<div class="mm-survey-page" data-page="4">
+									<div class="mm-survery-content">
+										<div class="row">
+											<div class="col-md-3 hidden-sm hidden-xs">
+												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
+											</div>
+											<div class="col-md-9 col-sm-12">
+												<div class="mm-survey-question">
+													<div class="question__block question__block_active">
+														<div class="question__number"><h4>шаг 4 из 7</h4></div>
+														<div class="question__description">
+															<legend class="question__text">Укажите дополнительную комплектацию</legend>
+															<div class="question__answer"></div>
+														</div>													
+													</div>
+												</div>
+												<div class="item_wrap">
+													<div class="answers">
+														<div class="row">
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item">
+																	<img src="img/quize/step4_im1.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio15" data-item="4" name="radio4" value="Гидроизоляционные пленки" data-value="1" /><label for="radio15">Гидроизоляционные<br>пленки</label>
+																</div>
+															</div>
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item mm-survey-item1" >
+																	<img src="img/quize/step4_im2.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio16" data-item="4" name="radio4" value="Конек" data-value="2" /><label for="radio16">Конек</label>
+																</div>
+															</div>
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step4_im3.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio17" data-item="4" name="radio4" value="Ветровая (торцевая) планка" data-value="3" /><label for="radio17">Ветровая (торцевая)<br>планка</label>
+																</div>
+															</div>
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step4_im4.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio18" data-item="4" name="radio4" value="Карнизная планка"  data-value="6"><label for="radio18">Карнизная планка</label>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step4_im5.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio19" data-item="4" name="radio4" value="Ендова (ендовные планки)" data-value="4" /><label for="radio19">Ендова (ендовные планки)</label>
+																</div>
+															</div>
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step4_im6.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio20" data-item="4" name="radio4" value="Планки примыкания" data-value="5" /><label for="radio20">Планки примыкания</label>
+																</div>
+															</div>
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step4_im7.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio21" data-item="4" name="radio4" value="Саморезы"  data-value="6"><label for="radio21">Саморезы</label>
+																</div>
+															</div>
+															<div class="col-md-3 col-sm-3">
+																<div class="mm-survey-item last-item" >
+																	<img src="img/quize/step4_im8.jpg" alt="" class="img-responsive">
+																	<input class="magic-checkbox" type="checkbox" id="radio22" data-item="4" name="radio4" value="Водосточная система"  data-value="6"><label for="radio22">Водосточная система</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="page_5">
+								<div class="mm-survey-page" data-page="5">
+									<div class="mm-survery-content">
+										<div class="row">
+											<div class="col-md-3 hidden-sm hidden-xs">
+												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
+											</div>
+											<div class="col-md-9 col-sm-12">
+												<div class="mm-survey-question">
+													<div class="question__block question__block_active">
+														<div class="question__number"><h4>шаг 5 из 7</h4></div>
+														<div class="question__description">
+															<legend class="question__text">Нужен ли монтаж</legend>
+															<div class="question__answer"></div>
+														</div>													
+													</div>
+												</div>
+												<div class="item_wrap">
+													<div class="answers">
+														<div class="row">
+															<div class="col-md-6 col-sm-6">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step5_im1.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio23" data-item="5" name="radio5" value="Нужен монтаж"><label for="radio23">Нужен монтаж</label>
+																</div>
+															</div>
+															<div class="col-md-6 col-sm-6 last-item">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step5_im2.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio24" data-item="5" name="radio5" value="Я справлюсь своими силами"><label for="radio24">Я справлюсь своими силами</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="page_6">
+								<div class="mm-survey-page" data-page="6">
+									<div class="mm-survery-content">
+										<div class="row">
+											<div class="col-md-3 hidden-sm hidden-xs">
+												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
+											</div>
+											<div class="col-md-9 col-sm-12">
+												<div class="mm-survey-question">
+													<div class="question__block question__block_active">
+														<div class="question__number"><h4>шаг 6 из 7</h4></div>
+														<div class="question__description">
+															<legend class="question__text">Выберите Ваш подарок</legend>
+															<div class="question__answer"></div>
+														</div>													
+													</div>
+												</div>
+												<div class="item_wrap">
+													<div class="answers">
+														<div class="row">
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step6_im1.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio25" data-item="6" name="radio6" value="Трехметровый снегозадержатель"><label for="radio25">Трехметровый<br>снегозадержатель</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step6_im2.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio27" data-item="6" name="radio6" value="Балон с краской"><label for="radio27">Балон с краской</label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4 last-item">
+																<div class="mm-survey-item" >
+																	<img src="img/quize/step6_im3.jpg" alt="" class="img-responsive">
+																	<input class="magic-radio" type="radio" id="radio28" data-item="6" name="radio6" value="Скидка на мансардные окна -20%"><label for="radio28">Скидка на мансардные окна -20%</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-9 col-md-offset-3 col-sm-12">
+							<div class="mm-survey-controller">
+								<div class="mm-next-btn">
+									<button disabled="true"><span></span>перейти к следующему шагу</button>
+								</div>
+								<div class="mm-finish-btn">
+									<button><span></span>перейти к следующему шагу</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<p>УНП 299428942<br>Брест 2018. Все права защищены</p>
-			</div>
-			<div class="col-md-2">
-				<p>Создание сайта:</p>
-				<a href="mailto:Paradigma.by">Paradigma.by</a>
 			</div>
 		</div>
 	</div>
 </div>
 </div>
-</div>
+
+
+
 
 
 
