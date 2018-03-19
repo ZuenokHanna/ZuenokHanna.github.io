@@ -40,13 +40,13 @@ html, body
 	height: 100%
 
 body
-	font-size: 13px
+	font-size: 15px
 	min-width: 320px
 	position: relative
 	line-height: 1.5em
-	font-family: "Montserrat-Light", sans-serif
+	font-family: "Montserrat-SemiBold"
 	overflow-x: hidden
-	color: #212121
+	color: #000
 #my-page
 	overflow-x: hidden
 
@@ -76,6 +76,7 @@ p
 	font-size: 18px
 	margin: 0
 	line-height: 1.1em
+	font-family: "Montserrat-SemiBold"
 
 .before
 	content: ''
@@ -117,7 +118,7 @@ p
 	width: 378px
 	background-color: #fff
 	padding: 22px 18px 55px 18px
-	color: #212121
+	color: #000
 	text-align: center
 	border-radius: 8px
 	.form-group
@@ -134,11 +135,12 @@ p
 			transition: all .5s ease
 			color: #999
 			font-size: 16px
+			font-family: "Montserrat-Medium", sans-serif
 			&:focus
 				background-color: #ededed
 				outline: none
 	h4
-		color: #212121
+		color: #000
 		font-size: 18px
 		font-family: "Montserrat-ExtraBold"
 		text-transform: uppercase
@@ -149,7 +151,7 @@ p
 
 
 .main-head
-	min-height: 940px
+	min-height: 1040px
 	background-size: cover
 	background-position: bottom center
 	position: relative
@@ -162,9 +164,10 @@ p
 		padding-left: 10px
 		padding-right: 176px
 		p
-			font-family: "Montserrat-Light", sans-serif
-			font-size: 13px
-			color: #999999
+			font-size: 15px
+			color: #000
+			padding-left: 11px
+			font-family: "Montserrat-Medium", sans-serif
 	.wrap
 		text-align: right
 		.phone-wrap
@@ -175,9 +178,10 @@ p
 				font-family: "Montserrat-Medium", sans-serif
 				font-size: 26px
 			.phone
-				font-family: "Montserrat-light", sans-serif
+				font-family: "Montserrat-SemiBold"
 				color: $main-color
 				cursor: pointer
+				font-size: 17px
 				.fa
 					margin-right: 5px
 		.hamburger
@@ -222,9 +226,9 @@ p
 	.header-left
 		padding-top: 10px
 		p
-			font-size: 15px
-			color: $main-color
-			padding-left: 10px
+			font-size: 17px
+			color: #5fad3e
+			padding-left: 23px
 		h1
 			line-height: 1.2em
 			font-family: Montserrat-SemiBold,sans-serif
@@ -236,9 +240,10 @@ p
 			list-style-image: url(../img/marker.png)
 			margin: 0
 			padding-left: 35px
-			margin-right: 41px
+			margin-right: 0
 			li
-				margin: 22px 20px 22px 0
+				margin: 22px 0 0 0
+				font-size: 18px
 
 .btn_wrap
 	text-align: right
@@ -256,7 +261,6 @@ p
 		letter-spacing: .05em
 		font-family: "Montserrat-ExtraBold", sans-serif
 		border-bottom: 5px solid #518f3f
-		box-shadow: 0 0 10px rgba(82,143,63,0.5)
 		outline: none
 		&:hover, &:active, &:focus
 			border-bottom: 2px solid #518f3f
@@ -1400,22 +1404,28 @@ p
 .quiz
 	text-align: center
 	h2
-		margin-top: 60px
+		font-size: 30px
 	.text_wrap
 		display: inline-block
-		width: 40%
-		padding: 20px 0
+		width: 49%
+		padding: 0
+		p
+			font-size: 15px
+			line-height: 1.5em
+			float: left
 		span
 			display: inline-block
-			width: 37px
-			height: 35px
-			background-image: url(../img/quize/quize_sprite.png)
-			background-position: -34px 0
+			width: 30px
+			height: 30px
+			background-image: url(../img/quize/q-ic1.png)
+			background-position: 0 0
 			background-repeat: no-repeat
+			background-size: contain
 			float: left
+			margin-right: 7px
 	.text_wrap2
 		span
-			background-position: -70px 0
+			background-image: url(../img/quize/q-ic2.png)
 
 	input[type="checkbox"], input[type="radio"] 
 		box-sizing: border-box
@@ -1428,21 +1438,24 @@ p
 		line-height: 20px
 		line-height: 1.2
 		text-align: left
+		span
+			position: relative
+			left: 26px
 	.magic-radio + label, .magic-checkbox + label 
 		position: relative
 		display: block
-		padding-left: 30px
+		padding-left: 0
 		cursor: pointer
 		vertical-align: middle
 	.magic-radio:checked + label:before 
-		border: 2px solid #ccc
+		border: 1.5px solid #ccc
 	.magic-radio:checked + label:before, .magic-checkbox:checked + label:before 
 		animation-name: none
 	.magic-radio + label:before 
 		border-radius: 50%
 	.magic-radio + label:before, .magic-checkbox + label:before 
 		position: absolute
-		top: 0
+		bottom: 0
 		left: 0
 		display: inline-block
 		width: 18px
@@ -1451,21 +1464,7 @@ p
 		border: 1.5px solid #ccc
 		&:hover
 			border: 1.5px solid $main-color
-	.magic-radio:checked + label:after, .magic-checkbox:checked + label:after 
-		display: block
-	.magic-radio:checked + label, .magic-checkbox:checked + label
 
-	.magic-radio + label:after 
-		top: 5px
-		left: 5px
-		width: 8px
-		height: 8px
-		border-radius: 50%
-		background: $main-color
-	.magic-radio + label:after, .magic-checkbox + label:after 
-		position: absolute
-		display: none
-		content: ''
 .magic-checkbox + label:before 
 	border-radius: 5px
 	width: 20px
@@ -1479,6 +1478,16 @@ p
 	font-size: 15px
 	text-align: center
 	line-height: 19px
+	color: $main-color
+.magic-radio:checked + label::before
+	height: 18px
+	width: 18px
+	position: absolute
+	content: '•'
+	display: inline-block
+	font-size: 40px
+	text-align: center
+	line-height: 9px
 	color: $main-color
 
 legend 
@@ -1495,7 +1504,7 @@ input[type="radio"] + label, input[type="radio"]:checked + label, input[type="ch
 	opacity: .5
 
 .mm-survey-progress
-	width: 90%
+	width: 95%
 	height: 6px
 	margin-top: 50px
 	transition: width 0.5s ease-in-out
@@ -1503,8 +1512,6 @@ input[type="radio"] + label, input[type="radio"]:checked + label, input[type="ch
 	background-repeat: repeat-x
 	background-position: 0 0
 
-
-input[type="checkbox"]
 
 input[type="text"]
 	display: block
@@ -1570,6 +1577,10 @@ input[type="text"]
 			top: 2px
 			left: 5px
 			margin: 0px
+		span
+			position: relative
+			left: 26px
+			font-size: 11px
 
 .mm-survey-question
 	min-height: 100px
@@ -1644,8 +1655,11 @@ input[type="text"]
 
 .page_1
 	.bg
-		margin-top: -256px
-		width: 100%
+		margin-top: 0
+	.mm-survey-progress
+		position: relative
+		top: 0
+		margin: 20px 0
 .page_3
 	.mm-survey-item
 		text-align: center
@@ -1657,96 +1671,163 @@ input[type="text"]
 			display: inline-block
 		input[type="radio"]
 			display: none
+.hide
+	height: 0
 .page_4
 	.mm-survey-item
 		text-align: left
-.page_3, .page_4, .page_5, .page_2, .page_6
+.quiz
+	.mm-survey-results-container
+		p
+			margin: 40px 0
+		.bg
+			margin-top: 0
+			width: 100%
+			background-image: url(../img/quize/step7_bg.jpg)
+			height: 525px
+		.text
+			display: block
+			padding-top: 70px
+			color: #fff
+			p
+				font-size: 20px
+				margin: 0
+		h3
+			font-size: 25px
+			font-family: "Montserrat-Medium", sans-serif
+			margin-top: 40px
+		h2
+			margin-top: 0
+		.answers
+			label
+				width: 100%
+				text-align: center
+				padding-bottom: 30px
+				.fa
+					margin-right: 6px
+			input[type=text]
+				margin: 40px 0
+				display: inline-block
+				width: 340px
+				padding: 15px 0
+			.magic-checkbox+label:before, .magic-radio+label:before 
+				top: 27px
+				left: 50%
+			.answer-group
+				&:nth-of-type(2)
+					.magic-radio+label:after 
+						top: 31.5px
+						left: 57.5%
+		.btn
+			display: inline-block
+			position: relative
+			width: 340px
+			height: 56px
+			margin-right: 0
+			margin-top: 0
+			border: none
+			background: linear-gradient(to top, #66b04d, #b4e36a)
+			border-radius: 5px
+			color: #fff
+			font-size: 14px
+			letter-spacing: .05em
+			font-family: "Montserrat-ExtraBold", sans-serif
+			border-bottom: 5px solid #518f3f
+			box-shadow: 0 0 10px rgba(82,143,63,0.5)
+			outline: none
+			&:hover, &:active, &:focus
+				border-bottom: 2px solid #518f3f
+				outline: none
+				span
+					top: 13px
+			span
+				display: block
+				width: 38px
+				height: 28px
+				position: absolute
+				top: 11px
+				left: 10px
+				background-image: url(../img/sprite.png)
+				background-position: 0 0
+				background-repeat: no-repeat
+		.question__comment
+			width: 90%
+			text-align: center
+			.present_wrap
+				display: inline-block
+				padding: 0
+				box-shadow: 0 0 20px rgba(0,0,0,0.4)
+				border-radius: 5px
+				margin-top: 20px
+.mm-survey-question 
+	min-height: 0
+.container-fluide
 	.bg
-		margin-top: -56px
-		width: 100%
-.mm-survey-results-container
-	p
-		margin: 40px 0
+		border-bottom-left-radius: 6px
+		border-top-left-radius: 6px
+		padding: 0
+		background-image: url(../img/quize/step_bg.jpg)
+		background-repeat: no-repeat
+		max-width: 100%
+		height: 720px
+		background-size: cover
+		background-position: center top
+	.mm-survey-item 
+		display: inline-block
+		text-align: left
+		img
+			max-width: 100%
+.answers
+	width: 100%
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	margin-left: -16px
+.mm-survey-item
+	width: 30%
+
+.mm-survey-controller
+	top: -100px
+
+.quiz h2
+	margin-top: 40px
+	fony-size: 30px
+.page_3
+	.mm-survey-item 
+		width: 44%
+	input[type=text]
+		width: 70%
+.page_3, .page_4, .page_5, .page_2
 	.bg
-		margin-top: -148px
+		margin-top: 0
 		width: 100%
-	.text
-		display: block
+		height: 650px
+	h4
+		margin-top: 44px
+	.mm-survey-progress
 		position: relative
 		top: 0
-		color: #fff
-		p
-			font-size: 20px
-			margin: 0
-	h3
-		font-size: 30px
-		font-family: "Montserrat-Medium", sans-serif
-	.answers
-		label
-			width: 100%
-			text-align: center
-			padding-bottom: 30px
-			.fa
-				margin-right: 6px
-		input[type=text]
-			margin: 40px 0
-			display: inline-block
-			width: 60%
-			padding: 20px 0
-	.magic-checkbox+label:before, .magic-radio+label:before 
-		top: 27px
-		left: 78px
-	.magic-radio+label:after 
-		top: 31.5px
-		left: 83px
-	.btn
-		display: inline-block
-		position: relative
-		width: 60%
-		height: 56px
-		margin-right: 0
-		margin-top: 0
-		border: none
-		background: linear-gradient(to top, #66b04d, #b4e36a)
-		border-radius: 5px
-		color: #fff
-		font-size: 14px
-		letter-spacing: .05em
-		font-family: "Montserrat-ExtraBold", sans-serif
-		border-bottom: 5px solid #518f3f
-		box-shadow: 0 0 10px rgba(82,143,63,0.5)
-		outline: none
-		&:hover, &:active, &:focus
-			border-bottom: 2px solid #518f3f
-			outline: none
-			span
-				top: 13px
-		span
-			display: block
-			width: 35px
-			height: 28px
-			position: absolute
-			top: 11px
-			left: 36px
-			background-image: url(../img/quize/quize_sprite.png)
-			background-position: 0 0
-			background-repeat: no-repeat
-	.question__comment
-		width: 100%
-		text-align: center
-		.present_wrap
-			display: inline-block
-			padding: 40px 20px
-			box-shadow: 0 0 15px rgba(0,0,0,0.4)
-			border-radius: 5px
-			margin-top: 20px
-
-
-
-
-
-
-
+.page_6
+	.bg
+		height: 700px
+.page_4
+	.mm-survey-item
+		width: 23%
+		&:nth-of-type(1), &:nth-of-type(3), &:nth-of-type(5)
+			.magic-checkbox+label:before, .quiz .magic-radio+label:before
+				bottom: 15px
+.page_5
+	.bg
+		height: 590px
+	.mm-survey-item 
+		width: 42%
+.page_6
+	.bg
+		height: 547px
+	.mm-survey-item
+		&:nth-of-type(1)
+			.magic-checkbox+label:before, .magic-radio+label:before
+				bottom: 15px
 
 @media (min-width: 768px)
 
@@ -1791,8 +1872,8 @@ input[type="text"]
 
 	.modalQuize
 		.modal-dialog 
-			width: 90%
-			margin-left: 5%
+			width: 60%
+			margin-left: 20%
 
 
 @media (max-width: 768px)
@@ -1800,19 +1881,35 @@ input[type="text"]
 	.modal-dialog 
 		width: 310px
 		margin-left: calc((100% - 310px) / 2)
+	.modalQuize
+		.modal-dialog 
+			width: 70%
+			margin-left: 15%
+		.modal-header
+			border: 0
 
 @media (max-width: 1500px)
-
+	.page_2
+		.mm-survey-item
+			&:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+				.magic-radio+label:after 
+					bottom: 20.2px
+	.page_3 input[type=text]
+		width: 80%
+	.quiz .mm-survey-results-container .question__comment .present_wrap 
+		padding: 0
 	.mm-survey-controller
 		top: -90px
 	.mm-survey-results-container .answers label
 		padding-left: 0
-@media (max-width: 1200px)	
+@media (max-width: 1300px)	
 
 	.mm-survey-controller
 		top: -90px
 	.quiz h2
-		margin-top: 0
+		margin-top: 30px
 	.mm-survey-question 
 	    min-height: 10px
 	.quiz .text_wrap 
@@ -1820,7 +1917,7 @@ input[type="text"]
 	.mm-survey-page
 		min-height: 505px
 	.mm-survey-item img
-		width: 70%
+		width: 100%
 		display: inline-block
 	.mm-survey-results-container .answers input[type=text] 
 		margin: 20px 0
@@ -1830,8 +1927,6 @@ input[type="text"]
 		img
 			width: 70%
 			display: inline-block
-	.mm-survey-results-container .question__comment .present_wrap
-		margin: 10px
 	.mm-survey-results-container .btn
 		width: 90%
 	.mm-survey-results-container .bg 
@@ -1842,19 +1937,179 @@ input[type="text"]
 			display: none
 	.mm-survey-results-container .magic-checkbox+label:before, .mm-survey-results-container .magic-radio+label:before
 		left: 37px
-	.mm-survey-results-container .magic-radio+label:after
-		left: 42px
 	.page_1 .bg 
-		margin-top: -211px
+		margin-top: 0px
+		height: 590px
 	.mm-survey-results-container
 		label
 			img
 				display: none
+	.quiz .text_wrap
+		p
+			font-size: 12px
+		span
+			width: 17px
+			height: 20px
+	.page_5
+		.bg
+			height: 590px
+		.mm-survey-item 
+			width: 42%
+	.page_6
+		.bg
+			height: 547px
+		.mm-survey-item
+			&:nth-of-type(1), &:nth-of-type(3)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+
+	.quiz
+		.mm-survey-results-container
+			.bg
+				height: 480px
+			.text
+				display: block
+				padding-top: 70px
+				color: #fff
+			h3
+				font-size: 23px
+			.answers
+				label
+					.fa
+						margin-right: 6px
+				input[type=text]
+					width: 340px
+					padding: 15px 0
+				.magic-checkbox+label:before, .magic-radio+label:before 
+					top: 27px
+					left: 50%
+		.question__comment
+			margin-left: -30px
+			.present_wrap
+
+@media (max-width: 1100px)
+
+	.quiz
+		h2 
+		margin-top: 15px
+		font-size: 23px
+		legend 
+			border: 0
+			padding: 0
+			font-size: 15px
+		h4 
+			font-size: 16px
+		.text_wrap
+			p
+				font-size: 12px
+			span
+				width: 17px
+				height: 20px
+	.quiz .answers label span
+		font-size: 10px
+	.page_1 .bg 
+		height: 653px
+		margin-top: -15px
+	.mm-survey-controller
+		button
+			width: 367px
+			height: 48px
+			margin-left: -30px
+			&:hover
+				span
+					top: 9px
+			span
+				top: 7px
+				left: 19px
+	.answers
+		.item-wrap
+			margin-left: -13px
+			.mm-survey-item
+				&:nth-of-type(3)
+					.magic-checkbox+label:before, .magic-radio+label:before
+						bottom: 15px
+					.magic-radio+label:after 
+						bottom: 19.2px
+	.mm-survey-item
+		margin-left: -16px
+		img 
+			width: 100%
+	.quiz h2 
+		margin-top: 7px
+	.page_2 .bg, .page_3 .bg, .page_4 .bg, .page_5 .bg, .page_6 .bg 
+		margin-top: -15px
+	.page_4
+		.answers label span
+			left: 18px
+		.mm-survey-item 
+			width: 24%
+			&:nth-of-type(5)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+	.page_2
+		.mm-survey-item
+			&:nth-of-type(3), &:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+				.magic-radio+label:after 
+					bottom: 20.2px
+	.page_2 .bg, .page_3 .bg, .page_4 .bg, .page_5 .bg, .page_6 .bg
+		height: 620px
+	.page_3 input[type=text] 
+		width: 91%
+	.page_5
+		.bg
+			height: 520px
+		.mm-survey-item 
+			width: 42%
+	.page_6
+		.bg
+			height: 547px
+		.mm-survey-item
+			&:nth-of-type(1), &:nth-of-type(3)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+	.quiz
+		.mm-survey-results-container
+			.bg
+				height: 526px
+				margin-top: -15px
+			.text
+				display: block
+				padding-top: 70px
+				color: #fff
+			h3, h2
+				font-size: 23px
+				margin-top: 0
+			.answers
+				label
+					.fa
+						margin-right: 6px
+				input[type=text]
+					width: 255px
+					padding: 15px 0
+				.magic-checkbox+label:before, .magic-radio+label:before 
+					top: 27px
+					left: 50%
+		.question__comment
+			margin-left: -30px
+
+	.quiz .mm-survey-results-container .btn
+		width: 90%
+		span
+			display: none
+	.quiz .mm-survey-results-container .text
+		padding-top: 40px
+	.quiz .mm-survey-results-container .question__comment .present_wrap
+		padding: 0
 
 @media (max-width: 992px)
 	.mm-survey-results-container
+		padding-bottom: 0
 		h2
 			margin-top: 65px
+		.answers 
+			padding-bottom: 0
 	.page_1
 		h2
 			margin-top: 40px
@@ -1866,10 +2121,7 @@ input[type="text"]
 		width: 60%
 	.page_4
 		padding: 0 20px
-		.answers
-			.mm-survey-item1
-				img
-					width: 60%
+
 	.page_1
 		padding: 0 20px
 		h2
@@ -1889,10 +2141,71 @@ input[type="text"]
 		line-height: 1.5em
 	.mm-survey-progress 
 		width: 100%
+	.container-fluide .answers
+		padding-bottom: 0
+		margin-left: 7px
+	.page_4
+		.mm-survey-item
+			width: 32%
+			&:nth-of-type(5)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+	.mm-survey-controller button
+		margin-left: 0
+
+@media (max-width: 767px)
+
+	.quiz h2 
+		margin: 0
+		font-size: 20px
+	.page_1
+		.mm-survey-item
+			width: 41%
+			&:nth-of-type(5), &:nth-of-type(3)
+				.magic-checkbox+label:before, .magic-radio+label:before
+						bottom: 15px
+
+	.quiz .text_wrap span
+		float: none
+	.mm-survey-controller button
+		width: 100%
+		span
+			display: none
+	.page_2 .mm-survey-progress, .page_3 .mm-survey-progress, .page_4 .mm-survey-progress, .page_5 .mm-survey-progress, .page_6 .mm-survey-progress
+		margin: 0
+	.page_2
+		.mm-survey-item 
+			width: 44%
+			&:nth-of-type(3), &:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+						bottom: 15px
+	.page_3
+		.mm-survey-item 
+			input[type=text] 
+				width: 100%
+				padding: 10px 0
+				font-size: 10px
+			label 
+				font-size: 14px
+	.page_4 .mm-survey-item 
+		width: 39%
+	.quiz .mm-survey-results-container .btn 
+		width: 70%
+	.quiz .mm-survey-results-container .question__comment 
+		width: 87%
+		margin-left: 21px
+		margin-top: 28px
 
 @media (max-width: 450px)
+	.modalQuize
+		.modal-dialog 
+			width: 90%
+			margin-left: 5%
 	.quiz .text_wrap 
-		width: 100%
+		width: 76%
+		padding-top: 10px
+		p 
+			font-size: 14px
 	.page_1, .page_2, .page_3, .page_4,.page_5, .page_6
 		.last-item
 		margin-bottom: 130px
@@ -1906,20 +2219,95 @@ input[type="text"]
 			display: none
 	.mm-survey-results-container .magic-checkbox+label:before, .mm-survey-results-container .magic-radio+label:before
 		top: 0
-	.quiz .magic-checkbox:checked+label:after, .quiz .magic-radio:checked+label:after
-		top: 5px
+
 	.page_2, .page_3, .page_4,.page_5, .page_6
-		h4
-			margin-top: -85px
+		.answers
+			padding-bottom: 0
+	.page_1
+		.answers 
+			padding-bottom: 0
+			margin-left: 7px
+	.page_2 h4, .page_3 h4, .page_4 h4, .page_5 h4, .page_6 h4
+		margin-top: -70px
+	.page_2 .mm-survey-progress, .page_3 .mm-survey-progress, .page_4 .mm-survey-progress, .page_5 .mm-survey-progress, .page_6 .mm-survey-progress
+		top: -100px
+	.mm-survey-page 
+		min-height: 379px
+	.page_3 .mm-survey-item 
+		width: 64%
+	.page_4 .mm-survey-item 
+		width: 65%
+	.quiz .answers label span 
+		font-size: 11px
+	.page_3
+		.mm-survey-item 
+			input[type=text] 
+				padding: 16px 0
+				font-size: 13px
+
+	.page_1 .mm-survey-item:nth-of-type(1) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(1) .magic-radio+label:before, .page_1 .mm-survey-item:nth-of-type(4) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(4) .magic-radio+label:before
+		bottom: 0
+	.page_2 .mm-survey-item 
+		width: 62%
+	.page_2 .mm-survey-item:nth-of-type(6) .magic-checkbox+label:before, .page_2 .mm-survey-item:nth-of-type(6) .magic-radio+label:before
+		bottom: 0
+	.page_2 .mm-survey-item:nth-of-type(3) .magic-checkbox+label:before, .page_2 .mm-survey-item:nth-of-type(3) .magic-radio+label:before, .page_2 .mm-survey-item:nth-of-type(4) .magic-checkbox+label:before, .page_2 .mm-survey-item:nth-of-type(4) .magic-radio+label:before
+		bottom: 0
+	.page_1 .mm-survey-item:nth-of-type(3) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(3) .magic-radio+label:before, .page_1 .mm-survey-item:nth-of-type(5) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(5) .magic-radio+label:before
+		bottom: 0
+	.page_1 .mm-survey-item 
+		width: 64%
+	.quiz .answers label span 
+		left: 26px
+	.page_5 .mm-survey-item 
+		width: 60%
+	.page_6
+		.mm-survey-item
+			width: 56%
+	.quiz .mm-survey-results-container .question__comment 
+		margin-top: 39px
+	.container-fluide .answers 
+		margin-left: -2px
+	.quiz .mm-survey-results-container .btn 
+		width: 80%
 
 @media (width: 768px)
 	
 	.modalQuize
 		.modal-dialog 
+			width: 90%
+			margin-left: 5%
 			.close span 
 				right: -18px
+	.quiz .text_wrap 
+		width: 43%
+		margin-bottom: 6px
+		p
+			font-size: 13px
+	.quiz .answers label span
+		font-size: 11px
 
+	.page_2
+		.mm-survey-item
+			&:nth-of-type(3), &:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 0
 
+	.page_3 input[type=text]
+		padding: 15px 0
+		width: 85%
+	.page_4 .mm-survey-item 
+		width: 40%
+	.page_4, .page_5, .page_6
+		.answers label span 
+			left: 26px
+			font-size: 16px
+	.quiz .mm-survey-results-container .btn
+		width: 58%
+
+@media (width: 320px)
+	.quiz .mm-survey-results-container .btn 
+		width: 253px
 
 @import "media"
 

@@ -1,18 +1,25 @@
 $(document).ready(function() {
 
 	$('#my-menu').mmenu({
-		extensions: [ 'widescreen', 'effect-menu-slide', 'pagedim-black' ],
+		extensions: [ 'widescreen', 'effect-menu-slide', 'pagedim-black', 'scrollbugfix' ],
 
 		offCanvas: {
 			position  : 'right'
-		}
-	});
+		},
+		pageScroll : {
+ scroll : true, // прокрутка к якорю
+ update : true, //прокручивать, даже если пункт обозначен как активный
+ scrollOffset : 300
+}
+
+});
 	var api = $('#my-menu').data('mmenu');
 	api.bind('opened', function () {
 		$('.hamburger').addClass('is-active');
 	}).bind('closed', function () {
 		$('.hamburger').removeClass('is-active');
 	});
+
 
 
 	$('.btn-form').on('shown.bs.modal', function (e) {
@@ -144,30 +151,12 @@ $(document).ready(function() {
 			//item.html(page);
 
 		});
-
-				jQuery('.mm-survey-progress-bar .mm-progress-list').each(function() {
-
-			var items;
-			var page;
-
-			items = jQuery(this);
-			list = item.data('list');
-
-			items.addClass('mm-page-'+list);
-			//item.html(page);
-
-		});
-
 	}
 
 	function getCount() {
 
 		count = jQuery('.mm-survey-page').length;
 		return count;
-
-		counter = jQuery('.mm-progress-list').length;
-		return counter;
-
 	}
 
 	function goToNext() {
@@ -207,11 +196,7 @@ $(document).ready(function() {
 			}
 			buttonConfig();
 		});
-
-
 	}
-
-
 
 	function buildProgress(g) {
 
@@ -223,13 +208,11 @@ $(document).ready(function() {
 		}
 		g = g * 100;
 		jQuery('.mm-survey-progress-bar').css({ 'width' : g+'%' });
-
 	}
 
 	function goToSlide(x) {
 
 		return x;
-
 	}
 
 	function getCurrentSlide() {
@@ -270,7 +253,6 @@ $(document).ready(function() {
 		else {
 			jQuery('.mm-next-btn').show();
 		}
-
 	}
 
 	jQuery('.mm-survey-q li input').each(function() {
@@ -349,14 +331,34 @@ $(document).ready(function() {
 		});
 	}
 
-function firstPage() {
-	jQuery('.mm-next-btn button').on('click', function() {
+	function firstPage() {
+		jQuery('.mm-next-btn button').on('click', function() {
 			jQuery('.hide_block').hide();
+
+		});
+	}
+
+	$("#phone7").mask("+375(**) *** *** *", {placeholder: "+375(**) *** *** *" });
+	$("#phone1").mask("+375(**) *** *** *");
+	$("#phone2").mask("+375(**) *** *** *");
+	$("#phone3").mask("+375(**) *** *** *");
+	$("#phone4").mask("+375(**) *** *** *");
+	$("#phone5").mask("+375(**) *** *** *");
+	$("#phone6").mask("+375(**) *** *** *");
+
+	$("input:radio[name=radio6]").click(function() {
+		var value = $(this).val();
+		var image_name;
+		if(value == 'Трехметровый снегозадержатель'){
+			image_name = "img/quize/step6_im1.jpg";
+		}else{
+			if(value == 'Балон с краской'){
+				image_name = "img/quize/step6_im2.jpg";
+			}else{
+				image_name = "img/quize/present1.jpg";
+			}
+		}
+		$('#qu').attr('src', image_name);
 	});
-}
-
-
-
-
 
 });

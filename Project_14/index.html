@@ -31,7 +31,7 @@
 
 	<div id="my-page">
 		<div id="my-header">
-			<div class="main-head" style="background-image: url(img/head_bg.jpg);">
+			<div class="main-head" id="home" style="background-image: url(img/head_bg.jpg);">
 				<div class="top-line">	
 					<div class="container">
 						<div class="row">
@@ -49,18 +49,21 @@
 								<div class="wrap">
 									<div class="phone-wrap">
 										<a class="tel" href="tel:+375 29 727 58 81">+375 29 727 58 81</a><br>
-										<a class="btn-form phone" data-send="Верхняя кнопка: Заказать звонок" data-submit="Заказать звонок" data-toggle="modal"  data-target=".modalForm1"><i class="fa fa-phone fa-flip-horizontal"></i>Заказать обратный звонок</a>
+										<a class="btn-form phone" data-send="Верхняя кнопка: Заказать звонок" data-submit="Заказать звонок" data-toggle="modal"  data-target=".modalForm1"><i class="fa fa-phone"></i>Заказать обратный звонок</a>
 									</div>
 									<a href="#my-menu" class="hamburger hamburger--emphatic">
 										<span class="hamburger-box"><span class="hamburger-inner"></span></span>
 									</a>
 									<nav id="my-menu">
 										<ul>
-											<li class="active"><a href="#">Home</a></li>
-											<li><a href="#">About us</a></li>
-											<li><a href="#">About us</a></li>
-											<li><a href="#">About us</a></li>
-											<li><a href="#">About us</a></li>
+											<li class="active"><a href="#home">Главная</a></li>
+											<li><a href="#section_1">Преимущества</a></li>
+											<li><a href="#section_2">Каталог</a></li>
+											<li><a href="#section_3">Расчитать</a></li>
+											<li><a href="#section_5">Дополнительные элементы</a></li>
+											<li><a href="#section_7">Гарантии</a></li>
+											<li><a href="#section_10">Схема работы</a></li>
+											<li><a href="#section_11">Контакты</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -118,7 +121,7 @@
 					<div class="col-md-12">
 						<h2>Мы продаем кровельные материалы по оптовым<br>
 						ценам и производим монтаж кровли под ключ</h2>
-						<p>Наши резулитаты и достижения в цыфрах</p>
+						<p>Наши резулитаты и достижения в цифрах</p>
 					</div>
 				</div>
 				<div class="icon_group">
@@ -358,7 +361,7 @@
 								</div>
 								<input type="hidden" name="formname" value="Форма в блоке:4">
 								<div class="btn_wrap">
-									<button type="submit" data-id="form2" class="btn"><span></span><a href="#">скачать полный каталог</a></button>
+									<button type="submit" data-id="form2" class="btn"><span></span>скачать полный каталог</button>
 								</div>
 								<span>PDF 2.1 mb</span>		
 							</form>
@@ -457,7 +460,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Каталог нашей продукции</h2>
+				<h2>Наш проекты</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -983,7 +986,7 @@
 </div>
 
 <div class="modal fade modalQuize" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
+	<div class="modal-dialog modal-md">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
@@ -991,460 +994,365 @@
 			<div class="container-fluide">
 				<div class="quiz">
 					<form  role="form" method="post" action="mail.php" id="form7">
-					<div class="mm-survey">
-						<div class="hide_block">
-							<div class="row">
-								<div class="col-md-3 hidden-sm">
-								</div>
-								<div class="col-md-9 col-sm-12">
-									<h2>Ответьте на 7 вопросов и получите:</h2>
-									<div class="text_wrap">
-										<span></span><p>Точную стоимость кровли и работ</p>
-									</div>
-									<div class="text_wrap text_wrap2">
-										<span></span><p>Гарантированный подарок на выбор</p>
-									</div>
-								</div>
-							</div>
+						<div class="mm-survey">
 						</div>
-						<div class="row">
-							<div class="col-md-9 col-md-offset-3 col-sm-12">
-								<div class="mm-survey-progress">
-									<div class="mm-survey-progress-bar mm-progress"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="mm-survey-results">
-						<div class="mm-survey-results-container">
-							<div class="row">
-								<div class="col-md-3 col-sm-12">
-									<div class="text">
-										<h2>Спасибо!</h2>
-										<p>Тест успешно пройден</p>
-									</div>
-									<img src="img/quize/step7_bg.jpg" alt="" class="bg img-responsive">
-								</div>
-								<div class="col-md-6 col-sm-8">
-									<div class="quiz__questions-list">
-										<div class="question__block question__block_active">
-											<div class="question__number"></div>
-											<legend class="question__text"><h3>Менеджер уже приступил<br>к расчёту кровли</h3>
-												<p>Введите Ваш телефон и получите<br>стоимость в течение 15 минут на:</p>
-											</legend>				
+						<div class="mm-survey-results">
+							<div class="mm-survey-results-container">
+								<div class="row">
+									<div class="col-md-3 hidden-sm hidden-xs">
+													<div class="bg">
+										<div class="text">
+											<h2>Спасибо!</h2>
+											<p>Тест успешно пройден</p>
 										</div>
-										<div class="answers">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-8">
+										<div class="quiz__questions-list">
+											<div class="question__block question__block_active">
+												<div class="question__number"></div>
+												<legend class="question__text"><h3>Менеджер уже приступил<br>к расчёту кровли</h3>
+													<p>Введите Ваш телефон и получите<br>стоимость в течение 15 минут на:</p>
+												</legend>				
+											</div>
+											<div class="answers">
+
+														<div class="answer-group" >
+															<input class="magic-radio" type="radio" id="q7-a0" name="q7" value="Да" data-value="" /><label for="q7-a0"><img src="img/quize/mail.png"> По SMS</label>
+														</div>
+
+														<div class="answer-group" >
+															<input class="magic-radio" type="radio" id="q7-a1" name="q7" value="Да" data-value="" /><label for="q7-a1"><img src="img/quize/viber.png"> Viber</label>
+														</div>
+
+														<div class="answer-group" >
+															<input class="magic-radio" type="radio" id="q7-a2" name="q7" value="Да" data-value="" /><label for="q7-a2"><img src="img/quize/tel.png"> Telegram</label>
+														</div>
+
+														<div class="answer-group" >
+															<input class="magic-radio" type="radio" id="q7-a3" name="q7" value="Да" data-value="" /><label for="q7-a3"><img src="img/quize/app.png"> WhatsApp</label>
+														</div>
+
+												<div class="row">
+													<div class="col-md-12 col-sm-12">
+														<div class="answer-group">
+															<input type="text" name="contact_tel" id="phone7" required placeholder="+375 (**) *** *** *">
+														</div>
+													</div>
+												</div>
+												<input type="hidden" name="formname" value="Форма в блоке: quize">
+												<button type="submit" data-id="form7" class="btn"><span></span>получить стоимость кровли</button>
+											</div>											
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4">
+										<div class="question__comment">
+											<h3>Ваш подарок:</h3>
+											<div class="present_wrap">
+												<img src="img/quize/present1.jpg" class="img-responsive" alt="" id="qu">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mm-survey-bottom">
+							<div class="mm-survey-container">
+
+								<div class="page_1">
+									<div class="mm-survey-page active" data-page="1">
+										<div class="mm-survery-content">
 											<div class="row">
-												<div class="col-md-3 col-sm-3">
-													<div class="answer-group" >
-														<input class="magic-radio" type="radio" id="q7-a0" name="q7" value="Да" data-value="" /><label for="q7-a0"><img src="img/quize/mail.png"> По SMS</label>
-													</div>
+												<div class="col-md-3 hidden-sm hidden-xs">
+													<div class="bg"></div>
 												</div>
-												<div class="col-md-3 col-sm-3">
-													<div class="answer-group" >
-														<input class="magic-radio" type="radio" id="q7-a1" name="q7" value="Да" data-value="" /><label for="q7-a1"><img src="img/quize/viber.png"> Viber</label>
+												<div class="col-md-9 col-sm-12 ">
+													<div class="hide_block">
+														<h2>Ответьте на 7 вопросов и получите:</h2>
+														<div class="text_wrap">
+															<span></span><p>Точную стоимость кровли и работ</p>
+														</div>
+														<div class="text_wrap text_wrap2">
+															<span></span><p>Гарантированный подарок на выбор</p>
+														</div>
 													</div>
-												</div>
-												<div class="col-md-3 col-sm-3">
-													<div class="answer-group" >
-														<input class="magic-radio" type="radio" id="q7-a2" name="q7" value="Да" data-value="" /><label for="q7-a2"><img src="img/quize/tel.png"> Telegram</label>
+													<div class="mm-survey-progress">
+														<div class="mm-survey-progress-bar mm-progress"></div>
+													</div>																	
+													<div class="mm-survey-question">
+														<div class="question__block question__block_active">
+															<div class="question__number"><h4>шаг 1 из 7</h4></div>
+															<div class="question__description">
+																<legend class="question__text">Выберите тип крыши</legend>
+																<div class="question__answer"></div>
+															</div>													
+														</div>
 													</div>
-												</div>
-												<div class="col-md-3 col-sm-3">
-													<div class="answer-group" >
-														<input class="magic-radio" type="radio" id="q7-a3" name="q7" value="Да" data-value="" /><label for="q7-a3"><img src="img/quize/app.png"> WhatsApp</label>
+													<div class="item_wrap">
+														<div class="answers">
+															<div class="mm-survey-item">
+																<input class="magic-radio" type="radio" id="radio01" data-item="1" name="radio1" value="Односкатная крыша" data-value="1" /><label for="radio01"><img src="img/quize/step1_im1.jpg" alt="" class="img-responsive"><span>Односкатная крыша</span></label>
+															</div>
+															<div class="mm-survey-item">
+																<input class="magic-radio" type="radio" id="radio02" data-item="1" name="radio1" value="Двускатная" data-value="2" /><label for="radio02"><img src="img/quize/step1_im2.jpg" alt="" class="img-responsive"><span>Двускатная</span></label>
+															</div>
+															<div class="mm-survey-item">
+																<input class="magic-radio" type="radio" id="radio03" data-item="1" name="radio1" value="Четырехскатная вальмовая" data-value="3" /><label for="radio03"><img src="img/quize/step1_im3.jpg" alt="" class="img-responsive"><span>Четырехскатная вальмовая</span></label>
+															</div>
+															<div class="mm-survey-item" >
+																<input class="magic-radio" type="radio" id="radio04" data-item="1" name="radio1" value="Мансардная ломаная" data-value="4" /><label for="radio04"><img src="img/quize/step1_im4.jpg" alt="" class="img-responsive"><span>Мансардная ломаная</span></label>
+															</div>
+															<div class="mm-survey-item">
+																<input class="magic-radio" type="radio" id="radio05" data-item="1" name="radio1" value="Четырехскатная шатровая" data-value="5" /><label for="radio05"><img src="img/quize/step1_im5.jpg" alt="" class="img-responsive"><span>Четырехскатная шатровая</span></label>
+															</div>
+															<div class="mm-survey-item last-item" >
+																<input class="magic-radio" type="radio" id="radio06" data-item="1" name="radio1" value="Полувальмовая" data-value="6"><label for="radio06"><img src="img/quize/step1_im6.jpg" alt="" class="img-responsive"><span>Полувальмовая</span></label>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="page_2">
+									<div class="mm-survey-page" data-page="2">
+										<div class="mm-survery-content">
 											<div class="row">
-												<div class="col-md-12 col-sm-12">
-													<div class="answer-group">
-														<input type="text" name="contact_tel" id="phone7" required placeholder="+375 (**) *** *** *">
+												<div class="col-md-3 hidden-sm hidden-xs">
+													<div class="bg"></div>
+												</div>
+												<div class="col-md-9">
+													<div class="mm-survey-progress">
+														<div class="mm-survey-progress-bar mm-progress"></div>
+													</div>
+													<div class="mm-survey-question">
+														<div class="question__block question__block_active">
+															<div class="question__number"><h4>шаг 2 из 7</h4></div>
+															<div class="question__description">
+																<legend class="question__text">Выберите тип покрытия</legend>
+																<div class="question__answer"></div>
+															</div>													
+														</div>
+													</div>
+													<div class="item_wrap">
+														<div class="answers">
+															<div class="mm-survey-item">
+																<input  class="magic-radio" type="radio" id="radio07" data-item="2" name="radio2" value="Металлочерепица" /><label for="radio07"><img src="img/quize/step2_im1.jpg" alt="" class="img-responsive"><span>Металлочерепица</span></label>
+															</div>
+															<div class="mm-survey-item" >														
+																<input  class="magic-radio" type="radio" id="radio08" data-item="2" name="radio2" value="Битумная черепица"/><label for="radio08"><img src="img/quize/step2_im2.jpg" alt="" class="img-responsive"><span>Битумная черепица</span></label>
+															</div>													
+															<div class="mm-survey-item" >														
+																<input  class="magic-radio" type="radio" id="radio09" data-item="2" name="radio2" value="Модульная металлочерепица" /><label for="radio09"><img src="img/quize/step2_im3.jpg" alt="" class="img-responsive"><span>Модульная металлочерепица</span></label>
+															</div>
+															<div class="mm-survey-item" >															
+																<input  class="magic-radio" type="radio" id="radio10" data-item="2" name="radio2" value="Керамическая металлочерепица" /><label for="radio10"><img src="img/quize/step2_im4.jpg" alt="" class="img-responsive"><span>Керамическая металлочерепица</span></label>
+															</div>
+															<div class="mm-survey-item" >														
+																<input  class="magic-radio" type="radio" id="radio11" data-item="2" name="radio2" value="Фальцевая кровля"/><label for="radio11"><img src="img/quize/step2_im5.jpg" alt="" class="img-responsive"><span>Фальцевая кровля</span></label>
+															</div>
+															<div class="mm-survey-item last-item" >															
+																<input  class="magic-radio" type="radio" id="radio12" data-item="2" name="radio2" value="Композитная черепица"><label for="radio12"><img src="img/quize/step2_im6.jpg" alt="" class="img-responsive"><span>Композитная черепица</span></label>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
-											<input type="hidden" name="formname" value="Форма в блоке: quize">
-											<button type="submit" data-id="form7" class="btn"><span></span>получить стоимость кровли</button>
-										</div>											
+										</div>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-4">
-									<div class="question__comment">
-										<h3>Ваш подарок:</h3>
-										<div class="present_wrap">
-											<h4>скидка -20% на</h4>
-											<p>мансардные окна Velux</p>
-											<img src="img/quize/step7_im.png" class="img-responsive" alt="">
+
+								<div class="page_3">
+									<div class="mm-survey-page" data-page="3">
+										<div class="mm-survery-content">
+											<div class="row">
+												<div class="col-md-3 hidden-sm hidden-xs">
+													<div class="bg"></div>
+												</div>
+												<div class="col-md-9 col-sm-12">
+													<div class="mm-survey-progress">
+														<div class="mm-survey-progress-bar mm-progress"></div>
+													</div>
+													<div class="mm-survey-question">
+														<div class="question__block question__block_active">
+															<div class="question__number"><h4>шаг 3 из 7</h4></div>
+															<div class="question__description">
+																<legend class="question__text">Введите площадь крыши либо размеры дома</legend>
+																<div class="question__answer"></div>
+															</div>													
+														</div>
+													</div>
+													<div class="item_wrap">
+														<div class="answers">
+															<div class="mm-survey-item" >
+																<img src="img/quize/step3_im1.jpg" alt="" class="img-responsive">
+																<input type="radio" id="radio13" data-item="3" name="radio3" value="Площадь крыши"><label class="magic-text" for="radio13">Площадь крыши<br><input type="text" placeholder="Например: 250 кв. м."></label>
+															</div>
+															<div class="mm-survey-item last-item" >
+																<img src="img/quize/step3_im2.jpg" alt="" class="img-responsive">
+																<input type="radio" id="radio14" data-item="3" name="radio3" value="Размеры дома"><label class="magic-text" for="radio14">Размеры дома<br><input type="text" placeholder="15 х 16 м"></label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="page_4">
+									<div class="mm-survey-page" data-page="4">
+										<div class="mm-survery-content">
+											<div class="row">
+												<div class="col-md-3 hidden-sm hidden-xs">
+													<div class="bg"></div>
+												</div>
+												<div class="col-md-9 col-sm-12">
+													<div class="mm-survey-progress">
+														<div class="mm-survey-progress-bar mm-progress"></div>
+													</div>
+													<div class="mm-survey-question">
+														<div class="question__block question__block_active">
+															<div class="question__number"><h4>шаг 4 из 7</h4></div>
+															<div class="question__description">
+																<legend class="question__text">Укажите дополнительную комплектацию</legend>
+																<div class="question__answer"></div>
+															</div>													
+														</div>
+													</div>
+													<div class="item_wrap">
+														<div class="answers">
+															<div class="mm-survey-item">																	
+																<input class="magic-checkbox" type="checkbox" id="radio15" data-item="4" name="radio4" value="Гидроизоляционные пленки" data-value="1" /><label for="radio15"><img src="img/quize/step4_im1.jpg" alt="" class="img-responsive"><span>Гидроизоляционные<br>пленки</span></label>
+															</div>
+															<div class="mm-survey-item mm-survey-item1" >																	
+																<input class="magic-checkbox" type="checkbox" id="radio16" data-item="4" name="radio4" value="Конек" data-value="2" /><label for="radio16"><img src="img/quize/step4_im2.jpg" alt="" class="img-responsive"><span>Конек</span></label>
+															</div>
+															<div class="mm-survey-item" >																		
+																<input class="magic-checkbox" type="checkbox" id="radio17" data-item="4" name="radio4" value="Ветровая (торцевая) планка" data-value="3" /><label for="radio17"><img src="img/quize/step4_im3.jpg" alt="" class="img-responsive"><span>Ветровая (торцевая)<br>планка</span></label>
+															</div>
+															<div class="mm-survey-item" >																		
+																<input class="magic-checkbox" type="checkbox" id="radio18" data-item="4" name="radio4" value="Карнизная планка"  data-value="6"><label for="radio18"><img src="img/quize/step4_im4.jpg" alt="" class="img-responsive"><span>Карнизная планка</span></label>
+															</div>
+															<div class="mm-survey-item" >																	
+																<input class="magic-checkbox" type="checkbox" id="radio19" data-item="4" name="radio4" value="Ендова (ендовные планки)" data-value="4" /><label for="radio19"><img src="img/quize/step4_im5.jpg" alt="" class="img-responsive"><span>Ендова (ендовные<br> планки)</span></label>
+															</div>
+															<div class="mm-survey-item" >																	
+																<input class="magic-checkbox" type="checkbox" id="radio20" data-item="4" name="radio4" value="Планки примыкания" data-value="5" /><label for="radio20"><img src="img/quize/step4_im6.jpg" alt="" class="img-responsive"><span>Планки примыкания</span></label>
+															</div>
+															<div class="mm-survey-item" >																		
+																<input class="magic-checkbox" type="checkbox" id="radio21" data-item="4" name="radio4" value="Саморезы"  data-value="6"><label for="radio21"><img src="img/quize/step4_im7.jpg" alt="" class="img-responsive"><span>Саморезы</span></label>
+															</div>
+															<div class="mm-survey-item last-item" >																		
+																<input class="magic-checkbox" type="checkbox" id="radio22" data-item="4" name="radio4" value="Водосточная система"  data-value="6"><label for="radio22"><img src="img/quize/step4_im8.jpg" alt="" class="img-responsive"><span>Водосточная система</span></label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="page_5">
+									<div class="mm-survey-page" data-page="5">
+										<div class="mm-survery-content">
+											<div class="row">
+												<div class="col-md-3 hidden-sm hidden-xs">
+													<div class="bg"></div>
+												</div>
+												<div class="col-md-9 col-sm-12">
+													<div class="mm-survey-progress">
+														<div class="mm-survey-progress-bar mm-progress"></div>
+													</div>
+													<div class="mm-survey-question">
+														<div class="question__block question__block_active">
+															<div class="question__number"><h4>шаг 5 из 7</h4></div>
+															<div class="question__description">
+																<legend class="question__text">Нужен ли монтаж</legend>
+																<div class="question__answer"></div>
+															</div>													
+														</div>
+													</div>
+													<div class="item_wrap">
+														<div class="answers">
+															<div class="mm-survey-item" >																	
+																<input class="magic-radio" type="radio" id="radio23" data-item="5" name="radio5" value="Нужен монтаж"><label for="radio23"><img src="img/quize/step5_im1.jpg" alt="" class="img-responsive"><span>Нужен монтаж</span></label>
+															</div>
+															<div class="mm-survey-item" >
+																<input class="magic-radio" type="radio" id="radio24" data-item="5" name="radio5" value="Я справлюсь своими силами"><label for="radio24"><img src="img/quize/step5_im2.jpg" alt="" class="img-responsive"><span>Я справлюсь своими силами</span></label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="page_6">
+									<div class="mm-survey-page" data-page="6">
+										<div class="mm-survery-content">
+											<div class="row">
+												<div class="col-md-3 hidden-sm hidden-xs">
+													<div class="bg"></div>
+												</div>
+												<div class="col-md-9 col-sm-12">
+													<div class="mm-survey-progress">
+														<div class="mm-survey-progress-bar mm-progress"></div>
+													</div>
+													<div class="mm-survey-question">
+														<div class="question__block question__block_active">
+															<div class="question__number"><h4>шаг 6 из 7</h4></div>
+															<div class="question__description">
+																<legend class="question__text">Выберите Ваш подарок</legend>
+																<div class="question__answer"></div>
+															</div>													
+														</div>
+													</div>
+													<div class="item_wrap">
+														<div class="answers">
+															<div class="mm-survey-item" >																
+																<input class="magic-radio" type="radio" id="radio25" data-item="6" name="radio6" value="Трехметровый снегозадержатель"><label for="radio25"><img src="img/quize/step6_im1.jpg" alt="" class="img-responsive"><span>Трехметровый<br>снегозадержатель</span></label>
+															</div>
+															<div class="mm-survey-item" >
+																<input class="magic-radio" type="radio" id="radio27" data-item="6" name="radio6" value="Балон с краской"><label for="radio27"><img src="img/quize/step6_im2.jpg" alt="" class="img-responsive"><span>Балон с краской</span></label>
+															</div>
+															<div class="mm-survey-item" >			
+																<input class="magic-radio" type="radio" id="radio28" data-item="6" name="radio6" value="Скидка на мансардные окна -20%"><label for="radio28"><img src="img/quize/step6_im3.jpg" alt="" class="img-responsive"><span>Скидка на мансардные окна -20%</span></label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-9 col-md-offset-3 col-sm-12">
+									<div class="mm-survey-controller">
+										<div class="mm-next-btn">
+											<button disabled="true"><span></span>перейти к следующему шагу</button>
+										</div>
+										<div class="mm-finish-btn">
+											<button><span></span>перейти к следующему шагу</button>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="mm-survey-bottom">
-						<div class="mm-survey-container">
-							<div class="page_1">
-								<div class="mm-survey-page active" data-page="1">
-									<div class="mm-survery-content">
-										<div class="row">
-											<div class="col-md-3 hidden-sm hidden-xs">
-												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
-											</div>
-											<div class="col-md-9 col-sm-12">
-												<div class="mm-survey-question">
-													<div class="question__block question__block_active">
-														<div class="question__number"><h4>шаг 1 из 7</h4></div>
-														<div class="question__description">
-															<legend class="question__text">Выберите тип крыши</legend>
-															<div class="question__answer"></div>
-														</div>													
-													</div>
-												</div>
-												<div class="item_wrap">
-													<div class="answers">
-														<div class="row">
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item">
-																	<img src="img/quize/step1_im1.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio01" data-item="1" name="radio1" value="Односкатная крыша" data-value="1" /><label for="radio01">Односкатная крыша</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item">
-																	<img src="img/quize/step1_im2.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio02" data-item="1" name="radio1" value="Двускатная" data-value="2" /><label for="radio02">Двускатная</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item">
-																	<img src="img/quize/step1_im3.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio03" data-item="1" name="radio1" value="Четырехскатная вальмовая" data-value="3" /><label for="radio03">Четырехскатная вальмовая</label>
-																</div>
-															</div>
-															<div class="row">
-																<div class="col-md-4 col-sm-4">
-																	<div class="mm-survey-item" >
-																		<img src="img/quize/step1_im4.jpg" alt="" class="img-responsive">
-																		<input class="magic-radio" type="radio" id="radio04" data-item="1" name="radio1" value="Мансардная ломаная" data-value="4" /><label for="radio04">Мансардная ломаная</label>
-																	</div>
-																</div>
-																<div class="col-md-4 col-sm-4">
-																	<div class="mm-survey-item" >
-																		<img src="img/quize/step1_im5.jpg" alt="" class="img-responsive">
-																		<input class="magic-radio" type="radio" id="radio05" data-item="1" name="radio1" value="Четырехскатная шатровая" data-value="5" /><label for="radio05">Четырехскатная шатровая</label>
-																	</div>
-																</div>
-																<div class="col-md-4 col-sm-4">
-																	<div class="mm-survey-item last-item" >
-																		<img src="img/quize/step1_im6.jpg" alt="" class="img-responsive">
-																		<input class="magic-radio" type="radio" id="radio06" data-item="1" name="radio1" value="Полувальмовая" data-value="6"><label for="radio06">Полувальмовая</label>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="page_2">
-								<div class="mm-survey-page" data-page="2">
-									<div class="mm-survery-content">
-										<div class="row">
-											<div class="col-md-3 hidden-sm hidden-xs">
-												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
-											</div>
-											<div class="col-md-9 col-sm-12">
-												<div class="mm-survey-question">
-													<div class="question__block question__block_active">
-														<div class="question__number"><h4>шаг 2 из 7</h4></div>
-														<div class="question__description">
-															<legend class="question__text">Выберите тип покрытия</legend>
-															<div class="question__answer"></div>
-														</div>													
-													</div>
-												</div>
-												<div class="item_wrap">
-													<div class="answers">
-														<div class="row">
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item">
-																	<img src="img/quize/step2_im1.jpg" alt="" class="img-responsive">
-																	<input  class="magic-radio" type="radio" id="radio07" data-item="2" name="radio2" value="Металлочерепица" /><label for="radio07">Металлочерепица</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step2_im2.jpg" alt="" class="img-responsive">
-																	<input  class="magic-radio" type="radio" id="radio08" data-item="2" name="radio2" value="Битумная черепица"/><label for="radio08">Битумная черепица</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step2_im3.jpg" alt="" class="img-responsive">
-																	<input  class="magic-radio" type="radio" id="radio09" data-item="2" name="radio2" value="Модульная металлочерепица" /><label for="radio09">Модульная металлочерепица</label>
-																</div>
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step2_im4.jpg" alt="" class="img-responsive">
-																	<input  class="magic-radio" type="radio" id="radio10" data-item="2" name="radio2" value="Керамическая металлочерепица" /><label for="radio10">Керамическая металлочерепица</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step2_im5.jpg" alt="" class="img-responsive">
-																	<input  class="magic-radio" type="radio" id="radio11" data-item="2" name="radio2" value="Фальцевая кровля"/><label for="radio11">Фальцевая кровля</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item last-item" >
-																	<img src="img/quize/step2_im6.jpg" alt="" class="img-responsive">
-																	<input  class="magic-radio" type="radio" id="radio12" data-item="2" name="radio2" value="Композитная черепица"><label for="radio12">Композитная черепица</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="page_3">
-								<div class="mm-survey-page" data-page="3">
-									<div class="mm-survery-content">
-										<div class="row">
-											<div class="col-md-3 hidden-sm hidden-xs">
-												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
-											</div>
-											<div class="col-md-9 col-sm-12">
-												<div class="mm-survey-question">
-													<div class="question__block question__block_active">
-														<div class="question__number"><h4>шаг 3 из 7</h4></div>
-														<div class="question__description">
-															<legend class="question__text">Введите площадь крыши либо размеры дома</legend>
-															<div class="question__answer"></div>
-														</div>													
-													</div>
-												</div>
-												<div class="item_wrap">
-													<div class="answers">
-														<div class="row">
-															<div class="col-md-6 col-sm-6">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step3_im1.jpg" alt="" class="img-responsive">
-																	<input type="radio" id="radio13" data-item="3" name="radio3" value="Площадь крыши"><label class="magic-text" for="radio13">Площадь крыши<br><input type="text" placeholder="Например: 250 кв. м."></label>
-																</div>
-															</div>
-															<div class="col-md-6 col-sm-6">
-																<div class="mm-survey-item last-item" >
-																	<img src="img/quize/step3_im2.jpg" alt="" class="img-responsive">
-																	<input type="radio" id="radio14" data-item="3" name="radio3" value="Размеры дома"><label class="magic-text" for="radio14">Размеры дома<br><input type="text" placeholder="15 х 16 м"></label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="page_4">
-								<div class="mm-survey-page" data-page="4">
-									<div class="mm-survery-content">
-										<div class="row">
-											<div class="col-md-3 hidden-sm hidden-xs">
-												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
-											</div>
-											<div class="col-md-9 col-sm-12">
-												<div class="mm-survey-question">
-													<div class="question__block question__block_active">
-														<div class="question__number"><h4>шаг 4 из 7</h4></div>
-														<div class="question__description">
-															<legend class="question__text">Укажите дополнительную комплектацию</legend>
-															<div class="question__answer"></div>
-														</div>													
-													</div>
-												</div>
-												<div class="item_wrap">
-													<div class="answers">
-														<div class="row">
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item">
-																	<img src="img/quize/step4_im1.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio15" data-item="4" name="radio4" value="Гидроизоляционные пленки" data-value="1" /><label for="radio15">Гидроизоляционные<br>пленки</label>
-																</div>
-															</div>
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item mm-survey-item1" >
-																	<img src="img/quize/step4_im2.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio16" data-item="4" name="radio4" value="Конек" data-value="2" /><label for="radio16">Конек</label>
-																</div>
-															</div>
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step4_im3.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio17" data-item="4" name="radio4" value="Ветровая (торцевая) планка" data-value="3" /><label for="radio17">Ветровая (торцевая)<br>планка</label>
-																</div>
-															</div>
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step4_im4.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio18" data-item="4" name="radio4" value="Карнизная планка"  data-value="6"><label for="radio18">Карнизная планка</label>
-																</div>
-															</div>
-														</div>
-														<div class="row">
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step4_im5.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio19" data-item="4" name="radio4" value="Ендова (ендовные планки)" data-value="4" /><label for="radio19">Ендова (ендовные планки)</label>
-																</div>
-															</div>
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step4_im6.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio20" data-item="4" name="radio4" value="Планки примыкания" data-value="5" /><label for="radio20">Планки примыкания</label>
-																</div>
-															</div>
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step4_im7.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio21" data-item="4" name="radio4" value="Саморезы"  data-value="6"><label for="radio21">Саморезы</label>
-																</div>
-															</div>
-															<div class="col-md-3 col-sm-3">
-																<div class="mm-survey-item last-item" >
-																	<img src="img/quize/step4_im8.jpg" alt="" class="img-responsive">
-																	<input class="magic-checkbox" type="checkbox" id="radio22" data-item="4" name="radio4" value="Водосточная система"  data-value="6"><label for="radio22">Водосточная система</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="page_5">
-								<div class="mm-survey-page" data-page="5">
-									<div class="mm-survery-content">
-										<div class="row">
-											<div class="col-md-3 hidden-sm hidden-xs">
-												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
-											</div>
-											<div class="col-md-9 col-sm-12">
-												<div class="mm-survey-question">
-													<div class="question__block question__block_active">
-														<div class="question__number"><h4>шаг 5 из 7</h4></div>
-														<div class="question__description">
-															<legend class="question__text">Нужен ли монтаж</legend>
-															<div class="question__answer"></div>
-														</div>													
-													</div>
-												</div>
-												<div class="item_wrap">
-													<div class="answers">
-														<div class="row">
-															<div class="col-md-6 col-sm-6">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step5_im1.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio23" data-item="5" name="radio5" value="Нужен монтаж"><label for="radio23">Нужен монтаж</label>
-																</div>
-															</div>
-															<div class="col-md-6 col-sm-6 last-item">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step5_im2.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio24" data-item="5" name="radio5" value="Я справлюсь своими силами"><label for="radio24">Я справлюсь своими силами</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="page_6">
-								<div class="mm-survey-page" data-page="6">
-									<div class="mm-survery-content">
-										<div class="row">
-											<div class="col-md-3 hidden-sm hidden-xs">
-												<img src="img/quize/step_bg.jpg" alt="" class="bg img-responsive">
-											</div>
-											<div class="col-md-9 col-sm-12">
-												<div class="mm-survey-question">
-													<div class="question__block question__block_active">
-														<div class="question__number"><h4>шаг 6 из 7</h4></div>
-														<div class="question__description">
-															<legend class="question__text">Выберите Ваш подарок</legend>
-															<div class="question__answer"></div>
-														</div>													
-													</div>
-												</div>
-												<div class="item_wrap">
-													<div class="answers">
-														<div class="row">
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step6_im1.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio25" data-item="6" name="radio6" value="Трехметровый снегозадержатель"><label for="radio25">Трехметровый<br>снегозадержатель</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step6_im2.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio27" data-item="6" name="radio6" value="Балон с краской"><label for="radio27">Балон с краской</label>
-																</div>
-															</div>
-															<div class="col-md-4 col-sm-4 last-item">
-																<div class="mm-survey-item" >
-																	<img src="img/quize/step6_im3.jpg" alt="" class="img-responsive">
-																	<input class="magic-radio" type="radio" id="radio28" data-item="6" name="radio6" value="Скидка на мансардные окна -20%"><label for="radio28">Скидка на мансардные окна -20%</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-9 col-md-offset-3 col-sm-12">
-							<div class="mm-survey-controller">
-								<div class="mm-next-btn">
-									<button disabled="true"><span></span>перейти к следующему шагу</button>
-								</div>
-								<div class="mm-finish-btn">
-									<button><span></span>перейти к следующему шагу</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</form>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-</div>
+
+
 
 
 
