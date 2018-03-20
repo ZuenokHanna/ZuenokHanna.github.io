@@ -44,7 +44,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.5em
-	font-family: "Montserrat-SemiBold"
+	font-family: "Montserrat-Medium"
 	overflow-x: hidden
 	color: #000
 #my-page
@@ -152,7 +152,7 @@ p
 
 
 .main-head
-	min-height: 1040px
+	min-height: 940px
 	background-size: cover
 	background-position: bottom center
 	position: relative
@@ -168,13 +168,14 @@ p
 			font-size: 15px
 			color: #000
 			padding-left: 11px
-			font-family: "Montserrat-Medium", sans-serif
+			font-family: "Montserrat-light", sans-serif
 	.wrap
 		text-align: right
 		.phone-wrap
 			display: inline-block
 			text-align: right
 			padding-top: 42px
+			border-bottom: 1.5px solid $main-color
 			.tel
 				font-family: "Montserrat-Medium", sans-serif
 				font-size: 26px
@@ -227,12 +228,11 @@ p
 	.header-left
 		padding-top: 10px
 		p
-			font-size: 17px
+			font-size: 16px
 			color: #5fad3e
 			padding-left: 23px
 		h1
 			line-height: 1.2em
-			font-family: Montserrat-SemiBold,sans-serif
 			margin-top: 12px
 			margin-left: 20px
 			margin-bottom: 0
@@ -244,7 +244,7 @@ p
 			margin-right: 0
 			li
 				margin: 22px 0 0 0
-				font-size: 18px
+				font-size: 16px
 
 .btn_wrap
 	text-align: right
@@ -263,6 +263,8 @@ p
 		font-family: "Montserrat-ExtraBold", sans-serif
 		border-bottom: 5px solid #518f3f
 		outline: none
+		text-transform: uppercase
+		font-family: "Montserrat-SemiBold", sans-serif
 		&:hover, &:active, &:focus
 			border-bottom: 2px solid #518f3f
 			outline: none
@@ -509,6 +511,7 @@ p
 		width: 255px
 		float: left
 		p
+			font-family: "Montserrat-Medium", sans-serif
 			font-size: 15px
 			margin: 30px 0
 			&:nth-of-type(2)
@@ -589,20 +592,28 @@ p
 		top: 513px
 	.s_block
 		padding-top: 50px
-		span
-			display: inline-block
-			width: 43px
-			height: 41px
-			background-image: url(../img/sprite.png)
-			background-position: 755px 0
-			float: left
-		p
-			margin-top: 12px
-			font-size: 16px
-		.span2
-			background-position: 719px 0
-		.span3
-			background-position: 676px 0
+		width: 100%
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		.text
+			width: 33%
+			text-align: left
+			span
+				display: inline-block
+				width: 43px
+				height: 41px
+				background-image: url(../img/sprite.png)
+				background-position: 763px 0
+				float: left
+				margin-right: 2%
+			p
+				margin-top: 12px
+				font-size: 16px
+			.span2
+				background-position: 719px 0
+			.span3
+				background-position: 676px 0
 	.btn_wrap
 		width: 100%
 		text-align: center
@@ -648,30 +659,33 @@ p
 	.s_block
 		padding-top: 80px
 		text-align: left
+		padding-left: 100px
 		span
 			display: inline-block
-			width: 68px
-			height: 73px
-			background-image: url(../img/sprite.png)
-			background-position: 591px 0
+			width: 55px
+			height: 60px
+			background-image: url(../img/icon_image1.png)
+			background-position: 0 0
+			background-repeat: no-repeat
+			background-size: cover
+			margin-top: 15px
 			float: left
-			margin-top: -17px
+			margin-right: 2%
 		.span2 
-			background-position: 508px 0
+			background-image: url(../img/icon_image2.png)
 		.span3 
-			background-position: 438px 0
+			background-image: url(../img/icon_image3.png)
 		p
 			margin-top: 30px
+			font-size: 16px
+			font-family: "Montserrat-Medium", sans-serif
 	.block_wrap
-		padding: 0 45px
-	.block_wrap1
-		padding-left: 95px
-		padding-right: 0
-	.block_wrap3
-		padding-right: 95px
-		padding-left: 0
+		width: 30%
+		padding: 0
+
 	.form_wrap
 		padding-top: 100px
+		margin-top: -38px
 		.form
 			position: relative
 			text-align: center
@@ -716,6 +730,7 @@ p
 		padding-top: 9px
 		.form_wrap
 			padding-top: 20px
+			margin-top: 0
 		.form
 			width: 514px
 			.btn
@@ -948,9 +963,10 @@ p
 		background-image: url(../img/s7_bg_icon4.png)
 	.tab-pane
 		p
-			font-size: 17px
-			&:nth-of-type(1)
-				font-family: "Montserrat-SemiBold"
+			font-size: 16px
+			margin-bottom: 8px
+			&:nth-of-type(2)
+				font-family: "Montserrat-Medium", sans-serif
 	.img_wrap
 		.im_wrap
 			width: 100%
@@ -973,10 +989,12 @@ p
 	0%, 100% {transform: rotate(10deg)}
 
 .section_8
-	@extend .section_4
+	@extend .section_3
 	background: none
 	padding-top: 55px
 	min-height: 775px
+	&:before
+		display: none
 	h1
 		margin-bottom: 73px
 	.image_wrap
@@ -993,8 +1011,8 @@ p
 		display: inline-block
 		float: left
 		.s_block
-			padding-left: 220px
-			padding-top: 47px
+			padding-left: 100px
+			padding-top: 100px
 			.block
 				position: relative
 				margin-bottom: 17px
@@ -1005,18 +1023,34 @@ p
 				background-image: url(../img/sprite.png)
 				background-position: 755px 0
 				float: left
-				margin-top: 0
+				margin-top: 3px
 				position: absolute
-				left: -42px
-				top: -10px
+				background-size: inherit
+				left: -64px
+				top: 0
 			p
 				margin-top: 12px
-				font-size: 17px
+				font-size: 16px
 			.span2
 				background-position: 719px 0
+				left: -77px
 			.span3
 				background-position: 676px 0
-				left: -46px
+				left: -49px
+			.btn_wrap
+				text-align: left
+				padding-top: 0
+				.btn
+					left: -15px
+					width: 29vw
+					&:hover, &:active, &:focus
+						span
+							top: 7px
+					span
+						background-position: 631px 0
+						left: 29px
+						top: 5px
+						margin-top: 0
 	.bottom_block
 		position: relative
 		width: 100%
@@ -1046,19 +1080,7 @@ p
 				text-transform: uppercase
 				padding: 16px
 				cursor: pointer
-	.btn_wrap
-		text-align: left
-		padding-top: 0
-		.btn
-			left: -107px
-			width: 29vw
-			&:hover, &:active, &:focus
-				span
-					top: 7px
-			span
-				background-position: 631px 0
-				left: 29px
-				top: 5px
+	
 
 .section_9
 	@extend .section_4
@@ -1623,8 +1645,9 @@ input[type="text"]
 		color: #fff
 		font-size: 14px
 		letter-spacing: .05em
-		font-family: "Montserrat-ExtraBold", sans-serif
+		font-family: "Montserrat-SemiBold", sans-serif
 		border-bottom: 5px solid #518f3f
+		text-transform: uppercase
 		outline: none
 		&:hover, &:active, &:focus
 			border-bottom: 2px solid #518f3f

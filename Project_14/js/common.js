@@ -13,17 +13,15 @@ $(document).ready(function() {
 }
 
 });
- var menuApi = $("#my-menu").data("mmenu");
- 
- menuApi.bind("opened", function() {
-  $(".hamburger").addClass("is-active");
- });
- menuApi.bind("closed", function() {
-  $(".hamburger").removeClass("is-active");
- })
-
- $('.mm-listview li').click(function (e) {
+$('.mm-listview li').click(function (e) {
 e.stopPropagation()
+var menuApi = $("#my-menu").data("mmenu");
+
+if ($("html").hasClass( "mm-opened" )) {
+menuApi.close();
+} else {
+menuApi.open();
+}
 })
 
 
@@ -55,47 +53,6 @@ e.stopPropagation()
             });
             return false;
           });*/
-
-          $('.slider1').slick({
-          	dots: true,
-          	infinite: false,
-          	arrows: false, 
-          });
-          $('.slider2').slick({
-          	dots: true,
-          	infinite: false,
-          	arrows: false, 
-          });
-          $('.slider3').slick({
-          	dots: true,
-          	infinite: false,
-          	arrows: false, 
-          });
-          $('.slider4').slick({
-          	dots: true,
-          	infinite: false,
-          	arrows: false, 
-          });
-          $('.slider5').slick({
-          	dots: true,
-          	infinite: false,
-          	arrows: false, 
-          });
-          $('.slider6').slick({
-          	dots: true,
-          	infinite: false,
-          	arrows: false, 
-          });
-
-          $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-          	$('.slider1').slick('reinit');
-          	$('.slider2').slick('reinit');
-          	$('.slider3').slick('reinit');
-          	$('.slider4').slick('reinit');
-          	$('.slider5').slick('reinit');
-          	$('.slider6').slick('reinit');
-
-          });
 
           $(".slider").owlCarousel({
           	items : 1,
@@ -364,6 +321,30 @@ e.stopPropagation()
 			}
 		}
 		$('#qu').attr('src', image_name);
+	});
+
+	$("input:radio[name=color]").click(function() {
+		var value = $(this).val();
+		var images_name;
+		if(value == 'Красный'){
+			images_name = "img/s2_var_image6.jpg";
+		}
+		if(value == 'Синий'){
+			images_name = "img/s2_var_image2.jpg";
+		}
+		if(value == 'Белый'){
+			images_name = "img/s2_var_image3.jpg";
+		}
+		if(value == 'Черный'){
+			images_name = "img/s2_var_image4.jpg";
+		}
+		if(value == 'Желтый'){
+			images_name = "img/s2_var_image5.jpg";
+		}else{
+				images_name = "img/s2_var_image.jpg";
+			}
+
+		$('#color_im').attr('src', images_name);
 	});
 
 });
