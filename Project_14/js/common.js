@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	$('#my-menu').mmenu({
-		extensions: [ 'widescreen', 'effect-menu-slide', 'pagedim-black', 'scrollbugfix' ],
+		extensions: [ 'effect-menu-slide', 'pagedim-black', 'scrollbugfix', ],
 
 		offCanvas: {
 			position  : 'right'
@@ -13,13 +13,18 @@ $(document).ready(function() {
 }
 
 });
-	var api = $('#my-menu').data('mmenu');
-	api.bind('opened', function () {
-		$('.hamburger').addClass('is-active');
-	}).bind('closed', function () {
-		$('.hamburger').removeClass('is-active');
-	});
+ var menuApi = $("#my-menu").data("mmenu");
+ 
+ menuApi.bind("opened", function() {
+  $(".hamburger").addClass("is-active");
+ });
+ menuApi.bind("closed", function() {
+  $(".hamburger").removeClass("is-active");
+ })
 
+ $('.mm-listview li').click(function (e) {
+e.stopPropagation()
+})
 
 
 	$('.btn-form').on('shown.bs.modal', function (e) {
