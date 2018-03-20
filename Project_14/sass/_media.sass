@@ -203,8 +203,23 @@
 
 	h1
 		font-size: 44px
-
-
+	.section_10:before, .section_11:before, .section_1:before, .section_3:before, .section_4:before, .section_5:before, .section_6:before, .section_7:before, .section_8:before, .section_9:before
+		top: 378px
+	.section_2 .btn_wrap .btn 
+		margin-top: 0
+	.section_3:before
+		top: 420px
+	.section_4 .s_block
+		padding-top: 40px
+	.section_6:before
+		top: 490px
+	.section_7:before
+		top: 790px
+	.cont_wrap .s_block .btn_wrap .btn 
+		left: -84px
+		width: 68%
+	.section_10:before
+		top: 560px
 
 @media only screen and (max-width : 992px)
 
@@ -319,12 +334,7 @@
 	.footer .logo_wrap .logo img 
 		margin-top: 0
 		width: 85px
-	.section_1 .icon_group .icon_wrap
-		width: 27vw
-		height: 27vw
-	.section_1 .icon_group .icon_wrap .text_wrap
-		width: 27vw
-		height: 27vw
+
 
 @media only screen and (max-width : 768px)
 
@@ -356,12 +366,12 @@
 	.section_1, .section_10, .section_11, .section_3, .section_4, .section_5, .section_6, .section_7, .section_8, .section_9
 		padding-top: 0
 	.section_1
-		min-height: 807px
+		min-height: 570px
 		&:before
 			top: 342px
 		.icon_group .icon_wrap .text_wrap
 			padding: 0
-			padding-top: 20px
+			padding-top: 34px
 	.section_1 .icon_group .icon_wrap .text_wrap span
 		font-size: 30px
 	.section_2 
@@ -378,18 +388,14 @@
 		width: 460px
 		margin-top: 50px
 	.section_3 .s_block
-		padding-left: 12%
+		padding-left: 0
 		padding-top: 10px
 	.section_3
-		min-height: 690px
+		min-height: 450px
 		&:before
 			display: none
 	.section_4 .form_wrap img
 		display: none
-	.section_4 .form_wrap .form
-		width: 90%
-		margin-right: 0
-		left: -5%
 	.rectangle 
 		width: 100%
 		height: 510px
@@ -415,8 +421,6 @@
 			.slide_content2
 				img
 					display: inline-block
-	.section_7 .tab_wrap .nav-tabs li
-		float: none
 	.section_8
 		.cont_wrap
 			.s_block 
@@ -432,7 +436,7 @@
 					position: absolute
 		.image_wrap
 			img 
-				margin-top: 155px
+				margin-top: 82px
 	.section_10 .block_wrap .context_wrap .icon_wrap div 
 		left: 0
 	.section_11
@@ -453,9 +457,11 @@
 				position: absolute
 			.phone-wrap
 				padding-left: 0
-				padding-bottom: 30px
+				padding-bottom: 7px
+				margin-left: -16px
+				padding-top: 43px
 	.section_1 .icon_group .icon_wrap .text_wrap
-		padding-top: 56px
+		padding-top: 34px
 	.slider .slide .slide_content1, .slider .slide .slide_content3
 		padding-top: 80px
 	.section_10 .block_wrap .context_wrap .icon_wrap div 
@@ -468,14 +474,55 @@
 			.btn
 				width: 60%
 	.section_3 .s_block
-		padding-left: 26%
-	.section_4 .s_block
-		padding-left: 3%
+		padding-left: 0
+
 	.section_8 .cont_wrap .s_block .block
 		margin-left: 26%
 	.close span
 		right: -85px
-
+	.main-head .form_wrap img
+		display: block
+		bottom: -50px
+		left: -112px
+	.form
+		margin-top: 50px
+	.section_4 .block_wrap
+		width: 52%
+		text-align: left
+		padding-left: 8%
+	.rectangle 
+		width: 97%
+		height: 505px
+		left: 7px
+	.section_4 .form_wrap .form
+		width: 90%
+		margin-right: 0
+		left: -5%
+		margin-top: 0
+	.section_5 .form_wrap .form
+		width: 93%
+		margin-right: 0
+		left: -3%
+		margin-top: -9px
+	.section_5 .form_block .rectangle 
+		width: 100%
+		height: 562px
+	.section_8 .bottom_block span 
+		bottom: 250px
+	.section_8 .cont_wrap .s_block
+		padding: 0
+	.section_8 .cont_wrap .s_block .btn_wrap .btn 
+		left: 146px
+		width: 54vw
+	.section_8 .cont_wrap .s_block .block 
+		margin-left: 0
+		width: 30%
+		text-align: center
+	.section_8 .cont_wrap .s_block span, .section_8 .cont_wrap .s_block .span2, .section_8 .cont_wrap .s_block .span3
+	    margin-top: 0
+	    position: absolute
+	    left: 85px
+	    top: 0
 @media only screen and (max-width : 480px)
 
 	.section_2 .catalog_wrap .nav-wrap li 
@@ -615,5 +662,487 @@
 	.section_2 .btn_wrap .btn
 		font-size: 12px
 
+@media (min-width: 768px)
 
+	.modal-dialog 
+		width: 387px
+		margin: 50px auto
+	.close
+		color: #ccc
+		text-shadow: 0 1px 0 #fff
+		opacity: 1
+		font-size: 40px
+		width: 40px
+		height: 40px
+		font-weight: 200
+		right: -18px
+		top: -16px
+		&:hover
+			opacity: 1
+			color: #212121
+			background: none
+			span
+				&:hover
+					opacity: 1
+					color: #212121
+					background: #fff
+		span
+			position: absolute
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			background: #fff
+			opacity: 1
+			right: -18px
+			top: -16px
+			box-shadow: 0 5px 15px rgba(0,0,0,.4)
+			&:hover
+				opacity: 1
+				color: #212121
+				background: #fff
+
+	.modal-header 
+		padding: 0
+		height: 0
+		border: 0
+		min-height: 0
+
+	.modalQuize
+		.modal-dialog 
+			width: 60%
+			margin-left: 20%
+
+
+@media (max-width: 768px)
+
+	.modal-dialog 
+		width: 310px
+		margin-left: calc((100% - 310px) / 2)
+	.modalQuize
+		.modal-dialog 
+			width: 70%
+			margin-left: 15%
+		.modal-header
+			border: 0
+
+@media (max-width: 1500px)
+	.page_2
+		.mm-survey-item
+			&:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+				.magic-radio+label:after 
+					bottom: 20.2px
+	.page_3 input[type=text]
+		width: 80%
+	.quiz .mm-survey-results-container .question__comment .present_wrap 
+		padding: 0
+	.mm-survey-controller
+		top: -90px
+	.mm-survey-results-container .answers label
+		padding-left: 0
+@media (max-width: 1300px)	
+
+	.mm-survey-controller
+		top: -90px
+	.quiz h2
+		margin-top: 30px
+	.mm-survey-question 
+	    min-height: 10px
+	.quiz .text_wrap 
+		padding: 0
+	.mm-survey-page
+		min-height: 505px
+	.mm-survey-item img
+		width: 100%
+		display: inline-block
+	.mm-survey-results-container .answers input[type=text] 
+		margin: 20px 0
+		width: 60%
+		padding: 20px 0
+	.question__comment
+		img
+			width: 70%
+			display: inline-block
+	.mm-survey-results-container .btn
+		width: 90%
+	.mm-survey-results-container .bg 
+		margin-top: -110px
+	.mm-survey-results-container .answers label
+		padding-left: 0
+		.fa
+			display: none
+	.mm-survey-results-container .magic-checkbox+label:before, .mm-survey-results-container .magic-radio+label:before
+		left: 37px
+	.page_1 .bg 
+		margin-top: 0px
+		height: 590px
+	.mm-survey-results-container
+		label
+			img
+				display: none
+	.quiz .text_wrap
+		p
+			font-size: 12px
+		span
+			width: 17px
+			height: 20px
+	.page_5
+		.bg
+			height: 590px
+		.mm-survey-item 
+			width: 42%
+	.page_6
+		.bg
+			height: 547px
+		.mm-survey-item
+			&:nth-of-type(1), &:nth-of-type(3)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+
+	.quiz
+		.mm-survey-results-container
+			.bg
+				height: 480px
+			.text
+				display: block
+				padding-top: 70px
+				color: #fff
+			h3
+				font-size: 23px
+			.answers
+				label
+					.fa
+						margin-right: 6px
+				input[type=text]
+					width: 340px
+					padding: 15px 0
+				.magic-checkbox+label:before, .magic-radio+label:before 
+					top: 27px
+					left: 50%
+		.question__comment
+			margin-left: -30px
+			.present_wrap
+
+@media (max-width: 1100px)
+
+	.quiz
+		h2 
+		margin-top: 15px
+		font-size: 23px
+		legend 
+			border: 0
+			padding: 0
+			font-size: 15px
+		h4 
+			font-size: 16px
+		.text_wrap
+			p
+				font-size: 12px
+			span
+				width: 17px
+				height: 20px
+	.quiz .answers label span
+		font-size: 10px
+	.page_1 .bg 
+		height: 653px
+		margin-top: -15px
+	.mm-survey-controller
+		button
+			width: 367px
+			height: 48px
+			margin-left: -30px
+			&:hover
+				span
+					top: 9px
+			span
+				top: 7px
+				left: 19px
+	.answers
+		.item-wrap
+			margin-left: -13px
+			.mm-survey-item
+				&:nth-of-type(3)
+					.magic-checkbox+label:before, .magic-radio+label:before
+						bottom: 15px
+					.magic-radio+label:after 
+						bottom: 19.2px
+	.mm-survey-item
+		margin-left: -16px
+		img 
+			width: 100%
+	.quiz h2 
+		margin-top: 7px
+	.page_2 .bg, .page_3 .bg, .page_4 .bg, .page_5 .bg, .page_6 .bg 
+		margin-top: -15px
+	.page_4
+		.answers label span
+			left: 18px
+		.mm-survey-item 
+			width: 24%
+			&:nth-of-type(5)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+	.page_2
+		.mm-survey-item
+			&:nth-of-type(3), &:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+				.magic-radio+label:after 
+					bottom: 20.2px
+	.page_2 .bg, .page_3 .bg, .page_4 .bg, .page_5 .bg, .page_6 .bg
+		height: 620px
+	.page_3 input[type=text] 
+		width: 91%
+	.page_5
+		.bg
+			height: 520px
+		.mm-survey-item 
+			width: 42%
+	.page_6
+		.bg
+			height: 547px
+		.mm-survey-item
+			&:nth-of-type(1), &:nth-of-type(3)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+	.quiz
+		.mm-survey-results-container
+			.bg
+				height: 526px
+				margin-top: -15px
+			.text
+				display: block
+				padding-top: 70px
+				color: #fff
+			h3, h2
+				font-size: 23px
+				margin-top: 0
+			.answers
+				label
+					.fa
+						margin-right: 6px
+				input[type=text]
+					width: 255px
+					padding: 15px 0
+				.magic-checkbox+label:before, .magic-radio+label:before 
+					top: 27px
+					left: 50%
+		.question__comment
+			margin-left: -30px
+
+	.quiz .mm-survey-results-container .btn
+		width: 90%
+		span
+			display: none
+	.quiz .mm-survey-results-container .text
+		padding-top: 40px
+	.quiz .mm-survey-results-container .question__comment .present_wrap
+		padding: 0
+
+@media (max-width: 992px)
+	.mm-survey-results-container
+		padding-bottom: 0
+		h2
+			margin-top: 65px
+		.answers 
+			padding-bottom: 0
+	.page_1
+		h2
+			margin-top: 40px
+	.quiz .text_wrap 
+		width: 46%
+	.mm-survey-controller
+		top: -90px
+	input[type=text]
+		width: 60%
+	.page_4
+		padding: 0 20px
+
+	.page_1
+		padding: 0 20px
+		h2
+			margin-top: 25px
+	.mm-survey-results-container .bg
+		display: none
+	.mm-survey-results-container .text 
+		top: 0
+		color: #000
+		margin-top: -24px
+	.quiz h2
+		margin: 20px 0
+	.mm-survey-results-container
+		padding-bottom: 50px
+	.mm-survey-results-container p 
+		margin: 21px 0
+		line-height: 1.5em
+	.mm-survey-progress 
+		width: 100%
+	.container-fluide .answers
+		padding-bottom: 0
+		margin-left: 7px
+	.page_4
+		.mm-survey-item
+			width: 32%
+			&:nth-of-type(5)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 15px
+	.mm-survey-controller button
+		margin-left: 0
+
+@media (max-width: 767px)
+
+	.quiz h2 
+		margin: 0
+		font-size: 20px
+	.page_1
+		.mm-survey-item
+			width: 41%
+			&:nth-of-type(5), &:nth-of-type(3)
+				.magic-checkbox+label:before, .magic-radio+label:before
+						bottom: 15px
+
+	.quiz .text_wrap span
+		float: none
+	.mm-survey-controller button
+		width: 100%
+		span
+			display: none
+	.page_2 .mm-survey-progress, .page_3 .mm-survey-progress, .page_4 .mm-survey-progress, .page_5 .mm-survey-progress, .page_6 .mm-survey-progress
+		margin: 0
+	.page_2
+		.mm-survey-item 
+			width: 44%
+			&:nth-of-type(3), &:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+						bottom: 15px
+	.page_3
+		.mm-survey-item 
+			input[type=text] 
+				width: 100%
+				padding: 10px 0
+				font-size: 10px
+			label 
+				font-size: 14px
+	.page_4 .mm-survey-item 
+		width: 39%
+	.quiz .mm-survey-results-container .btn 
+		width: 70%
+	.quiz .mm-survey-results-container .question__comment 
+		width: 87%
+		margin-left: 21px
+		margin-top: 28px
+
+@media (max-width: 450px)
+	.modalQuize
+		.modal-dialog 
+			width: 90%
+			margin-left: 5%
+	.quiz .text_wrap 
+		width: 76%
+		padding-top: 10px
+		p 
+			font-size: 14px
+	.page_1, .page_2, .page_3, .page_4,.page_5, .page_6
+		.last-item
+		margin-bottom: 130px
+
+	.mm-survey-controller button
+		width: 100%
+		span
+			display: none
+	.mm-survey-results-container .btn
+		span
+			display: none
+	.mm-survey-results-container .magic-checkbox+label:before, .mm-survey-results-container .magic-radio+label:before
+		top: 0
+
+	.page_2, .page_3, .page_4,.page_5, .page_6
+		.answers
+			padding-bottom: 0
+	.page_1
+		.answers 
+			padding-bottom: 0
+			margin-left: 7px
+	.page_2 h4, .page_3 h4, .page_4 h4, .page_5 h4, .page_6 h4
+		margin-top: -70px
+	.page_2 .mm-survey-progress, .page_3 .mm-survey-progress, .page_4 .mm-survey-progress, .page_5 .mm-survey-progress, .page_6 .mm-survey-progress
+		top: -100px
+	.mm-survey-page 
+		min-height: 379px
+	.page_3 .mm-survey-item 
+		width: 64%
+	.page_4 .mm-survey-item 
+		width: 65%
+	.quiz .answers label span 
+		font-size: 11px
+	.page_3
+		.mm-survey-item 
+			input[type=text] 
+				padding: 16px 0
+				font-size: 13px
+
+	.page_1 .mm-survey-item:nth-of-type(1) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(1) .magic-radio+label:before, .page_1 .mm-survey-item:nth-of-type(4) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(4) .magic-radio+label:before
+		bottom: 0
+	.page_2 .mm-survey-item 
+		width: 62%
+	.page_2 .mm-survey-item:nth-of-type(6) .magic-checkbox+label:before, .page_2 .mm-survey-item:nth-of-type(6) .magic-radio+label:before
+		bottom: 0
+	.page_2 .mm-survey-item:nth-of-type(3) .magic-checkbox+label:before, .page_2 .mm-survey-item:nth-of-type(3) .magic-radio+label:before, .page_2 .mm-survey-item:nth-of-type(4) .magic-checkbox+label:before, .page_2 .mm-survey-item:nth-of-type(4) .magic-radio+label:before
+		bottom: 0
+	.page_1 .mm-survey-item:nth-of-type(3) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(3) .magic-radio+label:before, .page_1 .mm-survey-item:nth-of-type(5) .magic-checkbox+label:before, .page_1 .mm-survey-item:nth-of-type(5) .magic-radio+label:before
+		bottom: 0
+	.page_1 .mm-survey-item 
+		width: 64%
+	.quiz .answers label span 
+		left: 26px
+	.page_5 .mm-survey-item 
+		width: 60%
+	.page_6
+		.mm-survey-item
+			width: 56%
+	.quiz .mm-survey-results-container .question__comment 
+		margin-top: 39px
+	.container-fluide .answers 
+		margin-left: -2px
+	.quiz .mm-survey-results-container .btn 
+		width: 80%
+
+@media (width: 768px)
+	
+	.modalQuize
+		.modal-dialog 
+			width: 90%
+			margin-left: 5%
+			.close span 
+				right: -18px
+	.quiz .text_wrap 
+		width: 43%
+		margin-bottom: 6px
+		p
+			font-size: 13px
+	.quiz .answers label span
+		font-size: 11px
+
+	.page_2
+		.mm-survey-item
+			&:nth-of-type(3), &:nth-of-type(4)
+				.magic-checkbox+label:before, .magic-radio+label:before
+					bottom: 0
+
+	.page_3 input[type=text]
+		padding: 15px 0
+		width: 85%
+	.page_4 .mm-survey-item 
+		width: 40%
+	.page_4, .page_5, .page_6
+		.answers label span 
+			left: 26px
+			font-size: 16px
+	.quiz .mm-survey-results-container .btn
+		width: 58%
+
+@media (width: 320px)
+	.quiz .mm-survey-results-container .btn 
+		width: 253px
 
