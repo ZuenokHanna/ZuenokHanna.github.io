@@ -1,0 +1,352 @@
+@import "fonts"
+@import "bourbon"
+@import "libs"
+@import "vars"
+
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 13px
+	min-width: 320px
+	position: relative
+	line-height: 1.5em
+	font-family: "OpenSansRegular"
+	overflow-x: hidden
+	color: $font-color
+
+a, a:hover, a:focus,  a:active
+	color: $main-color
+	text-decoration: none
+	outline: none
+
+h1
+	font-size: 48px
+	line-height: 1.5em
+
+h3
+	font-size: 25px
+	margin-bottom: 20px
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+
+.main-head
+	min-height: 100vh
+	overflow: hidden
+	background-size: cover
+	background-position: center
+	position: relative
+	padding-bottom: 120px
+	&::before
+		@extend .before
+		background-color: #000
+		opacity: .3
+
+.top-line
+	padding-top: 30px
+	min-height: 80px
+	background-color: transparentize(#fff, .3)
+	position: relative
+	z-index: 2
+
+.main-mnu
+	font-size: 14px
+	li
+		padding-right: 50px
+		&.active
+			a
+				color: $main-color
+		a
+			transition: all .5s ease
+			&:hover
+					color: $main-color
+	ul
+		@extend .ulmnu
+	a
+		color: #797979
+		font-weight: bold
+
+.btn
+	background: none
+	border: 1.5px solid $main-color
+	border-radius: 10em
+	font-size: 10px
+	text-transform: uppercase
+	width: 100%
+	padding: 11px 26px
+	margin-top: -15px
+	color: $main-color
+	font-weight: bold
+	transition: all 0.5s ease
+	&:hover, &:focus,	&.is-checked
+		background-color: $main-color
+		color: #FFF
+		outline: none
+
+.header-wrap
+	text-align: center
+	padding-top: 200px
+	h1
+		color: #fff
+		display: inline-block
+		text-shadow: 0 0 10px rgba(0,0,0,.5)
+		font-weight: normal
+	.arrow_wrap
+		width: 100%
+		position: absolute
+		bottom: 20px
+		text-align: center
+		.arrow
+			display: inline-block
+			width: 35px
+			height: 15px
+			background-image: url(../img/icon_sprite.png)
+			background-position: -260px -40px
+			background-repeat: no-repeat
+			cursor: pointer
+
+.section_1
+	min-height: 552px
+	background-color: #fff
+	text-align: center
+	padding-top: 76px
+	padding-bottom: 80px
+	h3
+		color: $main-color
+	p
+		font-size: 14px
+		line-height: 2.5em
+	.content_wrap
+		padding-top: 116px
+		.icon_wrap
+			text-align: center
+			width: 100%
+			span
+				display: inline-block
+				width: 56px
+				height: 60px
+				background-image: url(../img/icon_sprite.png)
+				background-position: 0 0
+				background-repeat: no-repeat
+			p
+				line-height: 1.5em
+				&:nth-of-type(1)
+					color: $main-color
+					font-size: 16px
+					font-weight: bold
+				&:nth-of-type(2)
+					font-size: 13px
+		.icon_wrap2
+			span
+				background-position: -58px 0
+		.icon_wrap3
+			span
+				background-position: -121px 0
+		.icon_wrap4
+			span
+				background-position: -191px 0
+			b
+				background: none
+				color: #44cfc9
+				font-size: 24px
+				font-weight: normal
+
+.section_2
+	@extend .section_1
+	background-color: #f4f6f8
+	.button-group
+		display: flex
+		width: 100%
+		justify-content: space-between
+		margin-top: 42px
+		flex-wrap: wrap
+		text-align: center
+		.btn
+			width: 167px
+			display: inline-block
+	.isotope
+		margin-top: 70px
+		display: flex
+		width: 100%
+		justify-content: space-between
+		flex-wrap: wrap
+		text-align: center
+		.item
+			display: nline-block
+			width: 23%
+			margin: 0 1%
+			height: 368px
+			text-align: center
+			border-radius: 10px
+			box-shadow: 0 0 10px rgba(0,0,0,.4)
+			background-color: #fff
+			transition: all 0.5s ease
+			img
+				border-top-left-radius: 10px
+				border-top-right-radius: 10px
+				margin-bottom: 20px
+			&:hover
+				transform: scale(1.02)
+			p
+				font-size: 10px
+				text-transform: uppercase
+				span
+					color: $main-color
+	.btn_wrap
+		width: 100%
+		text-align: center
+		padding-top: 68px
+		.btn
+			display: inline-block
+			width: 167px
+			&:hover
+				a
+					color: #fff
+
+footer
+	.map_wrap
+		width: 60%
+		float: right
+		.map
+			width: 100%
+			height: 560px
+	.cotact_wrap
+		padding-top: 80px
+		h3
+			color: $main-color
+		p
+			font-size: 14px
+			span
+				color: #000
+				font-weight: bold
+
+.form
+	display: inline-block
+	width: 100%
+	background-color: #fff
+	padding: 0 0 30px 0
+	color: #000
+	text-align: center
+	border-radius: 8px
+	h3
+		margin-top: 0
+	.form-group
+		padding: 0 20px
+		input
+			display: block
+			margin-bottom: 14px
+			width: 100%
+			border: 1px solid #999
+			border-radius: 5px
+			background-color: #fff
+			text-indent: 10px
+			padding: 22px 0
+			transition: all .5s ease
+			color: #999
+			font-size: 16px
+			&:focus
+				background-color: #ededed
+				outline: none
+	.btn_wrap
+		width: 100%
+		text-align: center
+		.btn
+			width: 165px
+			margin-top: 13px
+
+.modal-dialog 
+	width: 310px
+	margin: 50px auto
+	.close
+		color: #ccc
+		text-shadow: 0 1px 0 #fff
+		opacity: 1
+		font-size: 40px
+		width: 40px
+		height: 40px
+		font-weight: 200
+		right: -18px
+		top: -16px
+		&:hover, &:focus
+			opacity: 1
+			color: #212121
+			background: none
+			outline: none
+			span
+				&:hover
+					opacity: 1
+					color: #212121
+					background: #fff
+		span
+			position: absolute
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			background: #fff
+			opacity: 1
+			right: -18px
+			top: -16px
+			box-shadow: 0 5px 15px rgba(0,0,0,.4)
+			&:hover
+				opacity: 1
+				color: #212121
+				background: #fff
+	.modal-header 
+		padding: 0
+		height: 0
+		border: 0
+		min-height: 0
+
+@import "media"
+
