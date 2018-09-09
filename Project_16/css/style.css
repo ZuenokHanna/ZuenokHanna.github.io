@@ -1,0 +1,55 @@
+h2 {
+	font-size: 26px;
+	font-weight: normal;
+}
+h2 span {
+	font-size: 30px;
+	font-weight: bold;
+}
+input {
+	text-align: center;
+	margin: 0 5px;
+}
+.form-check-inline .form-check-input {
+	margin-left: 5px;
+}
+input[type=checkbox], input[type=radio] {
+	margin-right: 5px;
+}
+.table td, .table th {
+	vertical-align: middle;
+}
+.table thead th {
+	vertical-align: top;
+}
+.container.hd {
+	width: auto;
+	max-width: 1460px;
+}
+.table tr:nth-child(2n) {
+	background-color: #f3f3f3;
+}
+.form-check-inline {
+	margin-right: 0;
+}
+.form-group-pat-name {
+	width: 50%;
+}
+.form-group-pat-name input {
+	width: 70%;
+	margin-left: 1rem;
+}
+.form-group-dob {
+	width: 30%;
+}
+.form-group-dob input {
+	margin-left: 1rem;
+}
+.row-sum span {
+	display: inline-block;
+	border: 1px solid grey;
+	background-color: #fff;
+	width: 181.6px;
+	height: 30px;
+	text-align: center;
+}
