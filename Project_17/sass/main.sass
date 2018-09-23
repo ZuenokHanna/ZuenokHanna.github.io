@@ -1,0 +1,314 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: $under-color
+	opacity: 1
+
+*:-moz-placeholder
+	color: $under-color
+	opacity: 1
+
+*::-moz-placeholder
+	color: $under-color
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $under-color
+	opacity: 1
+
+*:focus::-webkit-input-placeholder
+	color: transparent
+	opacity: 0
+
+*:focus:-moz-placeholder
+	color: transparent
+	opacity: 0
+
+*:focus::-moz-placeholder
+	color: transparent
+	opacity: 0
+
+*:focus:-ms-input-placeholder
+	color: transparent
+	opacity: 0
+
+body
+	font-size: 20px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	font-family: "RobotoMedium", sans-serif
+	overflow-x: hidden
+	color: $main-color
+	background-color: #F7F7F7
+	box-sizing: border-box
+
+a, a:hover, a:focus,  a:active
+	color: $main-color
+	text-decoration: underline
+	outline: none
+
+h1
+	font-size: 2rem
+	font-family: "AvenirHeavy", sans-serif
+	color: #484848
+
+.container.scale 
+	max-width: 1000px
+
+.product_page 
+	margin: 58px 0
+	overflow-x: hidden
+
+.form
+	display: inline-block
+	width: 328px
+	height: 37px
+	bborder-top-right-radius: 2px
+	border-top-left-radius: 2px
+	border: #c9c9c9 solid 1px
+	background: #fff
+	border: 1px solid #fff
+	border-bottom: 1px solid $under-color
+	position: relative
+	input
+		padding: 0
+		margin: 0
+		display: block
+		border: none
+		outline: none
+		background: none
+		width: 100%
+		height: 100%
+	&__actions
+		width: 37px
+		height: 37px
+		float: left
+		background: url(../img/searchIcon.png) 5px 1px no-repeat
+		background-size: cover;
+		input
+			cursor: pointer
+	&__item
+		position: absolute
+		left: 40px
+		width: 280px
+		padding: 0px 5px
+		float: right
+		height: 37px
+		input
+			font: 1.02rem "RobotoRegular", sans-serif
+			color: $under-color
+			height: auto !important
+			padding: 6px 0
+
+.btn_add
+	display: inline-block
+	width: 104px
+	height: 36px
+	background: #A981CC
+	border: 0
+	font-size: 14px
+	color: #fff
+	margin-left: 20px
+	cursor: pointer
+
+.closeModal, .openModal
+	width: 14px
+	height: 14px
+	border-radius: 10rem
+	position: absolute
+	right: 21px
+	top: 8px
+	font-size: 30px
+	color: transparentize(#000, .46)
+	cursor: pointer
+
+.cardPr
+	margin-bottom: 15px
+	&:hover
+		.openModal
+			opacity: 1
+	.openModal
+		opacity: 0
+		transition: all 0.5s ease
+	&__block
+		display: inline-block
+		width: 324px
+		max-width: 100%
+		height: 388px
+		background: #fff
+		box-shadow: 0 2px 16px rgba(0,0,0,.13);
+		margin: 10px 0
+	&__layer
+		position: relative
+		width: 100%
+		.cardPr-title
+			font-size: 16px
+			color: #1F1F1F
+			float: left
+			margin-left: 72px
+			width: 100%
+			margin-top: 16px
+			text-align: left
+		p
+			font-size: 14px
+			font-family: "RobotoRegular", sans-serif
+			color: #4D4D4D
+			margin: 0
+			text-align: left
+			&:nth-of-type(2)
+				position: absolute
+				bottom: 17px
+			span
+				text-transform: uppercase
+				font-family: "RobotoMedium", sans-serif
+				margin-right: 20px
+		&:first-child
+			height: 72px
+			&::before
+				display: block
+				content: ''
+				width: 40px
+				height: 40px
+				border-radius: 10rem
+				position: absolute
+				left: 16px
+				top: 16px
+				background: #697996
+		&:last-child
+			height: 124px
+		&:nth-of-type(2)
+			height: calc(388px - 72px - 124px)
+			background: #697996
+		&:nth-of-type(3)
+			padding: 16px
+
+.cardPr
+	&:nth-of-type(2)
+		.cardPr__layer
+			&:first-child
+				&::before
+					background: #8E6996
+			&:nth-of-type(2)
+				background: #9354A0
+	&:nth-of-type(3)
+		.cardPr__layer
+			&:first-child
+				&::before
+					background: #8E6996
+			&:nth-of-type(2)
+				background: #783D84
+	&:nth-of-type(4)
+		.cardPr__layer
+			&:first-child
+				&::before
+					background: #8E6996
+			&:nth-of-type(2)
+				background: #662574
+	&:nth-of-type(5)
+		.cardPr__layer
+			&:first-child
+				&::before
+					background: #D8C08A
+			&:nth-of-type(2)
+				background: #D8C08A
+	&:nth-of-type(6)
+		.cardPr__layer
+			&:first-child
+				&::before
+					background: #9EC4C3
+			&:nth-of-type(2)
+				background: #9EC4C3
+
+.title-under
+	font-size: 13px
+	color: transparentize(#000, .48)
+	float: left
+	margin-left: 72px
+
+.modal
+	background-color: transparentize(#000, .46)
+	.modal-dialog
+		max-width: 640px
+		margin-top: 290px
+	.modal-content
+		max-width: 640px
+		max-height: 216px
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		border: transparent
+		border-radius: 2px
+		box-shadow: 0 19px 38px rgba(0,0,0,.26);
+		.modal-header
+			border: none
+			padding-top: 19px
+			padding-left: 24px
+			.modal-title
+				font-size: 20px
+				line-height: 1.2
+		.modal-body
+			padding-left: 24px
+			p
+				color: transparentize(#000, .46)
+				font-size: 16px
+				line-height: 1.6
+		.modal-footer
+			border: none
+			.btn-modal
+				width: 86px
+				height: 36px
+				color: #C4AFC9
+				background-color: transparent
+				border-radius: 2px
+				margin-bottom: 16px
+				line-height: 1.2
+				&:last-child
+					background-color: #A981CC
+					color: #fff
+
+.pagination
+	float: right
+	&__item
+		width: 34px
+		height: 34px
+		background-color: #EEE4F0
+		color: #3C3C3C
+		box-shadow: 0 1px 1px rgba(0,0,0,.16);
+		text-align: center
+		line-height: 34px
+		margin-left: 8px
+		cursor: pointer
+	.paginaton__item_active
+		background-color: #fff
+		margin-left: 0
+	.paginaton__item_next
+		width: 102px
+		position: relative
+		&::before
+			display: block
+			content: '►'
+			font-size: 8px
+			position: absolute
+			right: 5px
+			top: 52%
+			transform: translateY(-50%)
+			color:#3C3C3C
+
+
+
+
+
+@import "media" 
