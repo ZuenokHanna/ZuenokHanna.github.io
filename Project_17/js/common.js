@@ -51,7 +51,9 @@
 				buttonSource = window.event.srcElement;
 				modalWin.style.display = "block";
 				acceptButton.onclick = function() {
-					card = buttonSource.parentNode.parentNode.parentNode.style.display = 'none';
+					card = buttonSource.parentNode.parentNode.parentNode.remove();
+					//  или если не удалять узел из дерева DOM
+					// card = buttonSource.parentNode.parentNode.parentNode.style.display = 'none';
 					modalWin.style.display = "none";
 				}
 				closeModal.onclick = function() {
