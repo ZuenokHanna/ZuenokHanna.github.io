@@ -36,9 +36,9 @@
 			}
 		}
 
-		inputBtn.onclick = function() {
+		inputBtn.addEventListener('click', function() {
 			getSearchResult();
-		}
+		});
 
 		function diplayAllCards() {
 			for (var i = 0; i < allCards.length; i++) {
@@ -66,8 +66,8 @@
 		}
 
 		input.addEventListener('keypress', function(event) {
-			event.preventDefault();
 			if (event.keyCode === 13) {
+				event.preventDefault();
 				getSearchResult();
 			}
 		});
